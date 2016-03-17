@@ -203,7 +203,7 @@ Vi hade kunnat använda en analytisk utvärderingsmetod där artefakten studeras an
 Hevner presenterar även observationsbaserade utvärderingmetoder som fallstudier där artefakten studeras i den tilltänkta miljön under en viss tidsperiod. Denna utvärderingsmetod hade varit ett bra val eftersom vi då hade kunnat observera hur systemet fungerar i den tilltänkta miljön. Men eftersom studien skrivs under vårterminen finns det inga pågående introduktionskurser i programmering vid Malmö Högskola vilket innebär att en fallstudie ej är genomförbar. Därav anser vi att den lämpligaste utvärderingsmetoden är kontrollerade experiment.
 
 \subsection{Intervjuer}
-Målet med de intervjuer vi tänker genomföra är att samla in information om lärarnas åsikter och erfarenheter inom undervisning av introduktionskurser i programmering. Vi vill skapa oss en uppfattning om hur mycket av lärarnas resurser som läggs på att rätta programmeringsuppgifter, deras åsikter om automatiska bedömningssystem för programmeringsuppgifter samt undersöka om lärarna upplever plagiering bland studenterna som ett problem och i vilken omfattning som det sker. En annan fråga vi vill undersöka är lärarnas inställning till att använda fördefinierade testfall för bedömning av studenternas program gentemot att analysera och validera programmets utdata mot ett korrekt implementerat program. Vi vill dessutom ta reda på hur lärarna ställningstagande till att använda system som upptäcker plagiering av källkod och även deras åsikter om att använda versionshanteringssystem i introduktionskurser. Vi kommer att ställa frågor till lärarna om hur detaljerad återkopplingen till studenterna bör vara och om de tror att ett automatiskt bedömningssystem är ett bra stöd i studenternas utveckling. 
+Målet med de intervjuer vi tänker genomföra är att samla in information om lärarnas åsikter och erfarenheter inom undervisning av introduktionskurser i programmering. Vi vill skapa oss en uppfattning om hur mycket av lärarnas resurser som läggs på att rätta programmeringsuppgifter, deras åsikter om automatiska bedömningssystem för programmeringsuppgifter samt undersöka om lärarna upplever plagiering bland studenterna som ett problem och i vilken omfattning som det sker. Vi vill dessutom ta reda på lärarnas ställningstagande till att använda system som upptäcker plagiering av källkod och även deras åsikter om att använda versionshanteringssystem i introduktionskurser. Vi kommer att ställa frågor till lärarna om hur detaljerad återkopplingen till studenterna bör vara och om de tror att ett automatiskt bedömningssystem är ett bra stöd i studenternas utveckling.
 
 \subsection{Kontrollerade experiment}
 \textbf{OBS!! Detta är bara nedskrivna tankar för att visa hur vi tänker}
@@ -223,8 +223,41 @@ Det vi kan ta reda på är ungefär hur lång tid som det tar att skriva testfall fö
 
 \newpage
 \section{Resultat}
+Här presenteras de resultat vi samlat in från de specificerade aktiviteterna i Nunamakers process.
 
 \subsection{Intervjuer}
+Vi genomförde tre intervjuer med Farid Naisan, Rolf Axelsson och Jonas Wahlfrid vilka alla är anställda på Malmö Högskola.
+
+\subsubsection{Resurser}
+
+En fråga som vi ville få besvarad av respondenterna var hur mycket resurser som läggs på att rätta programmeringsuppgifter. Från intervjuerna framgick det att olika faktorer har inverkan på resursanvändningen beroende på om kursen är platsbelagd eller distansbelagd, antalet studenter och storleken på uppgiften samt kunskapsnivån för studenten som bedöms. Respondenterna hade svårt att ge en exakt siffra för hur mycket tid som krävs för bedömning av en uppgift. 
+\\
+Farid uppskattade att bedömningen kräver mellan 20-60 minuter per student, dock påpekade han att det är väldigt beroende på uppgiftens storlek. Enligt Farid har han uppskattningsvis 300 studenter per termin i de distanskurser som han är ansvarig för. 
+\\
+Rolf uppskattade att bedömingen av uppgifter tar 180 minuter per student
+för en kurs på 15 högskolepoäng. 
+\\
+Jonas gav ingen exakt siffra på hur mycket tid som bedömningen av uppgifter tar men han påpekade att det inte finns tillräckligt med resurser för bedöma samtliga studenters uppgifter. Han poängterade dessutom att restredovisningar av uppgifter är resurskrävande. Jonas berättade att de prövat att använda ett upplägg där de endast kollade närvaron på labbtillfällen i förhoppningen om att studenterna skulle använda tiden till att arbeta. Han berättade även att studenterna genomskådade ett annat upplägg där enbart vissa uppgifter bedömdes.
+\\
+Gemensamt för lärarna är att de delegerar bedömningen av studenternas uppgifter till lärarassistenter. 
+
+\subsubsection{Automatiserade bedömningssystem}
+
+Respondenterna fick besvara frågan på vad de anser om att använda automatiserade bedömningssystem för programmeringsuppgifter. Både Farid och Rolf ställer sig negativa till användningen av dessa system och anser att de ej lämpar sig för bedömning av programmeringsuppgifter eftersom det enligt dem är svårt att bedöma om studenten har uppnått tillräcklig förståelse.
+\\
+Farid påpekade att ett problem kan ha flera alternativa lösningar och han menar på att det inte är som vid en matematisk uppgift där det endast finns ett korrekt svar och därigenom är det svårt att göra en bedömning av inlämningens kvalité genom automatiserade system. Detta var något som även Rolf ansåg då han påpekade att det är möjligt att även en korrekt löst uppgift kan vara dåligt implementerad. 
+\\
+Jonas påpekade att det är viktigt att hålla studenterna sysselsatta men enligt honom ligger svårigheten i att balansera antalet uppgifter som ges ut till studenterna mot de resurser som finns till förfogande. Därför skiljer sig Jonas åsikter från de övrigas då han anser att ett bedömningssystem kan vara ett bra sätt att bedöma programmeringsuppgifter eftersom det då är möjligt att hålla studenterna kontinuerligt sysselsatta med begränsade resurser. Men han menar dock att vid obegränsade resurser vore en mänsklig bedömning det optimala sättet att bedöma programmeringsuppgifter. 
+\\
+Något som samtliga respondenter lyfter fram som en uppskattad funktion är möjligheten att använda flervalsfrågor för att verifiera studenternas kunskaper. 
+
+\subsubsection{Återkoppling}
+
+\subsubsection{Plagiering}
+
+\subsubsection{Inlämningsmetod}
+
+Vi ville ta reda på hur respondenterna anser att inlämningen av studenternas lösningar ska ske, antingen via ett versionshanteringssystem som Git eller med hjälp av en webbapplikation. Samtliga respondenter var överens om att ett versionshanteringssystem är viktigt för en utvecklare att behärska. Men två av de intervjuade anser att versionshanteringssystem inte lämpar sig för användning i en introduktionskurs till programmering eftersom fokus ska ligga på att lära studenterna grunderna i programmering och inte vara ett onödigt hinder i deras utveckling.
 
 \subsection{Systembeskrivning}
 
