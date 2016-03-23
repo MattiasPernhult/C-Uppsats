@@ -20,9 +20,9 @@
 \contentsline {subsubsection}{\numberline {3.1.3}Återkoppling}{7}
 \contentsline {subsubsection}{\numberline {3.1.4}Plagiering}{7}
 \contentsline {subsubsection}{\numberline {3.1.5}Inlämningsmetod}{7}
-\contentsline {subsection}{\numberline {3.2}Systembeskrivning}{7}
-\contentsline {subsection}{\numberline {3.3}Kontrollerade experiment}{7}
-\contentsline {section}{\numberline {4}Analys}{8}
-\contentsline {section}{\numberline {5}Diskussion}{9}
-\contentsline {section}{\numberline {6}Slutsatser och vidare forskning}{10}
-\contentsline {section}{Referenser}{11}
+\contentsline {subsection}{\numberline {3.2}Systembeskrivning}{8}
+\contentsline {subsection}{\numberline {3.3}Kontrollerade experiment}{8}
+\contentsline {section}{\numberline {4}Analys}{9}
+\contentsline {section}{\numberline {5}Diskussion}{10}
+\contentsline {section}{\numberline {6}Slutsatser och vidare forskning}{11}
+\contentsline {section}{Referenser}{12}
