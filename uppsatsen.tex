@@ -143,6 +143,7 @@ Text in English\ldots
 Ett sätt att lära sig att programmera är genom introduktionskurser på universitetet. I sådana kurser ges studenter olika uppgifter som kan hjälpa studenten att bli familjär med moderna programmeringsspråk, lära sig viktiga verktyg och ge insikter om hur systemutveckling bedrivs []. Utvärdering och bedömning av dessa programmeringsuppgifter utförs vanligtvis manuellt av lärare och övningsassistenter. När kurser utförs på detta traditionella sätt och de innehåller ett högt antal studenter skapar det tunga och tidskrävande uppgifter för lärare och övningsassistenter vilket tär på universitetets resurser. Det innebär även att återkopplingen till studenterna fördröjs vilket har en negativ påverkan på studenternas utveckling jämfört med direkt återkoppling [1]. Eftersom programmeringsuppgifters potentiella lösningar är av likartad karaktär kan utvärdering och bedömning automatiseras genom automatiserade bedömningssystem. Därav kan lärarens resurser användas på ett mer effektivt/givande sätt och på så vis förbättra kvalitén i kursens andra moment samtidigt som det ger en objektiv bedömning och direkt återkoppling till studenterna []. Automatiserade bedömningssystem för programmeringsuppgifter nämns redan första gången 1960 av Hollingsworth [2]. Studenterna använde sig av hålkort med program skrivna i assembly som de skickade in för bedömning. Sedan dess har automatiserade bedömningssystem vidareutvecklats.
 
 \subsection{Relaterat arbete}
+\uek{Det finns två principiella sätt att strukturera relaterade artiklar. Aningen per papper (som ni gör här) eller per ämne som är relevant. Oavsett så tycker kjag att ni borde skriva om hur ni har fått fram dem (sökning i vilka databaser och vilka söktermer som ni ansett vara relevanta).}
 
 Daly och Horgan [4] presenterar i sin artikel hur de utvecklade det automatiserade lärningssystemet RoboProf [4]. I artikeln utförde de även en studie där de testade att använda RoboProf i en introduktionskurs för programmering. Resultaten från studien visade att de studenter som utförde kursen på ett traditionellt vis presterade betydligt sämre än de studenter som använde RoboProf. Vidare presenterar författarna även en lösning för plagieringsproblemet vilket bygger på en idé av Plauger [5].
 
@@ -160,8 +161,10 @@ De presenterar även en lösning där studenten får en slumpmässigt utvald uppgift 
 Hollingsworth påpekar att studenters program kan innehålla skadlig kod vilket kan förstöra bedömningssystemet, studenterna utgör därmed ett hot mot systemet [2]. Detta problem adresseras av artiklarna [13][8][Itanhola] där författarna presenterar två alternativa lösningar som bygger på grundtanken att kompilera och exekvera studenternas program i en säker miljö för att skydda bedömningssystemet. I artikeln [8] presenterar Malan bedömningssystemet CS-50 vilket utvecklades som en del av en internetbaserad kurs vid Harvard Universitetet. För att säkert kompilera och exekvera opålitlig kod använder CS-50 SELinux [9] och PAM begränsningar [10]. ?pa?ek m. fl. [13] hävdar i sin studie att flertalet av dagens bedömningssystem saknar stöd för exekvering av opålitliga program i en säker miljö. Författarna har i sin lösning valt att använda den virtuella containerbaserade plattformen Docker [14] för att kompilera och exekvera studenternas program. APAC verifierar studenternas program genom att analysera och validera programmets utdata.
 
 \subsection{Syfte}
+\uek{Jag hade flyttat syfte och frågeställning till slutet av inledningskapitlet. Då blir det också mer förståeligt till varför just de relaterade arbetena är relaterade.}
 
-Studien ämnar att implementera ett bedömningssystem som använder Docker för att exekvera studenternas program i en säker miljö samt bedömmer programmen genom fördefinierade testfall tillhandahållna av en lärare. Bedömningssystemet är tänkt att användas för introduktionskurser i programmering som bedrivs på Malmö Högskola. Syftet är dels att undersöka om vårt bedömningssystem kan underlätta och ge stöd åt lärare i deras bedömningsprocess av programmeringsuppgifter samt undersöka om vårt bedömningssystem är ett bra hjälpmedel för att utveckla studenters programmeringskunskaper.
+Studien ämnar att implementera ett bedömningssystem som använder Docker för att exekvera studenternas program i en säker miljö samt bedömmer programmen genom fördefinierade testfall tillhandahållna av en lärare. Bedömningssystemet är tänkt att användas för introduktionskurser i programmering som bedrivs på Malmö Högskola. \ugh{Syftet är dels att undersöka om vårt bedömningssystem kan underlätta och ge stöd åt lärare i deras bedömningsprocess av programmeringsuppgifter samt undersöka om vårt bedömningssystem är ett bra hjälpmedel för att utveckla studenters programmeringskunskaper.}
+\uek{Om ni har dels för de första syftet måste ni även inleda det andra syftet med dels. Annars skriv att ni har två syften: 1) och 2)}
 
 \subsection{Frågeställning}
 
@@ -169,7 +172,7 @@ Studien avser ge svar på följande frågor:
 
 \begin{enumerate}
 \item
-Kan vårt bedömningssystem minska tidsåtgången för lärares bedömningsprocess av programmeringsuppgifter?
+\ugh{Kan vårt bedömningssystem minska tidsåtgången för lärares bedömningsprocess av programmeringsuppgifter?} \uek{Ni bör nog formulera det som ett bedömningssystem av den här typen. Annars är frågan lite väl begränsad som forskningsfråga, då ni per automatik har sagt att ni inte kan generalisera något svar }
 \item
 Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper?
 \end{enumerate}
@@ -187,7 +190,7 @@ Eftersom studiens syfte är att konstruera, implementera och utvärdera en systema
 
 Syftet med att konstruera ett konceptuellt ramverk är att definiera en relevant forskningsfråga och systemkrav. För att identifiera och definiera dessa kommer vi att genomföra en litteraturstudie av liknande system och utföra intervjuer med lärare och studenter vid Malmö högskola. Vi har valt ut tre lärare som alla har lång, dokumenterad erfarenhet av att lära ut programmering till högskolestudenter i introduktionskurser. Valet av intervjupersoner anser vi vara befogat eftersom personerna i fråga är representativa för den huvudsakliga målgruppen och verksamma inom den miljö som systemet ska tillämpas. Därav kommer vi få en djupare förståelse i ämnet vilket hjälper oss att omsätta den insamlade informationen till krav för systemet samt definiera forskningsfrågan. 
 
-Anledningen till att vi inte väljer en kvantitativ undersökningsmetod som exempelvis enkäter med fördefinierade svar beror på att de endast ger en ytlig förståelse i ämnet till skillnad från intervjuer [seminarieboken]. Vid intervjuer finns det även utrymme för att ställa följdfrågor till respondenten samt att det går att förtydliga frågorna vid eventuella missuppfattningar, något som inte är möjligt vid fördefinierade enkätundersökningar [seminarieboken]. Informationen som vi samlar in från litteraturstudien kommer att användas för att urskilja de befintliga systemen. Därigenom kan vi identifiera funktioner som vi anser saknas i dessa system vilket gör att vi, tillsammans med informationen vi erhåller från intervjuerna, kan definiera krav som systemets ska uppfylla.
+\ugh{Anledningen till att vi inte väljer en kvantitativ undersökningsmetod som exempelvis enkäter med fördefinierade svar beror på att de endast ger en ytlig förståelse i ämnet till skillnad från intervjuer [seminarieboken].}\uek{Ni behöver inte argumentera för/emot metoder ni inte använder} Vid intervjuer finns det även utrymme för att ställa följdfrågor till respondenten samt att det går att förtydliga frågorna vid eventuella missuppfattningar, något som inte är möjligt vid fördefinierade enkätundersökningar [seminarieboken]. Informationen som vi samlar in från litteraturstudien kommer att användas för att urskilja de befintliga systemen. Därigenom kan vi identifiera funktioner som vi anser saknas i dessa system vilket gör att vi, tillsammans med informationen vi erhåller från intervjuerna, kan definiera krav som systemets ska uppfylla.
 
 \subsubsection{Utveckla en systemarkitektur}
 
@@ -205,7 +208,7 @@ Tanken med följande steg är att implementera en prototyp som ska utvärderas i ko
 
 Hevner presenterar i sin tredje riktlinje \textit{Design Evaluation} olika metoder för utvärdering av informationssystem. Den metod som vi anser är lämpligast för vår studie är en experimentell utvärderingmetod, mer specifikt kontrollerade experiment, eftersom det innebär att studera en implementerad prototyp i en kontrollerad miljö. Vi kommer att utföra experiment på lärare och studenter vilka är de två huvudgrupperna i studien. Målet med experimenten för lärare är att besvara frågeställningen \textit{Kan vårt bedömningssystem minska tidsåtgången för lärarens bedömningsprocess av programmeringsuppgifter?}, medans experimenten för studenter har som mål att besvara \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper?}.
 
-Vi hade kunnat använda en analytisk utvärderingsmetod där artefakten studeras analytiskt eftersom det saknas en fungerande prototyp, men eftersom vi kommer ha en fungerande prototyp anser vi att denna utvärderingsmetod inte lämpar sig för vår studie.
+\del{Vi hade kunnat använda en analytisk utvärderingsmetod där artefakten studeras analytiskt eftersom det saknas en fungerande prototyp, men eftersom vi kommer ha en fungerande prototyp anser vi att denna utvärderingsmetod inte lämpar sig för vår studie.} \uek{Återigen: Argumentera inte emot saker som ni inte gör. Bättre att ta bort helt.}
 
 Hevner presenterar även observationsbaserade utvärderingmetoder som fallstudier där artefakten studeras i den tilltänkta miljön under en viss tidsperiod. Denna utvärderingsmetod hade varit ett bra val eftersom vi då hade kunnat observera hur systemet fungerar i den tilltänkta miljön. Men eftersom studien skrivs under vårterminen finns det inga pågående introduktionskurser i programmering vid Malmö Högskola vilket innebär att en fallstudie ej är genomförbar. Därav anser vi att den lämpligaste utvärderingsmetoden är kontrollerade experiment.
 
@@ -232,8 +235,12 @@ Det vi kan ta reda på är ungefär hur lång tid som det tar att skriva testfall fö
 \section{Resultat}
 Här presenteras de resultat vi samlat in från de specificerade aktiviteterna i Nunamakers process.
 
+
+
 \subsection{Intervjuer}
-Vi genomförde tre intervjuer med Farid Naisan, Rolf Axelsson och Jonas Wahlfrid vilka alla är anställda som lärare vid Malmö Högskola. Resultaten från intervjuerna presenteras enligt de ämnesområden som intervjufrågorna berörde.
+\uek{Jag tycker att ni  har en bra beskrivning av de intervjuer ni har genomfört. Ni kanske ska ta med era intervjufrågor i ett appendix i rapporten också. I slutet av denna sektionen bör ni dock sammanfatta vad intervjuresultaten medför för den typ av system ni vill bygga, en kort kravspec i form av en lista eller tabell. Ni kna ju senare i diskussioneskapitelt at upp alternatvia sätt att lösa lärarnas problem (om ni nu kommit på några).}
+
+\ugh{Vi genomförde tre intervjuer med Farid Naisan, Rolf Axelsson och Jonas Wahlfrid vilka alla är anställda som lärare vid Malmö Högskola.} \uek{Ni bör fundera på om ni verkligen ska skriva ut namne på läranra. bätre att kalla dem med nummer eller fejkade namn. Är de tillfrågade om att medverka med namn i studien?} Resultaten från intervjuerna presenteras enligt de ämnesområden som intervjufrågorna berörde.
 
 \subsubsection{Resurser}
 
