@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.18)  18 MAR 2016 15:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.18)  31 MAR 2016 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -75,7 +75,11 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 )
 Package babel Info: Making " an active character on input line 90.
 ))
-(./uppsatsen.aux)
+(./uppsatsen.aux
+
+LaTeX Warning: Label `overflow' multiply defined.
+
+)
 \openout1 = `uppsatsen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -90,8 +94,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
-
-(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
 \scratchdimen=\dimen106
@@ -175,25 +178,39 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 213.
 
-[5] [6] [7] <leap_arch.jpeg, id=60, 1027.84pt x 770.88pt>
+[5] [6] [7] <leap_flow.png, id=60, 1726.45pt x 1324.95pt>
+File: leap_flow.png Graphic file (type png)
+ <use leap_flow.png>
+Package pdftex.def Info: leap_flow.png used on input line 300.
+(pdftex.def)             Requested size: 431.61145pt x 331.2367pt.
+
+Overfull \hbox (4.82011pt too wide) in paragraph at lines 300--301
+ [][] 
+ []
+
+<leap_arch.jpeg, id=61, 1027.84pt x 770.88pt>
 File: leap_arch.jpeg Graphic file (type jpg)
  <use leap_arch.jpeg>
-Package pdftex.def Info: leap_arch.jpeg used on input line 274.
-(pdftex.def)             Requested size: 426.79659pt x 284.52715pt.
+Package pdftex.def Info: leap_arch.jpeg used on input line 312.
+(pdftex.def)             Requested size: 411.12872pt x 308.34654pt.
+ [8] [9 <./leap_flow.png (PNG copy)>] [10 <./leap_arch.jpeg>] [11] [12] [13]
+(./uppsatsen.aux)
 
-[8 <./leap_arch.jpeg>] [9] [10] [11] [12] (./uppsatsen.aux) )
+LaTeX Warning: There were multiply-defined labels.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 25 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 2192 strings out of 494501
- 29780 string characters out of 6167030
- 89994 words of memory out of 5000000
- 5454 multiletter control sequences out of 15000+600000
+ 2198 strings out of 494501
+ 29868 string characters out of 6167030
+ 90034 words of memory out of 5000000
+ 5458 multiletter control sequences out of 15000+600000
  13247 words of font info for 32 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,5n,23p,1438b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,6n,23p,1438b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
  </Users/mattiaspernhult/Library/texlive/2015basic/texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecti1095.600pk> </Users/mattiaspernhult/Library/texli
 ve/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </Users/matt
@@ -210,10 +227,10 @@ ult/Library/texlive/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.60
 i10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb>
-Output written on uppsatsen.pdf (20 pages, 201339 bytes).
+Output written on uppsatsen.pdf (21 pages, 1162332 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 435 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

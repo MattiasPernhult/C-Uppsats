@@ -265,19 +265,58 @@ Plagiering är något som samtliga av de intervjuade anser vara vanligt förekomman
 Vi ville ta reda på hur respondenterna anser att inlämningen av studenternas lösningar ska ske, antingen via ett versionshanteringssystem som Git eller med hjälp av en webbapplikation. Samtliga respondenter var överens om att ett versionshanteringssystem är viktigt för en utvecklare att behärska. Men två av de intervjuade anser att versionshanteringssystem inte lämpar sig för användning i en introduktionskurs till programmering eftersom fokus ska ligga på att lära studenterna grunderna i programmering och inte vara ett onödigt hinder i deras utveckling.
 
 \newpage
-\subsection{Systembeskrivning}
+\subsection{LEAP}
 
-Detta är bara ett test.
+\subsubsection{Systembeskrivning}
+Informationen som införskaffades genom litteraturstudien och intervjuer med lärare låg till grund för LEAP, \textit{LEarning and Assessment of Programming}, vilket är namnet på den prototyp som vi utvecklat. Utifrån den insamlade informationen definierade vi ett antal krav som vi anser att vår prototyp ska uppfylla:
+
+\begin{itemize}
+\item
+En lärare ska genom ett webbgränssnitt kunna skapa en uppgift i systemet och ladda upp en tillhörande testfil med testfall.
+\item
+En lärare ska ha möjlighet att skapa ett tillhörande quiz till en uppgift.
+\item
+En lärare ska kunna få information om hur många som klarat en uppgift.
+\item
+En student ska genom ett webbgränssnitt kunna skicka in svar på en uppgift som sedan körs mot uppgiftens testfil.
+\item
+En student ska få information om lösningen av uppgiften godkändes eller ej.
+\item
+En student ska få ta del av den genererade utdatan från testfallen vid ett misslyckande.
+\item
+En student ska kunna se vilka uppgifter den klarat och ej klarat.
+\item
+Systemet ska stödja uppgifter definierade för Java programmering.
+\item
+Systemet ska exekvera studentens program i en säker miljö som skyddar servern.
+\item
+Systemet ska kunna hantera kod innehållandes oändliga loopar.
+\item
+Systemet ska inte tillåta studentens program att utföra I/O operationer utanför den säkra miljön.
+\end{itemize}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=150mm,height=100mm]{leap_arch.jpeg}
+\includegraphics[scale=0.25]{leap_flow.png}
+\caption{Aktivitetsdiagram över  \label{overflow}}
+\end{figure}
+
+\subsubsection{Systemkomponenter}
+
+LEAP består i grunden av en HTTP-server utvecklad med Node.js [källa] som är en open source körningsmiljö byggd på Googles JavaScript-motor V8. Node.js har en händelsestyrd arkitektur som gör det möjligt att hantera asynkron I/O. För att interagera med servern har en webbaserad klient utvecklats som kommunicerar med servern via ett REST-API vilket har utvecklats med ramverket Express [källa]. Klienten är implementerad med ramverken Bootstrap [källa] och AngularJS [källa]. Bootstrap innehåller en mängd färdigutvecklade komponenter för utveckling av webbapplikationer. AngularJS används för utveckling av webbapplikationer och främjar utveckling av klienter som följer MVC arkitekturer. Datalagringen görs med hjälp av MongoDB som är en NoSQL-klassificerad dokumentdatabas. För att kommunicera med databas från servern används Node.js modulen Mongoose.  Tillsammans utgör MongoDB, Express, AngularJS och Node.js MEAN-stacken [källa].
+
+LEAP består av ytterligare en komponent vilket är Docker, detta för att sätta upp en säker miljö där studenternas program exekveras. Allt detta presenteras visuellt i figur 1.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.4]{leap_arch.jpeg}
 \caption{Systemarkitektur för LEAP \label{overflow}}
 \end{figure}
 
+\newpage
 \subsection{Kontrollerade experiment}
 
-Detta är bara ett test
+Kontrollerade experiment bla bla...
 
 \newpage
 \section{Analys}
