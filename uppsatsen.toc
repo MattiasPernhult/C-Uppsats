@@ -17,14 +17,20 @@
 \contentsline {subsection}{\numberline {3.1}Intervjuer}{6}
 \contentsline {subsubsection}{\numberline {3.1.1}Resurser}{6}
 \contentsline {subsubsection}{\numberline {3.1.2}Automatiserade bedömningssystem}{6}
-\contentsline {subsubsection}{\numberline {3.1.3}Återkoppling}{7}
-\contentsline {subsubsection}{\numberline {3.1.4}Plagiering}{7}
-\contentsline {subsubsection}{\numberline {3.1.5}Inlämningsmetod}{7}
+\contentsline {subsubsection}{\numberline {3.1.3}Inlämningsmetod}{7}
+\contentsline {subsubsection}{\numberline {3.1.4}Återkoppling}{7}
+\contentsline {subsubsection}{\numberline {3.1.5}Plagiering}{7}
 \contentsline {subsection}{\numberline {3.2}LEAP}{8}
-\contentsline {subsubsection}{\numberline {3.2.1}Systembeskrivning}{8}
+\contentsline {subsubsection}{\numberline {3.2.1}Systemfunktioner}{8}
 \contentsline {subsubsection}{\numberline {3.2.2}Systemkomponenter}{8}
-\contentsline {subsection}{\numberline {3.3}Kontrollerade experiment}{9}
-\contentsline {section}{\numberline {4}Analys}{10}
-\contentsline {section}{\numberline {5}Diskussion}{11}
-\contentsline {section}{\numberline {6}Slutsatser och vidare forskning}{12}
-\contentsline {section}{Referenser}{13}
+\contentsline {subsubsection}{\numberline {3.2.3}Förklarande av systemet vid uppladdning}{10}
+\contentsline {subsubsection}{\numberline {3.2.4}Förklarande av systemet vid inlämning}{11}
+\contentsline {subsection}{\numberline {3.3}Kontrollerade experiment}{13}
+\contentsline {subsubsection}{\numberline {3.3.1}Användarupplevelse}{13}
+\contentsline {subsubsection}{\numberline {3.3.2}Återkoppling}{15}
+\contentsline {subsubsection}{\numberline {3.3.3}Quiz}{17}
+\contentsline {subsubsection}{\numberline {3.3.4}Traditionellt eller automatiserat?}{18}
+\contentsline {section}{\numberline {4}Analys}{20}
+\contentsline {section}{\numberline {5}Diskussion}{21}
+\contentsline {section}{\numberline {6}Slutsatser och vidare forskning}{22}
+\contentsline {section}{Referenser}{23}
