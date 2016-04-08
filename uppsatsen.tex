@@ -28,16 +28,15 @@
 %
 % Do not change
 \let\rempage=\thepage
-{
-\renewcommand{\thepage}{\relax}
-\begin{picture}(44,0)(15,10)%
-\special{psfile=mahlogo-name.eps}%
-\end{picture}%
+{\renewcommand{\thepage}{\relax}
+	\begin{picture}(44,0)(15,10)%
+		\special{psfile=mahlogo-name.eps}%
+	\end{picture}%
 
-\vspace*{-30mm}
-\hfill\begin{minipage}[t]{16em}\large
-Fakulteten för teknik och samhälle\\
-Datavetenskap
+	\vspace*{-30mm}
+	\hfill\begin{minipage}[t]{16em}\large
+	Fakulteten för teknik och samhälle\\
+	Datavetenskap
 \end{minipage}
 
 \vspace*{45mm}
@@ -145,7 +144,7 @@ Text in English\ldots
 Ett sätt att lära sig att programmera är genom introduktionskurser på universitetet. I sådana kurser ges studenter olika uppgifter som kan hjälpa studenten att bli familjär med moderna programmeringsspråk, lära sig viktiga verktyg och ge insikter om hur systemutveckling bedrivs []. Utvärdering och bedömning av dessa programmeringsuppgifter utförs vanligtvis manuellt av lärare och övningsassistenter. När kurser utförs på detta traditionella sätt och de innehåller ett högt antal studenter skapar det tunga och tidskrävande uppgifter för lärare och övningsassistenter vilket tär på universitetets resurser. Det innebär även att återkopplingen till studenterna fördröjs vilket har en negativ påverkan på studenternas utveckling jämfört med direkt återkoppling [1]. Eftersom programmeringsuppgifters potentiella lösningar är av likartad karaktär kan utvärdering och bedömning automatiseras genom automatiserade bedömningssystem. Därav kan lärarens resurser användas på ett mer effektivt/givande sätt och på så vis förbättra kvalitén i kursens andra moment samtidigt som det ger en objektiv bedömning och direkt återkoppling till studenterna []. Automatiserade bedömningssystem för programmeringsuppgifter nämns redan första gången 1960 av Hollingsworth [2]. Studenterna använde sig av hålkort med program skrivna i assembly som de skickade in för bedömning. Sedan dess har automatiserade bedömningssystem vidareutvecklats.
 
 \subsection{Relaterat arbete}
-\uek{Det finns två principiella sätt att strukturera relaterade artiklar. Aningen per papper (som ni gör här) eller per ämne som är relevant. Oavsett så tycker kjag att ni borde skriva om hur ni har fått fram dem (sökning i vilka databaser och vilka söktermer som ni ansett vara relevanta).}
+\uek{Det finns två principiella sätt att strukturera relaterade artiklar. Aningen per papper (som ni gör här) eller per ämne som är relevant. Oavsett så tycker jag att ni borde skriva om hur ni har fått fram dem (sökning i vilka databaser och vilka söktermer som ni ansett vara relevanta).}
 
 Daly och Horgan [4] presenterar i sin artikel hur de utvecklade det automatiserade lärningssystemet RoboProf [4]. I artikeln utförde de även en studie där de testade att använda RoboProf i en introduktionskurs för programmering. Resultaten från studien visade att de studenter som utförde kursen på ett traditionellt vis presterade betydligt sämre än de studenter som använde RoboProf. Vidare presenterar författarna även en lösning för plagieringsproblemet vilket bygger på en idé av Plauger [5].
 
@@ -186,29 +185,31 @@ Följande avsnitt beskriver den metodik som valts för utförandet av studien.
 
 \subsection{Metodbeskrivning och metoddiskussion}
 
-Eftersom studiens syfte är att konstruera, implementera och utvärdera en systemartefakt valdes en metodik som presenteras av Nunamaker m. fl. [Nunamaker] eftersom det är en erkänd och välbeprövad process för forskning inom informationssystem [källa]. Författarna definierar en iterativ femstegsprocess för hur sådan forskning bör bedrivas vilken innefattar att: \textit{(1) konstruera ett konceptuellt ramverk} \textit{(2) utveckla en systemarkitektur} \textit{(3) konstruera och analysera systemet} \textit{(4) implementera systemet} och \textit{(5) utvärdera systemet}. För att ytterligare säkerställa studiens kvalité ämnar den att följa de sju riktlinjer för forskning inom informationssystem definierade av Hevner m.fl. [Hevner]. 
+Eftersom studiens syfte är att konstruera, implementera och utvärdera en systemartefakt valdes en metodik som presenteras av Nunamaker m. fl. [Nunamaker] eftersom det är en erkänd och välbeprövad process för forskning inom informationssystem [källa]. 
+\uek{jag måste rätta mig, för att få högsta betyg måste Ni  argumentera för/emot och jämföra med  metoder ni inte använder. Varför 'är Nunamaker lämoligare här än t.ex. design research?}
+Författarna definierar en iterativ femstegsprocess för hur sådan forskning bör bedrivas vilken innefattar att: \textit{(1) konstruera ett konceptuellt ramverk} \textit{(2) utveckla en systemarkitektur} \textit{(3) konstruera och analysera systemet} \textit{(4) implementera systemet} och \textit{(5) utvärdera systemet}. För att ytterligare säkerställa studiens kvalité ämnar den att följa de sju riktlinjer för forskning inom informationssystem definierade av Hevner m.fl. [Hevner]. 
 
 \subsubsection{Konstruera ett konceptuellt ramverk}
 
 Syftet med att konstruera ett konceptuellt ramverk är att definiera en relevant forskningsfråga och systemkrav. För att identifiera och definiera dessa kommer vi att genomföra en litteraturstudie av liknande system och utföra intervjuer med lärare och studenter vid Malmö högskola. Vi har valt ut tre lärare som alla har lång, dokumenterad erfarenhet av att lära ut programmering till högskolestudenter i introduktionskurser. Valet av intervjupersoner anser vi vara befogat eftersom personerna i fråga är representativa för den huvudsakliga målgruppen och verksamma inom den miljö som systemet ska tillämpas. Därav kommer vi få en djupare förståelse i ämnet vilket hjälper oss att omsätta den insamlade informationen till krav för systemet samt definiera forskningsfrågan. 
 
-\ugh{Anledningen till att vi inte väljer en kvantitativ undersökningsmetod som exempelvis enkäter med fördefinierade svar beror på att de endast ger en ytlig förståelse i ämnet till skillnad från intervjuer [seminarieboken].}\uek{Ni behöver inte argumentera för/emot metoder ni inte använder} Vid intervjuer finns det även utrymme för att ställa följdfrågor till respondenten samt att det går att förtydliga frågorna vid eventuella missuppfattningar, något som inte är möjligt vid fördefinierade enkätundersökningar [seminarieboken]. Informationen som vi samlar in från litteraturstudien kommer att användas för att urskilja de befintliga systemen. Därigenom kan vi identifiera funktioner som vi anser saknas i dessa system vilket gör att vi, tillsammans med informationen vi erhåller från intervjuerna, kan definiera krav som systemets ska uppfylla.
+\ugh{Anledningen till att vi inte väljer en kvantitativ undersökningsmetod som exempelvis enkäter med fördefinierade svar beror på att de endast ger en ytlig förståelse i ämnet till skillnad från intervjuer [seminarieboken].}\uek{jag måste rätta mig, för att få högsta betyg måste Ni  argumentera för/emot och jämföra med  metoder ni inte använder.} Vid intervjuer finns det även utrymme för att ställa följdfrågor till respondenten samt att det går att förtydliga frågorna vid eventuella missuppfattningar, något som inte är möjligt vid fördefinierade enkätundersökningar [seminarieboken]. Informationen som vi samlar in från litteraturstudien kommer att användas för att urskilja de befintliga systemen. Därigenom kan vi identifiera funktioner som vi anser saknas i dessa system vilket gör att vi, tillsammans med informationen vi erhåller från intervjuerna, kan definiera krav som systemets ska uppfylla.
 
 \subsubsection{Utveckla en systemarkitektur}
 
-Enligt Nunamaker m. fl. innefattar följande steg att bestämma systemets komponenter och definiera förhållandet mellan komponenterna samt att identifiera och definiera systemets funktionalitet []. Vi kommer att använda den insamlade information från föregående steg för att definiera komponenterna och systemfunktionerna. Nunamaker m.fl. påpekar betydelsen av att definiera mätbar funktioner för systemet eftersom det underlättar vid systemutvärderingen []. 
+Enligt Nunamaker m. fl. innefattar följande steg att bestämma systemets komponenter och definiera förhållandet mellan komponenterna samt att identifiera och definiera systemets funktionalitet []. \ugh{Vi kommer att använda den insamlade information från föregående steg för att definiera komponenterna och systemfunktionerna.} \uek{Dels bör ni inte beskriva det är i futurum, dels så bör ni ha med lite mer detlajer om hur ni gick tillväga. inkludera gärna en referns till var i rapporten läsaren kan hitta resultaten från det här steget.} Nunamaker m.fl. påpekar betydelsen av att definiera mätbar funktioner för systemet eftersom det underlättar vid systemutvärderingen []. \uek{Och var hittar jag den funktionen i er rapport?}
 
 \subsubsection{Konstruera och analysera systemet}
 
-I detta steg är syftet att vi ska att identifiera möjliga lösningar, tekniker och språk för att kunna implementera systemet i kommande steg []. Möjliga lösningar kommer att konstrueras vilka vi sedan analyserar innan vi slutligen väljer det bästa alternativet att gå vidare med och implementera.
+I detta steg är syftet att vi ska att identifiera möjliga lösningar, tekniker och språk för att kunna implementera systemet i kommande steg []. Möjliga lösningar kommer att konstrueras vilka vi sedan analyserar innan vi slutligen väljer det bästa alternativet att gå vidare med och implementera. \uek{återigen, beskriv vilka aktiviteter \emph{ni} har gjort och var man hittar resultaten.}
 
 \subsubsection{Implementera systemet}
 
-Tanken med följande steg är att implementera en prototyp som ska utvärderas i kommande steg. Prototypen kommer att ge insikter angående konceptets genomförbarhet och dess möjlighet att besvara frågeställningen.
+Tanken med följande steg är att implementera en prototyp som ska utvärderas i kommande steg. Prototypen kommer att ge insikter angående konceptets genomförbarhet och dess möjlighet att besvara frågeställningen. \uek{återigen, beskriv vilka aktiviteter \emph{ni} har gjort och var man hittar resultaten.}
 
 \subsubsection{Utvärdera systemet}
 
-Hevner presenterar i sin tredje riktlinje \textit{Design Evaluation} olika metoder för utvärdering av informationssystem. Den metod som vi anser är lämpligast för vår studie är en experimentell utvärderingmetod, mer specifikt kontrollerade experiment, eftersom det innebär att studera en implementerad prototyp i en kontrollerad miljö. Vi kommer att utföra experiment på lärare och studenter vilka är de två huvudgrupperna i studien. Målet med experimenten för lärare är att besvara frågeställningen \textit{Kan vårt bedömningssystem minska tidsåtgången för lärarens bedömningsprocess av programmeringsuppgifter?}, medans experimenten för studenter har som mål att besvara \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper?}.
+Hevner presenterar i sin tredje riktlinje \textit{Design Evaluation} olika metoder för utvärdering av informationssystem. Den metod som vi anser är lämpligast för vår studie är en experimentell utvärderingmetod, mer specifikt kontrollerade experiment, eftersom det innebär att studera en implementerad prototyp i en kontrollerad miljö. Vi kommer att utföra experiment på lärare och studenter vilka är de två huvudgrupperna i studien. Målet med experimenten för lärare är att besvara frågeställningen \textit{Kan vårt bedömningssystem minska tidsåtgången för lärarens bedömningsprocess av programmeringsuppgifter?}, medans experimenten för studenter har som mål att besvara \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper?}.  \uek{återigen, beskriv vilka aktiviteter \emph{ni} har gjort och var man hittar resultaten.}
 
 \del{Vi hade kunnat använda en analytisk utvärderingsmetod där artefakten studeras analytiskt eftersom det saknas en fungerande prototyp, men eftersom vi kommer ha en fungerande prototyp anser vi att denna utvärderingsmetod inte lämpar sig för vår studie.} \uek{Återigen: Argumentera inte emot saker som ni inte gör. Bättre att ta bort helt.}
 
@@ -218,10 +219,12 @@ Hevner presenterar även observationsbaserade utvärderingmetoder som fallstudier 
 Målet med de intervjuer vi tänker genomföra är att samla in information om lärarnas åsikter och erfarenheter inom undervisning av introduktionskurser i programmering. Vi vill skapa oss en uppfattning om hur mycket av lärarnas resurser som läggs på att rätta programmeringsuppgifter, deras åsikter om automatiska bedömningssystem för programmeringsuppgifter samt undersöka om lärarna upplever plagiering bland studenterna som ett problem och i vilken omfattning som det sker. Vi vill dessutom ta reda på lärarnas ställningstagande till att använda system som upptäcker plagiering av källkod och även deras åsikter om att använda versionshanteringssystem i introduktionskurser. Vi kommer att ställa frågor till lärarna om hur detaljerad återkopplingen till studenterna bör vara och om de tror att ett automatiskt bedömningssystem är ett bra stöd i studenternas utveckling.
 
 \subsection{Kontrollerade experiment}
-Syftet med genomförandet av kontrollerade experiment är att utvärdera den prototyp som vi utvecklar för att sedan ha möjlighet att besvara vår forskningsfråga \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper}. Experimenten kommer att genomföras på studenter vid Malmö Högskola som har läst minst en introduktionskurs i programmering. För att komma i kontakt med studenter som vill genomföra experimentet kommer vi att kontakta elever som studerar datavetenskap antingen via epost alternativt presentera oss vid någon av deras föreläsningar.
+Syftet med genomförandet av kontrollerade experiment är att utvärdera den prototyp som vi utvecklar för att sedan ha möjlighet att besvara vår forskningsfråga \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper}. Experimenten kommer att genomföras på studenter vid Malmö Högskola som har läst minst en introduktionskurs i programmering. För att komma i kontakt med studenter som vill genomföra experimentet kommer vi att kontakta elever som studerar datavetenskap antingen via epost alternativt presentera oss vid någon av deras föreläsningar. \uek{Återigen så är det ju atkiviteter ni ahr gjort, inte kommer att göra\ldots}
 Vid experimenten kommer studenten att först läsa en text som presenterar oss och vårt examensarbete följt av övergripande information om hur experimentet kommer att utföras. I texten beskrivs även hur den insamlade informationen kommer att behandlas. Därefter får studenten besvara en enkät med inledande frågor\footnote{Appendix A}. Efter att enkäten besvarats kommer studenten att få instruktioner om hur användartestet kommer att genomföras följt av att studenten genomför användartestet. Testet går ut på att testa vår prototyp med en existerande uppgift som vi tagit från kursen \textit{Introduktion till programmering} vid Malmö Högskola. Till denna uppgift har vi skrivit testfall som vi sedan har laddat upp till vår prototyp, det är dessa testfall som studenternas program sedan kommer att köras mot. När användartestet har genomförts kommer studenten att få besvara ytterligare en enkät\footnote{Appendix B}. Syftet med enkäten är att få en bra bild av hur studenten upplevde att använda vår prototyp.
+\uek{Ni bropde besriva lite mer detlajerat hur ni utformat enkäten, t.ex. att ni använt en Likert-skala. Ni kanske har nytta av Burgess, T.F., 2001. A general introduction to the design of questionnaires for survey research. University of Leeds. Eller har vi redan diskuterat detta?}
 
-Vid genomförandet av användartestet och den andra enkäten kommer vi ej närvara i rummet eller ta tid, detta för att undvika att skapa onödig press på studenten. Vi tycker även att det är viktigt att poängtera för studenten att all information som vi samlar in är helt anonym för att studentens åsikt ska vara sanningsenlig.
+Vid genomförandet av användartestet och den andra enkäten kommer vi ej närvara i rummet eller ta tid, detta för att undvika att skapa onödig press på studenten. Vi tycker även att det är viktigt att poängtera för studenten att all information som vi samlar in är helt anonym för att studentens åsikt ska vara sanningsenlig. \uek{Ni kanske ska diskutera validiteten i era emprisiskt insamlade resultat, både gällande intervjuer och de som provade systemet åt er. Läs gärna Easterbrook, S., Singer, J., Storey, M.-A., Damian, D., 2008. Selecting Empirical Methods for Software Engineering Research, in: Guide to Advanced Empirical Software Engineering. Springer, pp. 285?311, osm jag tror ni kan ha stor nytta av.
+}
 
 \newpage
 \section{Resultat}
@@ -230,16 +233,16 @@ Här presenteras de resultat vi samlat in från de specificerade aktiviteterna i N
 
 
 \subsection{Intervjuer}
-\uek{Jag tycker att ni  har en bra beskrivning av de intervjuer ni har genomfört. Ni kanske ska ta med era intervjufrågor i ett appendix i rapporten också. I slutet av denna sektionen bör ni dock sammanfatta vad intervjuresultaten medför för den typ av system ni vill bygga, en kort kravspec i form av en lista eller tabell. Ni kna ju senare i diskussioneskapitelt at upp alternatvia sätt att lösa lärarnas problem (om ni nu kommit på några).}
+\uek{Jag tycker att ni  har en bra beskrivning av de intervjuer ni har genomfört. Ni kanske ska ta med era intervjufrågor i ett appendix i rapporten också. I slutet av denna sektionen bör ni dock sammanfatta vad intervjuresultaten medför för den typ av system ni vill bygga, en kort kravspec i form av en lista eller tabell. Ni kan ju senare i diskussionskapitlet at upp alternativa sätt att lösa lärarnas problem (om ni nu kommit på några).}
 
-\ugh{Vi genomförde tre intervjuer med Farid Naisan, Rolf Axelsson och Jonas Wahlfrid vilka alla är anställda som lärare vid Malmö Högskola.} \uek{Ni bör fundera på om ni verkligen ska skriva ut namne på läranra. bätre att kalla dem med nummer eller fejkade namn. Är de tillfrågade om att medverka med namn i studien?} Resultaten från intervjuerna presenteras enligt de ämnesområden som intervjufrågorna berörde.
+\ugh{Vi genomförde tre intervjuer med Farid Naisan, Rolf Axelsson och Jonas Wahlfrid vilka alla är anställda som lärare vid Malmö Högskola.} \uek{Ni bör fundera på om ni verkligen ska skriva ut namne på lärarna. Bättre att kalla dem med nummer eller fejkade namn. Är de tillfrågade om att medverka med namn i studien?} Resultaten från intervjuerna presenteras enligt de ämnesområden som intervjufrågorna berörde.
 
 \subsubsection{Resurser}
 En fråga som vi ville få besvarad av respondenterna var hur mycket resurser som läggs på att rätta programmeringsuppgifter. Från intervjuerna framgick det att olika faktorer har inverkan på resursanvändningen beroende på om kursen är platsbelagd eller distansbelagd, antalet studenter och storleken på uppgiften samt kunskapsnivån för studenten som bedöms. Respondenterna hade svårt att ge en exakt siffra för hur mycket tid som krävs för bedömning av en uppgift. 
 
 Farid uppskattade att bedömningen för en uppgift kräver mellan 20-60 minuter per student, dock påpekade han att det är väldigt beroende på uppgiftens storlek. Enligt Farid har han uppskattningsvis 300 studenter per termin i de distanskurser som han är ansvarig för. 
 
-Rolf uppskattade att bedömingen av uppgifter tar 180 minuter per student
+Rolf uppskattade att bedömningen av uppgifter tar 180 minuter per student
 för en kurs på 15 högskolepoäng. 
 
 Jonas gav ingen exakt siffra på hur mycket tid som bedömningen av uppgifter tar men han påpekade att det inte finns tillräckligt med resurser för bedöma samtliga studenters uppgifter. Han poängterade dessutom att restredovisningar av uppgifter är resurskrävande. Jonas berättade att de prövat att använda ett upplägg där de endast kollade närvaron på labbtillfällen i förhoppningen om att studenterna skulle använda tiden till att arbeta. Han berättade även att studenterna genomskådade ett annat upplägg där enbart vissa uppgifter bedömdes.
@@ -266,8 +269,9 @@ Plagiering är något som samtliga av de intervjuade anser vara vanligt förekomman
 
 \newpage
 \subsection{LEAP}
+\uek{På det hela taget är er beskrivning av systemet mycket bra!}
 \subsubsection{Systemfunktioner}
-Informationen som införskaffades genom litteraturstudien och intervjuer med lärare låg till grund för LEAP, \textit{LEarning and Assessment of Programming}, vilket är namnet på den prototyp som vi utvecklat. För att följa Nunamakers metod började vi med att utföra de två första stegen i metoden vilket innefattar att definiera funktioner och krav för prototypen. För att genomföra detta använde vi oss av den insamlade informationen och definierade följande funktioner och krav som vår prototyp ska uppfylla:
+Informationen som införskaffades genom litteraturstudien och intervjuer med lärare låg till grund för LEAP, \textit{LEarning and Assessment of Programming}, vilket är namnet på den prototyp som vi utvecklat. För att följa Nunamakers metod började vi med att utföra de två första stegen i metoden vilket innefattar att definiera funktioner och krav för prototypen. För att genomföra detta använde vi oss av den insamlade informationen och definierade följande funktioner och krav som vår prototyp ska uppfylla: \uek{Bra sammanfattning!}
 
 \begin{itemize}
 \item
@@ -414,11 +418,11 @@ Efter att testpersonerna utfört användartestet fick de ge sina synpunkter på anv
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale=0.6]{general_ux.png}
-\caption{Allmäna användarupplevelsen av prototypen}
+\caption{Allmäna användarupplevelsen av prototypen \uek{Om ni använder en Likert-skaa så måste ni förklara vilka värdeord ni har förklarat de olika siffrorna med.}}
 \label{fig:GeneralUX}
 \end{figure}
 
-Som diagrammet visar är åsikterna från testpersonerna lite olika speciellt när det kommer till detaljrikedomen i återkopplingen. Tre personer upplevde att återkopplingen tydligt visar vad felet i programmet är. Dock upplevde tre personer att återkopplingen som vår prototyp gav var svårtydlig och svårförstådd. De flesta av testpersonerna upplevde att vår prototyp var enkel att använda eftersom navigeringen var tydlig och att det var tydligt hur man skickade in en uppgift för bedömning. 
+Som diagrammet visar \uek{Det är ju ganska lätt att lägga in referenser till vilka diagram som avses i LaTeX. Gör det!} är åsikterna från testpersonerna lite olika speciellt när det kommer till detaljrikedomen i återkopplingen. Tre personer upplevde att återkopplingen tydligt visar vad felet i programmet är. Dock upplevde tre personer att återkopplingen som vår prototyp gav var svårtydlig och svårförstådd. De flesta av testpersonerna upplevde att vår prototyp var enkel att använda eftersom navigeringen var tydlig och att det var tydligt hur man skickade in en uppgift för bedömning. 
 Vi hade även en fråga där vi ville att testpersonerna skulle nämna förbättringar för vår prototyp. Där nämner samtliga att återkopplingen kan bli bättre på olika sätt. De nämner dels att den kan bli tydligare och mer strukturerad för att det ska vara lättare att veta vad felet i programmet är men även att det hade varit bra att få tips eller exempel på hur felen kan lösas. 
 
 Vi ställde även en fråga om testpersonerna tror att det skulle vara användbart att använda vår prototyp vid programmeringskurser. Figur \ref{fig:UsePrototype} visar att samtliga studenter ställer sig positivt till att använda vår prototyp vid programmeringskurser. De flesta av testpersoner menar att direkt återkoppling är anledningen till att de anser att vår prototyp kan användas vid programmeringskurser. En av testpersoner anser dock att återkopplingen som ges från en lärare eller en labbhandledare är mer givande. Två av testpersonerna påpekar att med vår prototyp skulle studenterna bli mer självständiga. En av dem menar att vid laborationer finns det inte alltid utrymme att få sina uppgifter bedömda eftersom antalet studenter är markant fler än antalet lärare och labbhandledare. Vidare menar testpersonen att det finns få redovisningstider vilket medför att studenter har svårt att få sina uppgifter redovisade och bedömda samt att stressen för lärare att bedöma uppgifterna minskar med användningen av vår prototyp.
@@ -426,7 +430,7 @@ Vi ställde även en fråga om testpersonerna tror att det skulle vara användbart a
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale=0.6]{use_prototype.png}
-\caption{Använda vår prototyp vid programmeringskurser}
+\caption{Använda vår prototyp vid programmeringskurser \uek{Ett cirkeldiagram dör alla svar är likadana säger ju inte så mycket. Fundera på om ni i så fall ska ta bort diagrammet och bara skriva det i texten?}}
 \label{fig:UsePrototype}
 \end{figure}
 
@@ -436,7 +440,7 @@ Vi ställde även frågor till testpersonerna om hur de upplevde att få direkt åter
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale=0.6]{direct_feedback.png}
-\caption{Upplevelsen av direkt återkoppling}
+\caption{Upplevelsen av direkt återkoppling \uek{Samma kommentar som ovan.}}
 \label{fig:DirectFeedback}
 \end{figure}
 
@@ -519,10 +523,14 @@ Det är sju av åtta testpersoner som anser att automatiserad bedöming är bättre f
 %
 % Do not change
 \newpage
+
 \addcontentsline{toc}{section}{Referenser}
+\uek{referenslsitan stämmer ju int emed texten, men det vet ni väl?}
+
 \begin{thebibliography}{888}
 %
 % Referenserna ordnade i bokstavsordning efter försteförfattaren
+
 
 \bibitem{rectlinkopt2}
 H.~N.~Djidjev, A.~Lingas, J.-R.~Sack, An $O(n\log n)$ algorithm for
