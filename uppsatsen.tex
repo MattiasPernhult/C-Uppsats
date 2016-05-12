@@ -2,6 +2,12 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{epstopdf}
+\usepackage{multicol}
+
+\graphicspath{ {images_eps/} }
 
 %
 % Do not change
@@ -12,13 +18,9 @@
 \evensidemargin = 5.0mm
 \unitlength = 1mm
 
-
-\usepackage[T1]{fontenc} % Use latin1 font encoding, permits the direct use of åäöÅÄÖ in the text
-
-%
-% Choose if you write in Swedish or English. (Don't write in English!)
-\usepackage[swedish]{babel} % If in Swedish
-%\usepackage[english]{babel} % If in English
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
 
 % Här finns Ulriks kommentarfunktioner
 \usepackage{hyperref}
@@ -28,6 +30,7 @@
 %
 % Do not change
 \let\rempage=\thepage
+<<<<<<< HEAD
 {\renewcommand{\thepage}{\relax}
 	\begin{picture}(44,0)(15,10)%
 		\special{psfile=mahlogo-name.eps}%
@@ -37,6 +40,19 @@
 	\hfill\begin{minipage}[t]{16em}\large
 	Fakulteten för teknik och samhälle\\
 	Datavetenskap
+=======
+{
+\renewcommand{\thepage}{\relax}
+\begin{picture}(44,0)(15,10)
+% \special{psfile=mahlogo-name.eps}
+\includegraphics[scale=1]{mahlogo-name.eps}
+\end{picture}
+
+\vspace*{-30mm}
+\hfill\begin{minipage}[t]{16em}\large
+Fakulteten fÃ¶r teknik och samhÃ¤lle\\
+Datavetenskap
+>>>>>>> master
 \end{minipage}
 
 \vspace*{45mm}
@@ -45,20 +61,20 @@
 Examensarbete 
 
 \small
-15 högskolepoäng, grundnivå
+15 hÃ¶gskolepoÃ¤ng, grundnivÃ¥
 }
 
 \vspace*{25mm}
 \LARGE
 %
 % Put your title here
-Bedömningssystem
+LEAP: Automatiserad bedÃ¶mning av programmeringsuppgifter
 
 \vspace*{8mm}
 \large
 %
 % Translated title 
-Assesmentsystem
+LEAP: Automatic assessment of programming assignments
 
 \vspace*{12mm}
 \Large
@@ -80,26 +96,26 @@ Mattias Pernhult
 % Fill in correct data for you
 Examen: Kandidatexamen 180~hp
 \\
-Huvudområde: Datavetenskap
+HuvudomrÃ¥de: Datavetenskap
 %
-% Huvudområden är:
-% Affärssystem
+% HuvudomrÃ¥den Ã¤r:
+% AffÃ¤rssystem
 % Data och informationsvetenskap (IA och IS)
-% Datavetenskap (Övriga)
+% Datavetenskap (Ã–vriga)
 \\
 Program: Systemutvecklare
 \\
-Datum för slutseminarium: 2016-05-30
+Datum fÃ¶r slutseminarium: 2016-05-30
 \end{minipage}
 %
 \hfill
 %
-\begin{minipage}[t]{15em}
+\begin{minipage}[t]{15,5em}
 %
 % Fill in supervisor and second reader
 Handledare: Ulrik Eklund
 \\
-Andrabedömare: John Doe
+AndrabedÃ¶mare: Magnus Krampell
 \end{minipage}
 
 \newpage
@@ -110,7 +126,7 @@ Andrabedömare: John Doe
 
 \section*{Sammanfattning}
 
-Text på svenska\ldots
+Antal studenter i programmeringskurser pÃ¥ universitet och hÃ¶gskolor Ã¶kar kraftigt och krÃ¤ver mycket resurser vilket gÃ¶r kurserna nÃ¤stintill omÃ¶jliga att bedriva utan att Ã¶ka antalet lÃ¤rare. Genom att introducera automatisering i dessa kurser, speciellt vid bedÃ¶mning, Ã¤r det mÃ¶jligt att upprÃ¤tthÃ¥lla kvalitÃ©n i dessa kurser. DÃ¤rav Ã¤r syftet med denna studie att konstruera, implementera och utvÃ¤rdera ett bedÃ¶mningssystem fÃ¶r att ta reda pÃ¥ fÃ¶r- och nackdelar med anvÃ¤ndningen av bedÃ¶mningssystem i programmeringskurser. Resultatet frÃ¥n studien visar att fÃ¶rdelarna med ett bedÃ¶mningssystem Ã¤r direkt Ã¥terkoppling, dess tillgÃ¤nglighet och dess fÃ¶rmÃ¥ga att verifiera korrektheten av studenters program bÃ¤ttre Ã¤n vad en lÃ¤rare kan. Resultatet visar att nackdelarna med ett bedÃ¶mningssystem Ã¤r dess Ã¶kad krav pÃ¥ vÃ¤lutformade uppgifter och testfall samt systemets svÃ¥righet att bedÃ¶ma kvalitativa aspekter i studenters program.
 
 \newpage
 
@@ -120,7 +136,29 @@ Text på svenska\ldots
 
 \section*{Abstract}
 
-Text in English\ldots
+Number of students in programming courses at universities is increasing rapidly and requires a lot of resources which makes the courses almost impossible to conduct without increasing the number of teachers. By introducing automation in these courses, especially in the assessment part, it is possible to maintain the quality of these courses. Hence, the aim of this study is to design, implement and evaluate an assessment system to find out the benefits and drawbacks of the use of a assessment systems in programming courses. The results of the study shows that the benefits of an assessment system is direct feedback, its availability and its ability to verify the accuracy of students programs better than a teacher. The result shows that the drawbacks of an assessment system is its increased effort of designing well-designed tasks and test cases, as well as the systems inability to assess the qualitative aspects of the students programs.
+
+\begin{description}
+    \item[Keywords] Automated assessment system, test cases, feedback, computer programming courses, quiz, LEAP, sandbox
+\end{description}
+
+\newpage
+
+\section*{Ordlista}
+\begin{description}
+    \item [Docker] En containerbaserad virtualiserings plattform
+    \item [Docker-container] En Docker-container Ã¤r en lÃ¤ttviktig isolerad process som kÃ¶rs ovanpÃ¥ hostens operativssystem
+    \item [Git] Ett distribuerat versionshanteringssystem
+    \item [Versionshanteringssystem] Ett verktyg som gÃ¶r det mÃ¶jligt att lagra, Ã¥terskapa och spÃ¥ra Ã¤ndringar i dokument och kÃ¤llkodsfiler
+    \item [REST-API] Ett grÃ¤nssnitt vilket mjukvarusystem kommunicerar via som fÃ¶ljer IT arkitekturen Representational State Transfer (REST)
+    \item [NoSQL] Databashanterare som tillhandahÃ¥ller lagring och hÃ¤mtning av data som ej behÃ¶ver vara tabulÃ¤r.
+    \item [OAuth 2.0] En Ã¶ppen standard fÃ¶r autentisering som anvÃ¤nds fÃ¶r att autentisera personer genom tredjepartstjÃ¤nster
+    \item [Testfall] Strukturerat testunderlag som beskriver hur en funktion eller egenskap ska testas. InnehÃ¥ller bland annat teststeg och fÃ¶rvÃ¤ntat resultat
+    \item [Enhetstestning] En mjukvarutestningsmetod som anvÃ¤nds fÃ¶r att verifiera att kÃ¤llkoden fungerar som den Ã¤r specificerad att gÃ¶ra
+    \item [JUnit] Ett ramverk fÃ¶r enhetstestning av programmeringssprÃ¥ket Java
+    \item [ExekveringsmiljÃ¶] Program, filer och rutiner som, fÃ¶rutom operativsystemet, behÃ¶vs fÃ¶r att man ska kunna kÃ¶ra ett visst program
+\end{description}
+
 
 \uek{Det är bara en kommentar för att se att det funkar}
 
@@ -134,90 +172,190 @@ Text in English\ldots
 \ifodd\value{page}\else\mbox{}\newpage\fi
 \setcounter{page}{1}
 \renewcommand{\thepage}{\rempage}
-%
-
 
 \section{Inledning}
 
-\subsection{Bakgrund}
+\subsection{Bakgrund}\label{Bakgrund}
 
-Ett sätt att lära sig att programmera är genom introduktionskurser på universitetet. I sådana kurser ges studenter olika uppgifter som kan hjälpa studenten att bli familjär med moderna programmeringsspråk, lära sig viktiga verktyg och ge insikter om hur systemutveckling bedrivs []. Utvärdering och bedömning av dessa programmeringsuppgifter utförs vanligtvis manuellt av lärare och övningsassistenter. När kurser utförs på detta traditionella sätt och de innehåller ett högt antal studenter skapar det tunga och tidskrävande uppgifter för lärare och övningsassistenter vilket tär på universitetets resurser. Det innebär även att återkopplingen till studenterna fördröjs vilket har en negativ påverkan på studenternas utveckling jämfört med direkt återkoppling [1]. Eftersom programmeringsuppgifters potentiella lösningar är av likartad karaktär kan utvärdering och bedömning automatiseras genom automatiserade bedömningssystem. Därav kan lärarens resurser användas på ett mer effektivt/givande sätt och på så vis förbättra kvalitén i kursens andra moment samtidigt som det ger en objektiv bedömning och direkt återkoppling till studenterna []. Automatiserade bedömningssystem för programmeringsuppgifter nämns redan första gången 1960 av Hollingsworth [2]. Studenterna använde sig av hålkort med program skrivna i assembly som de skickade in för bedömning. Sedan dess har automatiserade bedömningssystem vidareutvecklats.
+Ett sÃ¤tt att lÃ¤ra sig att programmera Ã¤r genom introduktionskurser pÃ¥ universitetet. I sÃ¥dana kurser ges studenter olika uppgifter som kan hjÃ¤lpa dem att bli bekanta med moderna programmeringssprÃ¥k, lÃ¤ra sig viktiga verktyg och fÃ¥ insikter om hur systemutveckling bedrivs \cite{douce_11}. UtvÃ¤rdering och bedÃ¶mning av dessa programmeringsuppgifter utfÃ¶rs vanligtvis manuellt av lÃ¤rare och labbhandledare. NÃ¤r kurser utfÃ¶rs pÃ¥ detta traditionella sÃ¤tt och de innehÃ¥ller ett hÃ¶gt antal studenter skapar det tunga och tidskrÃ¤vande uppgifter fÃ¶r lÃ¤rare och Ã¶vningsassistenter vilket tÃ¤r pÃ¥ universitetets resurser. Det innebÃ¤r Ã¤ven att Ã¥terkopplingen till studenterna fÃ¶rdrÃ¶js vilket har en negativ pÃ¥verkan pÃ¥ deras utveckling jÃ¤mfÃ¶rt med direkt Ã¥terkoppling \cite{japanerna_1}. Eftersom potentiella lÃ¶sningar till mindre programmeringsuppgifter Ã¤r av likartad karaktÃ¤r kan utvÃ¤rdering och bedÃ¶mning automatiseras genom automatiserade bedÃ¶mningssystem. DÃ¤rav kan lÃ¤rares resurser anvÃ¤ndas pÃ¥ ett mer effektivt sÃ¤tt och pÃ¥ sÃ¥ vis fÃ¶rbÃ¤ttra kvalitÃ©n i kursens andra moment samtidigt som det ger en objektiv bedÃ¶mning och direkt Ã¥terkoppling till studenterna \cite{douce_11} \cite{hollingsworth_2} \cite{higgins_3}. Automatiserade bedÃ¶mningssystem fÃ¶r programmeringsuppgifter nÃ¤mns redan fÃ¶rsta gÃ¥ngen 1960 av Hollingsworth \cite{hollingsworth_2}. Studenterna anvÃ¤nde sig av hÃ¥lkort med program skrivna i assembly som de skickade in fÃ¶r bedÃ¶mning. Sedan dess har automatiserade bedÃ¶mningssystem vidareutvecklats.
 
 \subsection{Relaterat arbete}
 \uek{Det finns två principiella sätt att strukturera relaterade artiklar. Aningen per papper (som ni gör här) eller per ämne som är relevant. Oavsett så tycker jag att ni borde skriva om hur ni har fått fram dem (sökning i vilka databaser och vilka söktermer som ni ansett vara relevanta).}
 
-Daly och Horgan [4] presenterar i sin artikel hur de utvecklade det automatiserade lärningssystemet RoboProf [4]. I artikeln utförde de även en studie där de testade att använda RoboProf i en introduktionskurs för programmering. Resultaten från studien visade att de studenter som utförde kursen på ett traditionellt vis presterade betydligt sämre än de studenter som använde RoboProf. Vidare presenterar författarna även en lösning för plagieringsproblemet vilket bygger på en idé av Plauger [5].
+Daly och Horgan \cite{roboprof_4} presenterar i sin artikel hur de utvecklade det automatiserade lÃ¤rningssystemet RoboProf \cite{roboprof_4}. I artikeln utfÃ¶rde de Ã¤ven en studie dÃ¤r de testade att anvÃ¤nda RoboProf i en introduktionskurs fÃ¶r programmering. Resultaten frÃ¥n studien visar att de studenter som utfÃ¶rde kursen pÃ¥ ett traditionellt vis presterade betydligt sÃ¤mre Ã¤n de studenter som anvÃ¤nde RoboProf. Vidare presenterar fÃ¶rfattarna Ã¤ven en lÃ¶sning fÃ¶r plagieringsproblemet vilket bygger pÃ¥ en idÃ© av Plauger \cite{plaguer_5}.
 
-I artikeln [] presenterar Edwards och Pe?rez-Quin?ones deras erfarenheter av att använda testdriven utveckling med Web-CAT []. Web-CAT är unikt bland automatiserade bedömningssystem eftersom det låter lärare bedöma hur bra studenterna testar deras egen kod istället för att studenternas kod testas gentemot fördefinierade testfall []. 
+RÃ¶ÃŸling och Hartte tar i sin artikel \cite{webtasks} upp en webb-baserat lÃ¤rningsplattform som de kallar fÃ¶r WebTasks som bedÃ¶mer programmeringsuppgifter fÃ¶r Java programmering. Det intressanta med WebTasks Ã¤r att nÃ¤r en students lÃ¶sning accepteras av WebTasks sparas lÃ¶sningen och den gÃ¶rs tillgÃ¤nglig fÃ¶r andra studenter som Ã¤ven de har fÃ¥tt sina lÃ¶sningar accepterade. DÃ¤rmed finns det mÃ¶jlighet fÃ¶r granskning och diskussion av de olika lÃ¶sningarna och dÃ¤rav kanske studenterna kan komma fram till alternativa eller effektivare lÃ¶sningar.
 
-Higgins m. fl. [3] påpekar i sin studie om det automatiserade bedömningssystemet CourseMarker [12] att studenter ofta vill ha väldigt detaljerad information om vilken del av deras kod som inte godkändes. Författarna hävdar dock att alltför detaljerad information i återkopplingen kan ha negativ påverkan på studenters resultat. CourseMarker löser problemet genom att låta läraren själv ange hur detaljerad återkopplingen till studenten ska vara [3] [7][11].
+I artikel \cite{edwards_15} presenterar Edwards och PÃ©rez-QuiÃ±ones sina erfarenheter av att anvÃ¤nda testdriven utveckling med Web-CAT \cite{edwards_15}. Web-CAT Ã¤r unikt bland automatiserade bedÃ¶mningssystem eftersom det bedÃ¶mer hur bra studenterna testar sin egen kod istÃ¤llet fÃ¶r att studenternas kod testas gentemot fÃ¶rdefinierade testfall \cite{edwards_15}.
 
-En alternativ lösning presenteras av Reek som begränsar antalet försök en student har på sig att genomföra en uppgift. Detta för att tvinga studenten att tänka över deras lösning mer noggrant innan de lämnar in den [6]. Denna lösning presenteras även av Ihantola m. fl. [].
-
-Caiza och Del Alamo tar även de upp problem kring återkoppling till studenterna [7]. De nämner trial and error problemet vilket betyder att studenter prövar sig fram genom att göra mindre förändringar i deras program istället för att reflektera över vad problemet beror på. Författarna påstår att de inte upplevt \textit{trial and error} beteendet bland de medverkande studenterna.
-
-Ihantola m. fl. [Ihantola] lyfter fram olika lösningar för att förhindra \textit{trial and error} beteendet.  En alternativ lösning som de presenterar är att begränsa mängden återkoppling till studenterna. Dock kan detta frambringa förvirring hos studenterna eftersom de inte förstår varför deras program bedömdes som inkorrekt [26]. Vidare nämner författarna en lösning där studenter får en tidsbestraffning vid ett misslyckande, de påpekar även att tidsbestraffningen kan öka exponentiellt.
-De presenterar även en lösning där studenten får en slumpmässigt utvald uppgift vid varje nytt försök vilket förhindrar \textit{trial and error} beteendet. 
-
-Hollingsworth påpekar att studenters program kan innehålla skadlig kod vilket kan förstöra bedömningssystemet, studenterna utgör därmed ett hot mot systemet [2]. Detta problem adresseras av artiklarna [13][8][Itanhola] där författarna presenterar två alternativa lösningar som bygger på grundtanken att kompilera och exekvera studenternas program i en säker miljö för att skydda bedömningssystemet. I artikeln [8] presenterar Malan bedömningssystemet CS-50 vilket utvecklades som en del av en internetbaserad kurs vid Harvard Universitetet. För att säkert kompilera och exekvera opålitlig kod använder CS-50 SELinux [9] och PAM begränsningar [10]. ?pa?ek m. fl. [13] hävdar i sin studie att flertalet av dagens bedömningssystem saknar stöd för exekvering av opålitliga program i en säker miljö. Författarna har i sin lösning valt att använda den virtuella containerbaserade plattformen Docker [14] för att kompilera och exekvera studenternas program. APAC verifierar studenternas program genom att analysera och validera programmets utdata.
-
+<<<<<<< HEAD
 \subsection{Syfte}
 \uek{Jag hade flyttat syfte och frågeställning till slutet av inledningskapitlet. Då blir det också mer förståeligt till varför just de relaterade arbetena är relaterade.}
 
 Studien ämnar att implementera ett bedömningssystem som använder Docker för att exekvera studenternas program i en säker miljö samt bedömmer programmen genom fördefinierade testfall tillhandahållna av en lärare. Bedömningssystemet är tänkt att användas för introduktionskurser i programmering som bedrivs på Malmö Högskola. \ugh{Syftet är dels att undersöka om vårt bedömningssystem kan underlätta och ge stöd åt lärare i deras bedömningsprocess av programmeringsuppgifter samt undersöka om vårt bedömningssystem är ett bra hjälpmedel för att utveckla studenters programmeringskunskaper.}
 \uek{Om ni har dels för de första syftet måste ni även inleda det andra syftet med dels. Annars skriv att ni har två syften: 1) och 2)}
+=======
+Higgins m. fl. \cite{higgins_3} pÃ¥pekar i sin studie om det automatiserade bedÃ¶mningssystemet CourseMarker \cite{higgins_coursemarker_12} att studenter ofta vill ha detaljerad information om vilken del av deras kod som inte godkÃ¤ndes. FÃ¶rfattarna hÃ¤vdar dock att alltfÃ¶r detaljerad information i Ã¥terkopplingen kan ha negativ pÃ¥verkan pÃ¥ studenters resultat. CourseMarker lÃ¶ser problemet genom att lÃ¥ta lÃ¤raren sjÃ¤lv ange hur detaljerad Ã¥terkopplingen till studenten ska vara \cite{higgins_3} \cite{caiza_7} \cite{douce_11}.
 
-\subsection{Frågeställning}
+En alternativ lÃ¶sning presenteras av Reek som begrÃ¤nsar antalet fÃ¶rsÃ¶k en student har pÃ¥ sig att genomfÃ¶ra en uppgift. Detta fÃ¶r att tvinga studenterna att tÃ¤nka Ã¶ver sina lÃ¶sningar mer noggrant innan de lÃ¤mnar in dem \cite{reek_6}. Denna lÃ¶sning presenteras Ã¤ven av Ihantola m. fl. \cite{ihantola}.
+>>>>>>> master
 
-Studien avser ge svar på följande frågor:
+Caiza och Del Alamo tar Ã¤ven de upp problem kring Ã¥terkoppling till studenter \cite{caiza_7}. De nÃ¤mner \textit{trial and error}-problemet vilket betyder att studenter prÃ¶var sig fram genom att gÃ¶ra mindre fÃ¶rÃ¤ndringar i deras program istÃ¤llet fÃ¶r att reflektera Ã¶ver vad problemet beror pÃ¥. FÃ¶rfattarna pÃ¥stÃ¥r att de inte upplevt \textit{trial and error}-beteendet bland de medverkande studenterna.
 
+Ihantola m. fl. \cite{ihantola} lyfter fram olika lÃ¶sningar fÃ¶r att fÃ¶rhindra \textit{trial and error}-beteendet.  En alternativ lÃ¶sning som de presenterar Ã¤r att begrÃ¤nsa mÃ¤ngden Ã¥terkoppling till studenten. Dock kan detta frambringa fÃ¶rvirring hos studenten eftersom studenten inte fÃ¶rstÃ¥r varfÃ¶r programmet bedÃ¶mdes som inkorrekt [26]. Vidare nÃ¤mner fÃ¶rfattarna en lÃ¶sning dÃ¤r studenten fÃ¥r en tidsbestraffning vid ett misslyckande, de pÃ¥pekar Ã¤ven att tidsbestraffningen kan Ã¶ka exponentiellt.
+De presenterar Ã¤ven en lÃ¶sning dÃ¤r studenten fÃ¥r en slumpmÃ¤ssigt utvald uppgift vid varje nytt fÃ¶rsÃ¶k vilket fÃ¶rhindrar \textit{trial and error} beteendet. 
+
+<<<<<<< HEAD
 \begin{enumerate}
 \item
 \ugh{Kan vårt bedömningssystem minska tidsåtgången för lärares bedömningsprocess av programmeringsuppgifter?} \uek{Ni bör nog formulera det som ett bedömningssystem av den här typen. Annars är frågan lite väl begränsad som forskningsfråga, då ni per automatik har sagt att ni inte kan generalisera något svar }
 \item
 Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper?
 \end{enumerate}
+=======
+Hollingsworth pÃ¥pekar att studenters program kan innehÃ¥lla skadlig kod vilket kan fÃ¶rstÃ¶ra bedÃ¶mningssystemet, de utgÃ¶r dÃ¤rmed ett hot mot systemet \cite{hollingsworth_2}. Detta problem adresseras av artiklarna \cite{spacek_13} \cite{cs50_8} \cite{ihantola} dÃ¤r fÃ¶rfattarna presenterar tvÃ¥ alternativa lÃ¶sningar som bygger pÃ¥ grundtanken att kompilera och exekvera studenternas program i en sÃ¤ker miljÃ¶ fÃ¶r att skydda bedÃ¶mningssystemet. I artikeln \cite{cs50_8} presenterar Malan bedÃ¶mningssystemet CS-50 vilket utvecklades som en del av en internetbaserad kurs vid Harvard Universitetet. FÃ¶r att sÃ¤kert kompilera och exekvera opÃ¥litlig kod anvÃ¤nder CS-50 SELinux \cite{selinux} och PAM begrÃ¤nsningar \cite{pambegransningar}. Å paÄek m. fl. \cite{spacek_13} hÃ¤vdar i sin studie att flertalet av dagens bedÃ¶mningssystem saknar stÃ¶d fÃ¶r exekvering av opÃ¥litliga program i en sÃ¤ker miljÃ¶. FÃ¶rfattarna har i sin lÃ¶sning valt att anvÃ¤nda den virtuella containerbaserade plattformen Docker \cite{docker} fÃ¶r att kompilera och exekvera studenternas program. APAC verifierar studenternas program genom att analysera och validera programmets utdata.
+>>>>>>> master
 
-\newpage
-\section{Metod}
+\subsection{LEAP}
 
-Följande avsnitt beskriver den metodik som valts för utförandet av studien.
+Under vÃ¥r litteraturstudie av liknande bedÃ¶mningssystem har vi observerat att avsaknaden av exekvering i sÃ¤ker miljÃ¶ Ã¤r vanligt fÃ¶rekommande i flertalet system [Review] \cite{roboprof_4} [CourseMarker]. Denna observation stÃ¶ds Ã¤ven av Spacek m. fl. \cite{spacek_13}. Vi har Ã¤ven observerat att majoriteten av bedÃ¶mningssystemen verifierar studenternas program genom att analysera och validera programmets utdata gentemot utdatan frÃ¥n ett korrekt implementerat program [Review] [RIT]. VÃ¥ra observationer lÃ¥g till grund fÃ¶r LEAP vilket Ã¤r den prototyp som implementerades fÃ¶r att kunna besvara frÃ¥gestÃ¤llningen. Namnet LEAP Ã¤r en fÃ¶rkortning av \textit{LEarning and Assessment of Programming}. LEAP anvÃ¤nder sig av testfall som skapas av lÃ¤rare fÃ¶r att bedÃ¶ma studenters lÃ¶sningar och fÃ¶r att garantera att studenternas program exekverar i en sÃ¤ker miljÃ¶ anvÃ¤nder sig LEAP av Docker-containrar.
 
-\subsection{Metodbeskrivning och metoddiskussion}
-
+<<<<<<< HEAD
 Eftersom studiens syfte är att konstruera, implementera och utvärdera en systemartefakt valdes en metodik som presenteras av Nunamaker m. fl. [Nunamaker] eftersom det är en erkänd och välbeprövad process för forskning inom informationssystem [källa]. 
 \uek{jag måste rätta mig, för att få högsta betyg måste Ni  argumentera för/emot och jämföra med  metoder ni inte använder. Varför 'är Nunamaker lämoligare här än t.ex. design research?}
 Författarna definierar en iterativ femstegsprocess för hur sådan forskning bör bedrivas vilken innefattar att: \textit{(1) konstruera ett konceptuellt ramverk} \textit{(2) utveckla en systemarkitektur} \textit{(3) konstruera och analysera systemet} \textit{(4) implementera systemet} och \textit{(5) utvärdera systemet}. För att ytterligare säkerställa studiens kvalité ämnar den att följa de sju riktlinjer för forskning inom informationssystem definierade av Hevner m.fl. [Hevner]. 
+=======
+LEAP bedÃ¶mer studentens lÃ¶sning genom att kÃ¶ra fÃ¶rdefinierade testfall i form av enhetstester mot studentens kod, om samtliga testfall passeras kommer LEAP meddela studenten att lÃ¶sningen Ã¤r godkÃ¤nd. Om nÃ¥got testfall misslyckas kommer LEAP meddela studenten att lÃ¶sningen inte Ã¤r godkÃ¤nd och att studenten fÃ¥r fÃ¶rsÃ¶ka igen, LEAP meddelar Ã¤ven vad det vad som inte godkÃ¤ndes. LEAP beskrivs mer utfÃ¶rligt under avsnitt \ref{LEAP}.
+>>>>>>> master
 
-\subsubsection{Konstruera ett konceptuellt ramverk}
 
-Syftet med att konstruera ett konceptuellt ramverk är att definiera en relevant forskningsfråga och systemkrav. För att identifiera och definiera dessa kommer vi att genomföra en litteraturstudie av liknande system och utföra intervjuer med lärare och studenter vid Malmö högskola. Vi har valt ut tre lärare som alla har lång, dokumenterad erfarenhet av att lära ut programmering till högskolestudenter i introduktionskurser. Valet av intervjupersoner anser vi vara befogat eftersom personerna i fråga är representativa för den huvudsakliga målgruppen och verksamma inom den miljö som systemet ska tillämpas. Därav kommer vi få en djupare förståelse i ämnet vilket hjälper oss att omsätta den insamlade informationen till krav för systemet samt definiera forskningsfrågan. 
+\subsection{Syfte}
 
+<<<<<<< HEAD
 \ugh{Anledningen till att vi inte väljer en kvantitativ undersökningsmetod som exempelvis enkäter med fördefinierade svar beror på att de endast ger en ytlig förståelse i ämnet till skillnad från intervjuer [seminarieboken].}\uek{jag måste rätta mig, för att få högsta betyg måste Ni  argumentera för/emot och jämföra med  metoder ni inte använder.} Vid intervjuer finns det även utrymme för att ställa följdfrågor till respondenten samt att det går att förtydliga frågorna vid eventuella missuppfattningar, något som inte är möjligt vid fördefinierade enkätundersökningar [seminarieboken]. Informationen som vi samlar in från litteraturstudien kommer att användas för att urskilja de befintliga systemen. Därigenom kan vi identifiera funktioner som vi anser saknas i dessa system vilket gör att vi, tillsammans med informationen vi erhåller från intervjuerna, kan definiera krav som systemets ska uppfylla.
+=======
+Studien Ã¤mnar att konstruera, implementera och utvÃ¤rdera ett bedÃ¶mningssystem som Ã¤r tÃ¤nkt att anvÃ¤ndas i programmeringskurser som bedrivs pÃ¥ MalmÃ¶ HÃ¶gskola. Syftet Ã¤r dels att undersÃ¶ka vilka fÃ¶r- och nackdelarna Ã¤r av att anvÃ¤nda ett bedÃ¶mningssystem i programmeringskurser och dels att undersÃ¶ka vilka fÃ¶rdelar respektive nackdelar som ett bedÃ¶mningssystem har vid bedÃ¶mning av programmeringsuppgifter och dels undersÃ¶ka hur bedÃ¶mningssystem kan anvÃ¤ndas i programmeringskurser.
+>>>>>>> master
 
-\subsubsection{Utveckla en systemarkitektur}
+\subsection{FrÃ¥gestÃ¤llning}
 
+<<<<<<< HEAD
 Enligt Nunamaker m. fl. innefattar följande steg att bestämma systemets komponenter och definiera förhållandet mellan komponenterna samt att identifiera och definiera systemets funktionalitet []. \ugh{Vi kommer att använda den insamlade information från föregående steg för att definiera komponenterna och systemfunktionerna.} \uek{Dels bör ni inte beskriva det är i futurum, dels så bör ni ha med lite mer detlajer om hur ni gick tillväga. inkludera gärna en referns till var i rapporten läsaren kan hitta resultaten från det här steget.} Nunamaker m.fl. påpekar betydelsen av att definiera mätbar funktioner för systemet eftersom det underlättar vid systemutvärderingen []. \uek{Och var hittar jag den funktionen i er rapport?}
+=======
+Studien avser ge svar pÃ¥ fÃ¶ljande frÃ¥gor:
+>>>>>>> master
 
-\subsubsection{Konstruera och analysera systemet}
+\begin{enumerate}
+\item
+Vilka Ã¤r fÃ¶r- och nackdelarna av att anvÃ¤nda ett bedÃ¶mningssystem av den hÃ¤r typen i programmeringskurser?
+\item
+Hur kan ett bedÃ¶mningssystem av den hÃ¤r typen anvÃ¤ndas i programmeringskurser?
+\end{enumerate}
 
+<<<<<<< HEAD
 I detta steg är syftet att vi ska att identifiera möjliga lösningar, tekniker och språk för att kunna implementera systemet i kommande steg []. Möjliga lösningar kommer att konstrueras vilka vi sedan analyserar innan vi slutligen väljer det bästa alternativet att gå vidare med och implementera. \uek{återigen, beskriv vilka aktiviteter \emph{ni} har gjort och var man hittar resultaten.}
+=======
+\subsection{AvgrÃ¤nsning}
+>>>>>>> master
 
-\subsubsection{Implementera systemet}
+Vi har under litteraturstudien identifierat att det finns olika aspekter inom bedÃ¶mning av programmeringsuppgifter [KÃ„LLA] som bedÃ¶mning av funktionalitet vilket innebÃ¤r att lÃ¶sningens korrekthet verifieras och Ã¤ven bedÃ¶mning av lÃ¶sningens design- och implementationsval vilket Ã¤r en bedÃ¶mning av lÃ¶sningens kvalitÃ©.
+\\
+\\
+LEAP kommer enbart att bedÃ¶ma lÃ¶sningens korrekthet och inte gÃ¶ra nÃ¥gon form av bedÃ¶mning eller analys av lÃ¶sningens kvalitÃ© utan enbart verifiera lÃ¶sningens funktionalitet. DÃ¤rmed Ã¤r tanken att LEAP inte ska ersÃ¤tta hela bedÃ¶mningsprocessen utan istÃ¤llet fungera som ett stÃ¶d fÃ¶r lÃ¤rare i deras bedÃ¶mningsprocess och eventuellt minska de resurser som lÃ¤rare lÃ¤gger pÃ¥ att bedÃ¶ma ofullstÃ¤ndiga lÃ¶sningar.
+\\
+\\
+De respondenter och testpersoner som deltar i studien fÃ¶r att besvara frÃ¥gestÃ¤llningen Ã¤r lÃ¤rare och studenter pÃ¥ MalmÃ¶ HÃ¶gskola inom institutionen Datavetenskap.
 
+<<<<<<< HEAD
 Tanken med följande steg är att implementera en prototyp som ska utvärderas i kommande steg. Prototypen kommer att ge insikter angående konceptets genomförbarhet och dess möjlighet att besvara frågeställningen. \uek{återigen, beskriv vilka aktiviteter \emph{ni} har gjort och var man hittar resultaten.}
+=======
+\newpage
+\section{Metod}\label{Metod}
+>>>>>>> master
 
-\subsubsection{Utvärdera systemet}
+FÃ¶ljande avsnitt beskriver den metodik som valts fÃ¶r utfÃ¶randet av studien. I avsnitt \ref{Nunamakers metod} presenterar vi Nunamakers metod och hur de tvÃ¥ andra metoderna, intervjuer och kontrollerade experiment, relaterar till Nunamakers metod vilket presenteras visuellt i Figur \ref{fig:metod_visual}. Intervjuerna anvÃ¤nds som underlag fÃ¶r att definiera systemkrav och experimenten utfÃ¶rs fÃ¶r att utvÃ¤rdera LEAP. FÃ¶rtydligande av intervjuerna och experimenten presenteras i avsnitt \ref{Intervjuer} respektive avsnitt \ref{Experiment}.
+\\
+\\
+Eftersom studiens syfte Ã¤r att konstruera, implementera och utvÃ¤rdera en systemartefakt valdes en metodik som presenteras av Nunamaker m. fl. \cite{nunamaker} eftersom det Ã¤r en erkÃ¤nd och vÃ¤lbeprÃ¶vad process fÃ¶r forskning inom informationssystem. FÃ¶rfattarna definierar en iterativ femstegsprocess fÃ¶r hur sÃ¥dan forskning bÃ¶r bedrivas vilken innefattar att: \textit{(1) konstruera ett konceptuellt ramverk} \textit{(2) utveckla en systemarkitektur} \textit{(3) konstruera och analysera systemet} \textit{(4) implementera systemet} och \textit{(5) utvÃ¤rdera systemet}. 
+\\
+\\
+FÃ¶r att ytterligare sÃ¤kerstÃ¤lla studiens kvalitÃ© fÃ¶ljer den de sju riktlinjer fÃ¶r forskning inom informationssystem definierade av Hevner m.fl. \cite{hevner}:
+\begin{description}
+    \item [Riktlinje 1]
+    Design as an Artifact
+    \begin{itemize}
+    \item [--] Riktlinje 1 innebÃ¤r enligt Hevner m.fl att forskning inom informationssystem mÃ¥ste producera en artefakt. I avsnitt \ref{LEAP} presenteras artefakten.
+    \end{itemize}
+    \item [Riktlinje 2]
+    Problem Relevance
+     \begin{itemize}
+    \item [--] MÃ¥let med forskning inom informationssystem Ã¤r att utveckla teknologibaserade lÃ¶sningar pÃ¥ viktiga och relevanta affÃ¤rsproblem. Studiens relevans presenteras i avsnitt \ref{Bakgrund}
+    \end{itemize}
+    \item [Riktlinje 3]
+    Design Evaluation
+     \begin{itemize}
+    \item [--] En artefakts anvÃ¤ndbarhet, kvalitÃ© och effektivitet mÃ¥ste demonstreras via strikta utvÃ¤rderingsmetoder. UtvÃ¤rdering av artefakten ingÃ¥r i steg 5 i Nunamakers process och beskrivningen av utfÃ¶randet presenteras under avsnitt \ref{Experiment} och resultatet under avsnitt \ref{experiment} 
+    \end{itemize}
+    \item [Riktlinje 4]
+    Research Contributions
+     \begin{itemize}
+    \item [--] Forskning inom informationssystem mÃ¥ste tillhandahÃ¥lla tydliga och verifierbara resultat. Diskussion kring resultatens validitet finns under avsnitt \ref{TODO}
+    \end{itemize}
+    \item [Riktlinje 5]
+    Research Rigor
+     \begin{itemize}
+    \item [--] Forskning inom informationssystem mÃ¥ste anvÃ¤nda sig av rigorÃ¶sa metoder vid bÃ¥de utveckling och utvÃ¤rdering av artefakten. I avsnitt \ref{Metod} presenteras studiens metodval.
+    \end{itemize}
+    \item [Riktlinje 6]
+    Design as a Search Process
+     \begin{itemize}
+    \item [--] Riktlinje 6 innebÃ¤r i praktiken att iterera steg 3-5 i Nunamakers process, se figur \ref{fig:metod_visual}. 
+    \end{itemize}
+    \item [Riktlinje 7]
+    Communication of Research
+     \begin{itemize}
+    \item [--] Med riktlinje 7 menar Hevner m.fl att forskning inom informationssystem mÃ¥ste presenteras effektivt till bÃ¥de teknikkunnig sÃ¥vÃ¤l som icke-teknikkunnig publik. Uppsatsen i sig Ã¤r vÃ¥rt sÃ¤tt att presentera studien. 
+    \end{itemize}
+\end{description}
 
+\subsection{Nunamakers metod}\label{Nunamakers metod}
+
+<<<<<<< HEAD
 Hevner presenterar i sin tredje riktlinje \textit{Design Evaluation} olika metoder för utvärdering av informationssystem. Den metod som vi anser är lämpligast för vår studie är en experimentell utvärderingmetod, mer specifikt kontrollerade experiment, eftersom det innebär att studera en implementerad prototyp i en kontrollerad miljö. Vi kommer att utföra experiment på lärare och studenter vilka är de två huvudgrupperna i studien. Målet med experimenten för lärare är att besvara frågeställningen \textit{Kan vårt bedömningssystem minska tidsåtgången för lärarens bedömningsprocess av programmeringsuppgifter?}, medans experimenten för studenter har som mål att besvara \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper?}.  \uek{återigen, beskriv vilka aktiviteter \emph{ni} har gjort och var man hittar resultaten.}
 
 \del{Vi hade kunnat använda en analytisk utvärderingsmetod där artefakten studeras analytiskt eftersom det saknas en fungerande prototyp, men eftersom vi kommer ha en fungerande prototyp anser vi att denna utvärderingsmetod inte lämpar sig för vår studie.} \uek{Återigen: Argumentera inte emot saker som ni inte gör. Bättre att ta bort helt.}
+=======
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.4]{metod_image2.eps}
+\caption{Visuell presentation av vÃ¥ra metoder och deras relation}
+\label{fig:metod_visual}
+\end{figure}
 
-Hevner presenterar även observationsbaserade utvärderingmetoder som fallstudier där artefakten studeras i den tilltänkta miljön under en viss tidsperiod. Denna utvärderingsmetod hade varit ett bra val eftersom vi då hade kunnat observera hur systemet fungerar i den tilltänkta miljön. Men eftersom studien skrivs under vårterminen finns det inga pågående introduktionskurser i programmering vid Malmö Högskola vilket innebär att en fallstudie ej är genomförbar. Därav anser vi att den lämpligaste utvärderingsmetoden är kontrollerade experiment.
+Steg 1 i Nunamakers metod Ã¤r att konstruera ett konceptuellt ramverk vilket innebÃ¤r att definiera relevanta systemkrav. FÃ¶r att identifiera och definiera dessa genomfÃ¶r vi en litteraturstudie av liknande system och intervjuar tre lÃ¤rare vid MalmÃ¶ hÃ¶gskola. Vi vÃ¤ljer ut tre lÃ¤rare som alla har lÃ¥ng, dokumenterad erfarenhet av att lÃ¤ra ut programmering till hÃ¶gskolestudenter i introduktionskurser. Valet av intervjupersoner anser vi vara befogat eftersom personerna i frÃ¥ga Ã¤r representativa fÃ¶r den huvudsakliga mÃ¥lgruppen och verksamma inom den miljÃ¶ som systemet ska tillÃ¤mpas. DÃ¤rav fÃ¥r vi djupare fÃ¶rstÃ¥else fÃ¶r hur lÃ¤rarna bedriver programmeringskurser och hur lÃ¤rarna tÃ¤nker kring bedÃ¶mning av programmeringsuppgifter. Denna fÃ¶rstÃ¥else och information som vi samlar in frÃ¥n intervjuerna med lÃ¤rarna hjÃ¤lper oss att definiera krav fÃ¶r systemet.
+Anledningen till att vi inte vÃ¤ljer en kvantitativ undersÃ¶kningsmetod som exempelvis enkÃ¤ter med fÃ¶rdefinierade svar beror pÃ¥ att de endast ger en ytlig fÃ¶rstÃ¥else i Ã¤mnet till skillnad frÃ¥n intervjuer \cite{seminarieboken}. Vid intervjuer finns det Ã¤ven utrymme fÃ¶r att stÃ¤lla fÃ¶ljdfrÃ¥gor till respondenten samt att det gÃ¥r att fÃ¶rtydliga frÃ¥gorna vid eventuella missuppfattningar, nÃ¥got som inte Ã¤r mÃ¶jligt vid fÃ¶rdefinierade enkÃ¤tundersÃ¶kningar \cite{seminarieboken}. Informationen som vi samlar in frÃ¥n litteraturstudien anvÃ¤nds fÃ¶r att urskilja de befintliga systemen. DÃ¤rigenom identifieras funktioner som vi anser saknas i dessa system vilket gÃ¶r att vi, tillsammans med informationen frÃ¥n intervjuerna, kan definiera krav som systemets ska uppfylla.
+\\
+\\
+Enligt Nunamaker m. fl. innefattar steg 2 att definiera systemets komponenter och att definiera fÃ¶rhÃ¥llandet mellan komponenterna samt att identifiera och definiera systemets funktionalitet \cite{nunamaker}. Den insamlade informationen frÃ¥n steg 1 analyseras och sammanstÃ¤lls till systemkrav och systemfunktioner. De anvÃ¤nds sedan fÃ¶r att definiera komponenter och funktioner fÃ¶r systemet\footnote{Resultatet frÃ¥n detta steg finns i avsnitt \ref{systemfunktioner}}. Nunamaker m.fl. pÃ¥pekar betydelsen av att definiera mÃ¤tbara funktioner fÃ¶r systemet eftersom det underlÃ¤ttar vid systemutvÃ¤rderingen \cite{nunamaker}.
+\\
+\\
+I det tredje steget, konstruera och analysera systemet, Ã¤r syftet att vi identifierar mÃ¶jliga lÃ¶sningar, tekniker och sprÃ¥k fÃ¶r att implementera systemet i kommande steg \cite{nunamaker}. MÃ¶jliga lÃ¶sningar konstrueras och analyseras innan vi slutligen vÃ¤ljer det bÃ¤sta alternativet att gÃ¥ vidare med och implementera\footnote{Resultatet frÃ¥n detta steg finns i avsnitt \ref{systemkomponenter}}.
+\\
+\\
+Tanken med det fjÃ¤rde steget Ã¤r att implementera en prototyp som utvÃ¤rderas i kommande steg. Prototypen beskrivs under avsnittet \ref{LEAP}. Prototypen ger insikter angÃ¥ende konceptets genomfÃ¶rbarhet och dess mÃ¶jlighet att besvara frÃ¥gestÃ¤llningen. Implementationen sker i tvÃ¥ veckors sprintar dÃ¤r vi infÃ¶r varje sprint definierar de funktioner som prototypen ska ha vid sprintens slut.
+\\
+\\
+Det sista och femte steget i Nunamkers metod Ã¤r att utvÃ¤rdera den implemeneterade prototypen som implementerades i det fjÃ¤rde steget. Hevner \cite{hevner} presenterar i sin tredje riktlinje \textit{Design Evaluation} olika metoder fÃ¶r utvÃ¤rdering av informationssystem. Den metod som vi anser Ã¤r lÃ¤mpligast fÃ¶r vÃ¥r studie Ã¤r en experimentell utvÃ¤rderingsmetod, mer specifikt kontrollerade experiment, eftersom det innebÃ¤r att studera en implementerad prototyp i en kontrollerad miljÃ¶. Vi utfÃ¶r experiment med studenter och mÃ¥let med experimenten Ã¤r att ta reda pÃ¥ fÃ¶rdelar respektive nackdelar med bedÃ¶mningssystem av den hÃ¤r typen. 
+\\
+Om det hade saknats en fungerande prototyp hade vi kunnat anvÃ¤nda en analytiskt utvÃ¤rderingsmetod dÃ¤r prototypen studeras analytiskt, men dÃ¥ vi har en fungerande prototyp anser vi att denna utvÃ¤rderingsmetod inte lÃ¤mpar sig fÃ¶r studien.
+>>>>>>> master
 
-\subsection{Intervjuer}
-Målet med de intervjuer vi tänker genomföra är att samla in information om lärarnas åsikter och erfarenheter inom undervisning av introduktionskurser i programmering. Vi vill skapa oss en uppfattning om hur mycket av lärarnas resurser som läggs på att rätta programmeringsuppgifter, deras åsikter om automatiska bedömningssystem för programmeringsuppgifter samt undersöka om lärarna upplever plagiering bland studenterna som ett problem och i vilken omfattning som det sker. Vi vill dessutom ta reda på lärarnas ställningstagande till att använda system som upptäcker plagiering av källkod och även deras åsikter om att använda versionshanteringssystem i introduktionskurser. Vi kommer att ställa frågor till lärarna om hur detaljerad återkopplingen till studenterna bör vara och om de tror att ett automatiskt bedömningssystem är ett bra stöd i studenternas utveckling.
+\newpage
+\subsection{Intervjuer}\label{Intervjuer}
 
+MÃ¥let med de intervjuer vi genomfÃ¶r Ã¤r att samla in information om lÃ¤rarnas Ã¥sikter och erfarenheter inom undervisning av introduktionskurser i programmering. Vi vill skapa oss en uppfattning om hur mycket av lÃ¤rarnas resurser som lÃ¤ggs pÃ¥ att rÃ¤tta programmeringsuppgifter, deras Ã¥sikter om automatiska bedÃ¶mningssystem fÃ¶r programmeringsuppgifter samt undersÃ¶ka om lÃ¤rarna upplever plagiering bland studenterna som ett problem och i vilken omfattning som det sker. Vi vill dessutom ta reda pÃ¥ lÃ¤rarnas stÃ¤llningstagande till att anvÃ¤nda system som upptÃ¤cker plagiering av kÃ¤llkod och Ã¤ven deras Ã¥sikter om att anvÃ¤nda versionshanteringssystem i introduktionskurser. Vi stÃ¤ller Ã¤ven frÃ¥gor till lÃ¤rarna om hur detaljerad Ã¥terkopplingen till studenterna bÃ¶r vara och om de tror att ett automatiskt bedÃ¶mningssystem Ã¤r ett bra stÃ¶d i studenternas utveckling.
+
+<<<<<<< HEAD
 \subsection{Kontrollerade experiment}
 Syftet med genomförandet av kontrollerade experiment är att utvärdera den prototyp som vi utvecklar för att sedan ha möjlighet att besvara vår forskningsfråga \textit{Kan vårt bedömningssystem hjälpa studenterna att utveckla deras programmeringskunskaper}. Experimenten kommer att genomföras på studenter vid Malmö Högskola som har läst minst en introduktionskurs i programmering. För att komma i kontakt med studenter som vill genomföra experimentet kommer vi att kontakta elever som studerar datavetenskap antingen via epost alternativt presentera oss vid någon av deras föreläsningar. \uek{Återigen så är det ju atkiviteter ni ahr gjort, inte kommer att göra\ldots}
 Vid experimenten kommer studenten att först läsa en text som presenterar oss och vårt examensarbete följt av övergripande information om hur experimentet kommer att utföras. I texten beskrivs även hur den insamlade informationen kommer att behandlas. Därefter får studenten besvara en enkät med inledande frågor\footnote{Appendix A}. Efter att enkäten besvarats kommer studenten att få instruktioner om hur användartestet kommer att genomföras följt av att studenten genomför användartestet. Testet går ut på att testa vår prototyp med en existerande uppgift som vi tagit från kursen \textit{Introduktion till programmering} vid Malmö Högskola. Till denna uppgift har vi skrivit testfall som vi sedan har laddat upp till vår prototyp, det är dessa testfall som studenternas program sedan kommer att köras mot. När användartestet har genomförts kommer studenten att få besvara ytterligare en enkät\footnote{Appendix B}. Syftet med enkäten är att få en bra bild av hur studenten upplevde att använda vår prototyp.
@@ -246,177 +384,208 @@ Rolf uppskattade att bedömningen av uppgifter tar 180 minuter per student
 för en kurs på 15 högskolepoäng. 
 
 Jonas gav ingen exakt siffra på hur mycket tid som bedömningen av uppgifter tar men han påpekade att det inte finns tillräckligt med resurser för bedöma samtliga studenters uppgifter. Han poängterade dessutom att restredovisningar av uppgifter är resurskrävande. Jonas berättade att de prövat att använda ett upplägg där de endast kollade närvaron på labbtillfällen i förhoppningen om att studenterna skulle använda tiden till att arbeta. Han berättade även att studenterna genomskådade ett annat upplägg där enbart vissa uppgifter bedömdes.
+=======
+\subsection{Kontrollerade experiment}\label{Experiment}
 
-Gemensamt för lärarna är att de delegerar bedömningen av studenternas uppgifter till lärarassistenter. 
-
-\subsubsection{Automatiserade bedömningssystem}
-Respondenterna fick besvara frågan på vad de anser om att använda automatiserade bedömningssystem för programmeringsuppgifter. Både Farid och Rolf ställer sig negativa till användningen av dessa system och anser att de ej lämpar sig för bedömning av programmeringsuppgifter eftersom det enligt dem är svårt att bedöma om studenten har uppnått tillräcklig förståelse.
-
-Farid påpekade att ett problem kan ha flera alternativa lösningar och han menar på att det inte är som vid en matematisk uppgift där det endast finns ett korrekt svar och därigenom är det svårt att göra en bedömning av inlämningens kvalité genom automatiserade system. Detta var något som även Rolf ansåg då han påpekade att det är möjligt att även en korrekt löst uppgift kan vara dåligt implementerad.
-
-Jonas påpekade att det är viktigt att hålla studenterna sysselsatta men enligt honom ligger svårigheten i att balansera antalet uppgifter som ges ut till studenterna mot de resurser som finns till förfogande för bedömning. Därför skiljer sig Jonas åsikter från de övrigas då han anser att ett bedömningssystem kan vara ett bra sätt att bedöma programmeringsuppgifter eftersom det då är möjligt att hålla studenterna kontinuerligt sysselsatta med begränsade resurser. Men han menar dock att vid obegränsade resurser vore en mänsklig bedömning det optimala sättet att bedöma programmeringsuppgifter.
-
-Något som samtliga respondenter lyfter fram som en uppskattad funktion är möjligheten att använda flervalsfrågor för att verifiera studenternas kunskaper. 
-
-\subsubsection{Inlämningsmetod}
-Vi ville ta reda på hur respondenterna anser att inlämningen av studenternas lösningar ska ske, antingen via ett versionshanteringssystem som Git eller med hjälp av en webbapplikation. Samtliga respondenter var överens om att ett versionshanteringssystem är viktigt för en utvecklare att behärska. Men två av de intervjuade anser att versionshanteringssystem inte lämpar sig för användning i en introduktionskurs till programmering eftersom fokus ska ligga på att lära studenterna grunderna i programmering och inte vara ett onödigt hinder i deras utveckling.
-
-\subsubsection{Återkoppling}
-Under intervjun ställdes även frågor om respondenternas åsikter angående återkoppling till studenterna, frågorna berörde synpunkter kring detaljrikedom och tidsaspekt. Gemensamt för respondenterna är att de anser att återkopplingen till studenter bör ske utan fördröjning då det enligt dem är bra för studenterna att få direkt återkoppling. Angående detaljrikedomen i återkopplingen menar Jonas att studenterna bör få ta del av samma utdata som ett testramverk ger för testfall. Både Farid och Rolf delar Jonas åsikter där de även påpekar att återkoppling är en viktig del av studenternas programmeringsutveckling.
-
-\subsubsection{Plagiering}
-Plagiering är något som samtliga av de intervjuade anser vara vanligt förekommande bland studenter. Men de anser att ett verktyg för att upptäcka plagiering är svårt att använda i praktiken på grund av flera anledningar, dels uppmuntrar lärarna studenterna att samarbeta till en viss grad och samtidigt är en del av uppgifterna utformade på ett sätt som gör det svårt att avgöra om en lösning är plagierad. De menar att mindre uppgifter har färre potentiella lösningar vilket innebär att studenternas lösningar blir svåra att särskilja. Jonas påpekar att studenter som plagierar ofta fångas upp i andra moment som exempelvis vid redovisningar av inlämningar och tentamina. 
+Steg 5 i Nunamakers metod innebÃ¤r att utvÃ¤rdera den prototyp som utvecklats. Vi utvÃ¤rderar prototypen genom att genomfÃ¶ra kontrollerade experiment och mÃ¥let med de kontrollerade experimenten Ã¤r att ta reda pÃ¥ fÃ¶rdelar och nackdelar med ett bedÃ¶mningssystem av den hÃ¤r typen, vilket Ã¤r en del av studiens forskningsfrÃ¥ga. 
+\\
+Experimenten genomfÃ¶rs med studenter vid MalmÃ¶ HÃ¶gskola som har lÃ¤st minst en introduktionskurs i programmering. FÃ¶r att fÃ¥ testpersoner till experimenten kontaktade vi studenter genom it's learning och vi besÃ¶kte Ã¤ven en fÃ¶relÃ¤sning dÃ¤r vi presenterade syftet med studien och fÃ¶rklarade att vi sÃ¶kte studenter till de kontrollerade experimenten.
+\\
+De kontrollerade experimenten bestÃ¥r av totalt tre stycken moment som Ã¤r tvÃ¥ enkÃ¤ter och ett anvÃ¤ndartest. Det fÃ¶rsta momentet Ã¤r en inledande enkÃ¤t\footnote{Appendix A} dÃ¤r testpersonen fÃ¥r besvara inledande frÃ¥gor som vilket program och vilken termin de lÃ¤ser. Efter att testpersonen besvarat den fÃ¶rsta enkÃ¤ten kommer testpersonen att fÃ¥ instruktioner fÃ¶r hur det andra momentet gÃ¥r till vilket Ã¤r ett anvÃ¤ndartest dÃ¤r testpersonen fÃ¥r testa att anvÃ¤nda LEAP. Experimentets tredje moment som Ã¤r ytterligare en enkÃ¤t\footnote{Appendix B} genomfÃ¶rs nÃ¤r testpersonen Ã¤r klar med anvÃ¤ndartestet. Syftet med den andra enkÃ¤ten Ã¤r att vi ska fÃ¥ en bra bild av hur testpersonen upplevde att anvÃ¤nda LEAP och vilka fÃ¶rdelar och nackdelar de ser med att anvÃ¤nda ett bedÃ¶mningssystem av den hÃ¤r typen vid programmeringskurser.
+\\
+Vid genomfÃ¶randet av de tre momenten nÃ¤rvarar vi ej i rummet eller tar tid, detta fÃ¶r att undvika att skapa onÃ¶dig press pÃ¥ testpersonerna. Vi tycker Ã¤ven att det Ã¤r viktigt att poÃ¤ngtera fÃ¶r testpersonerna att all information som vi samlar in Ã¤r helt anonym fÃ¶r att testpersonernas Ã¥sikter ska vara Ã¤rliga.
 
 \newpage
+\section{Resultat}
+HÃ¤r presenteras de resultat vi samlat in frÃ¥n de specificerade metoderna i avsnitt \ref{Metod}. I avsnitt \ref{result:Intervjuer} presenterar vi resultatet frÃ¥n de tre intervjuerna som vi genomfÃ¶rde med tre lÃ¤rare pÃ¥ MalmÃ¶ HÃ¶gskola. I avsnitt \ref{LEAP} presenterar vi LEAP:s funktioner och komponenter. I avsnitt \ref{experiment} presenterar vi resultatet frÃ¥n de kontrollerade experimenten som vi utfÃ¶rde med studenter pÃ¥ MalmÃ¶ HÃ¶gskola.
+>>>>>>> master
+
+\subsection{Intervjuer}\label{result:Intervjuer}
+Vi genomfÃ¶rde intervjuer med tre personer vilka alla Ã¤r anstÃ¤llda som lÃ¤rare vid MalmÃ¶ HÃ¶gskola\footnote{FrÃ¥gorna finns i Appendix C}. FÃ¶r att lÃ¤rarna ska vara anonyma anvÃ¤nder vi fÃ¶ljande pseudonymer: Kajsa, Kalle och BjÃ¶rn. Resultaten frÃ¥n intervjuerna presenteras enligt de Ã¤mnesomrÃ¥den som intervjufrÃ¥gorna berÃ¶rde.
+\\
+\\
+En frÃ¥ga som vi ville fÃ¥ besvarad av respondenterna var hur mycket resurser som lÃ¤ggs pÃ¥ att rÃ¤tta programmeringsuppgifter. FrÃ¥n intervjuerna framgick det att olika faktorer har inverkan pÃ¥ resursanvÃ¤ndningen beroende pÃ¥ om kursen Ã¤r platsbelagd eller distansbelagd, antalet studenter och storleken pÃ¥ uppgiften samt kunskapsnivÃ¥n fÃ¶r studenten som bedÃ¶ms. Respondenterna hade svÃ¥rt att ge en exakt siffra fÃ¶r hur mycket tid som krÃ¤vs fÃ¶r bedÃ¶mning av en uppgift.
+Kalle uppskattade att bedÃ¶mningen fÃ¶r en uppgift krÃ¤ver mellan 20-60 minuter per student, dock pÃ¥pekade han att det Ã¤r vÃ¤ldigt beroende pÃ¥ uppgiftens storlek. Enligt Kalle har han uppskattningsvis 300 studenter per termin i de distanskurser som han Ã¤r ansvarig fÃ¶r.
+BjÃ¶rn uppskattade att bedÃ¶mningen av uppgifter tar 180 minuter per student
+fÃ¶r en kurs pÃ¥ 15 hÃ¶gskolepoÃ¤ng. 
+Kajsa gav ingen exakt siffra pÃ¥ hur mycket tid som bedÃ¶mningen av uppgifter tar men hon pÃ¥pekade att det inte finns tillrÃ¤ckligt med resurser fÃ¶r att bedÃ¶ma samtliga studenters uppgifter. Hon poÃ¤ngterade dessutom att restredovisningar av uppgifter Ã¤r resurskrÃ¤vande. Kajsa berÃ¤ttade att de prÃ¶vat att anvÃ¤nda ett upplÃ¤gg dÃ¤r de endast kollade nÃ¤rvaron pÃ¥ labbtillfÃ¤llen i fÃ¶rhoppningen om att studenterna skulle anvÃ¤nda tiden till att arbeta. Hon berÃ¤ttade Ã¤ven att studenterna genomskÃ¥dade ett annat upplÃ¤gg dÃ¤r enbart vissa uppgifter bedÃ¶mdes.
+
+Gemensamt fÃ¶r lÃ¤rarna Ã¤r att de delegerar bedÃ¶mningen av studenternas uppgifter till labbhandledare. 
+\\
+\\
+Respondenterna fick besvara frÃ¥gan pÃ¥ vad de anser om att anvÃ¤nda automatiserade bedÃ¶mningssystem fÃ¶r programmeringsuppgifter. BÃ¥de Kalle och BjÃ¶rn stÃ¤ller sig negativa till anvÃ¤ndningen av dessa system och anser att de ej lÃ¤mpar sig fÃ¶r bedÃ¶mning av programmeringsuppgifter eftersom det enligt dem Ã¤r svÃ¥rt att bedÃ¶ma om studenten uppnÃ¥tt tillrÃ¤cklig fÃ¶rstÃ¥else.
+Kalle pÃ¥pekade att ett problem kan ha flera alternativa lÃ¶sningar och han menar pÃ¥ att det inte Ã¤r som vid en matematisk uppgift dÃ¤r det endast finns ett korrekt svar och dÃ¤rigenom Ã¤r det svÃ¥rt att gÃ¶ra en bedÃ¶mning av inlÃ¤mningens kvalitÃ© genom automatiserade system. Detta var nÃ¥got som Ã¤ven BjÃ¶rn ansÃ¥g dÃ¥ han pÃ¥pekade att det Ã¤r mÃ¶jligt att Ã¤ven en korrekt lÃ¶st uppgift kan vara dÃ¥ligt implementerad.
+Kajsa pÃ¥pekade att det Ã¤r viktigt att hÃ¥lla studenterna sysselsatta men enligt henne ligger svÃ¥righeten i att balansera antalet uppgifter som ges ut till studenterna mot de resurser som finns till fÃ¶rfogande fÃ¶r bedÃ¶mning. DÃ¤rfÃ¶r skiljer sig Kajsas Ã¥sikter frÃ¥n de Ã¶vrigas dÃ¥ hon anser att ett bedÃ¶mningssystem kan vara ett bra sÃ¤tt att bedÃ¶ma programmeringsuppgifter eftersom det dÃ¥ Ã¤r mÃ¶jligt att hÃ¥lla studenterna kontinuerligt sysselsatta med begrÃ¤nsade resurser. Men hon menar dock att vid obegrÃ¤nsade resurser vore en mÃ¤nsklig bedÃ¶mning det optimala sÃ¤ttet att bedÃ¶ma programmeringsuppgifter.
+
+NÃ¥got som samtliga respondenter lyfte fram som en uppskattad funktion Ã¤r mÃ¶jligheten att anvÃ¤nda flervalsfrÃ¥gor fÃ¶r att verifiera studenternas kunskaper.
+\\
+\\
+Vi ville ta reda pÃ¥ hur respondenterna anser att inlÃ¤mningen av studenternas lÃ¶sningar ska ske, antingen via ett versionshanteringssystem som Git eller med hjÃ¤lp av en webbapplikation. Samtliga respondenter var Ã¶verens om att ett versionshanteringssystem Ã¤r viktigt fÃ¶r en utvecklare att behÃ¤rska. Men tvÃ¥ av de intervjuade anser att versionshanteringssystem inte lÃ¤mpar sig fÃ¶r anvÃ¤ndning i en introduktionskurs till programmering eftersom fokus ska ligga pÃ¥ att lÃ¤ra studenterna grunderna i programmering och ett versionhanteringssystem kan vara ett onÃ¶digt hinder i studenternas utveckling.
+\\
+\\
+Under intervjun stÃ¤lldes Ã¤ven frÃ¥gor om respondenternas Ã¥sikter angÃ¥ende Ã¥terkoppling till studenterna, frÃ¥gorna berÃ¶rde synpunkter kring detaljrikedom och tidsaspekt. Gemensamt fÃ¶r respondenterna Ã¤r att de anser att Ã¥terkopplingen till studenter bÃ¶r ske utan fÃ¶rdrÃ¶jning dÃ¥ det enligt dem Ã¤r bra fÃ¶r studenterna att fÃ¥ direkt Ã¥terkoppling. AngÃ¥ende detaljrikedomen i Ã¥terkopplingen menar Kajsa att studenterna bÃ¶r fÃ¥ ta del av samma utdata som ett testramverk ger fÃ¶r testfall, vilket innefattar detaljerad information kring de testfall som misslyckades. BÃ¥de Kalle och BjÃ¶rn delar Kajsas Ã¥sikter dÃ¤r de Ã¤ven pÃ¥pekar att Ã¥terkoppling Ã¤r en viktig del av studenternas programmeringsutveckling.
+\\
+\\
+Plagiering Ã¤r nÃ¥got som samtliga av de intervjuade anser vara vanligt fÃ¶rekommande bland studenter. Men de anser att ett verktyg fÃ¶r att upptÃ¤cka plagiering Ã¤r svÃ¥rt att anvÃ¤nda i praktiken pÃ¥ grund av flera anledningar, dels uppmuntrar lÃ¤rarna studenterna att samarbeta till en viss grad och samtidigt Ã¤r en del av uppgifterna utformade pÃ¥ ett sÃ¤tt som gÃ¶r det svÃ¥rt att avgÃ¶ra om en lÃ¶sning Ã¤r plagierad. De menar att mindre uppgifter har fÃ¤rre potentiella lÃ¶sningar vilket innebÃ¤r att studenternas lÃ¶sningar blir svÃ¥ra att sÃ¤rskilja. Kajsa pÃ¥pekar att studenter som plagierar ofta fÃ¥ngas upp i andra moment som exempelvis vid redovisningar av inlÃ¤mningar och tentamina. 
+ 
+
+\newpage
+<<<<<<< HEAD
 \subsection{LEAP}
 \uek{På det hela taget är er beskrivning av systemet mycket bra!}
 \subsubsection{Systemfunktioner}
 Informationen som införskaffades genom litteraturstudien och intervjuer med lärare låg till grund för LEAP, \textit{LEarning and Assessment of Programming}, vilket är namnet på den prototyp som vi utvecklat. För att följa Nunamakers metod började vi med att utföra de två första stegen i metoden vilket innefattar att definiera funktioner och krav för prototypen. För att genomföra detta använde vi oss av den insamlade informationen och definierade följande funktioner och krav som vår prototyp ska uppfylla: \uek{Bra sammanfattning!}
+=======
+\subsection{LEAP} \label{LEAP}
+\subsubsection{Systemfunktioner} \label{systemfunktioner}
+Informationen som infÃ¶rskaffades genom litteraturstudien och intervjuer med lÃ¤rare lÃ¥g till grund fÃ¶r LEAP, \textit{LEarning and Assessment of Programming}, vilket Ã¤r namnet pÃ¥ den prototyp som vi utvecklat. FÃ¶r att fÃ¶lja Nunamakers metod bÃ¶rjade vi med att definiera funktioner och krav fÃ¶r prototypen. FÃ¶r att genomfÃ¶ra detta anvÃ¤nde vi oss av den insamlade informationen och definierade nedan systemfunktioner och systemkrav som vÃ¥r prototyp ska uppfylla. NÃ¤r vi skriver att en uppgift godkÃ¤nnes eller en student har klarat en uppgift innebÃ¤r det att studentens lÃ¶sning till uppgiften har passerat uppgiftens samtliga testfall.
+>>>>>>> master
 
 \begin{itemize}
 \item
-En lärare ska genom ett webbgränssnitt kunna skapa en uppgift i systemet och ladda upp en tillhörande testfil med testfall.
+En lÃ¤rare skall kunna skapa en uppgift med testfall i systemet.
 \item
-En lärare ska ha möjlighet att skapa ett tillhörande quiz till en uppgift.
+En lÃ¤rare skall ha mÃ¶jlighet att skapa ett tillhÃ¶rande quiz till en uppgift.
 \item
-En lärare ska kunna få information om hur många som klarat en uppgift.
+En lÃ¤rare skall kunna fÃ¥ information om hur mÃ¥nga studenter som klarat en uppgift.
 \item
-En student ska genom ett webbgränssnitt kunna skicka in svar på en uppgift som sedan körs mot uppgiftens testfil.
+En student skall kunna skicka in en lÃ¶sning till en uppgift.
 \item
-En student ska få information om lösningen av uppgiften godkändes eller ej.
+En student skall fÃ¥ information om lÃ¶sningen av uppgiften godkÃ¤ndes eller ej.
 \item
-En student ska få ta del av den genererade utdatan från testfallen vid ett misslyckande.
+En student skall fÃ¥ ta del av den genererade utdatan frÃ¥n testfallen vid ett misslyckande.
 \item
-En student ska kunna se vilka uppgifter den klarat och ej klarat.
+En student skall kunna se vilka uppgifter som studenten klarat och ej klarat.
 \item
-Systemet ska stödja uppgifter definierade för Java programmering.
+Systemet skall stÃ¶dja uppgifter definierade fÃ¶r Java programmering.
 \item
-Systemet ska exekvera studentens program i en säker miljö som skyddar servern.
+Systemet skall exekvera studentens program i en sÃ¤ker miljÃ¶ som skyddar servern.
 \item
-Systemet ska kunna hantera program med oändliga loopar.
+Systemet skall kunna hantera program med oÃ¤ndliga loopar.
 \item
-Systemet ska inte tillåta studentens program att utföra I/O operationer utanför den säkra miljön.
+Systemet skall inte tillÃ¥ta studentens program att utfÃ¶ra I/O operationer utanfÃ¶r den sÃ¤kra miljÃ¶n.
 \end{itemize}
-\subsubsection{Systemkomponenter}
-Det andra steget i Nunamakers metod är att utveckla en systemarkitektur vilket innebär att definiera de olika systemkomponenterna för prototypen. De komponenter som vi anser behövs för att utveckla vår prototyp är en databas,  en klient, en server, ett API-gränsnitt och en säker miljö samt en komponent för hantering av användare. Servern är nödvändig för att hantera kommunikationen med databasen och för att klienten ska kunna kommunicera med servern behövs ett API-gränsnitt. Klienten behövs för att studenter och lärare ska kunna utföra de ovannämnda funktionerna. För att lösa problemet med att studenternas program kan vara skadlig och därmed utgöra ett hot mot systemet anser vi att någon typ av komponent som kan exekvera programmen i en säker miljö är väsentlig. Komponenten för att hantera användare behövs för att servern ska kunna urskilja alla användare och deras uppgifter.
 
-I tredje steget i Nunamakers metod identifierade vi olika lösningar, språk och tekniker som vi skulle kunna använda för att implementera vår prototyp. Vi analyserade och diskuterade olika lösningar och kom efter noga övervägande fram till att vår prototyp LEAP ska använda sig av följande tekniker och språk. 
+\subsubsection{Systemkomponenter} \label{systemkomponenter}
 
-LEAP består i grunden av en HTTP-server utvecklad med Node.js [källa] som är en open source körningsmiljö byggd på Googles JavaScript-motor V8. Node.js har en händelsestyrd arkitektur som gör det möjligt att hantera asynkron I/O. För att interagera med servern har en webbaserad klient utvecklats som kommunicerar med servern via ett REST-API vilket har utvecklats med ramverket Express [källa]. Klienten är implementerad med ramverken Bootstrap [källa] och AngularJS [källa]. Bootstrap innehåller en mängd färdigutvecklade komponenter för utveckling av webbapplikationer. AngularJS används för utveckling av webbapplikationer och främjar utveckling av klienter som följer MVC arkitekturer. Datalagringen görs med hjälp av MongoDB som är en NoSQL-klassificerad dokumentdatabas. För att kommunicera med databasen från servern används Node.js modulen Mongoose.  Tillsammans utgör MongoDB, Express, AngularJS och Node.js MEAN-stacken [källa]. För att hantera och skilja på de olika användare samt tillåta de att logga in använder LEAP sig av Googles API med OAuth 2.0.
+Det andra steget i Nunamakers metod Ã¤r att utveckla en systemarkitektur vilket innebÃ¤r att definiera de olika systemkomponenterna fÃ¶r prototypen. De komponenter som vi anser behÃ¶vs fÃ¶r att utveckla vÃ¥r prototyp Ã¤r en databas,  en klient, en server, ett API-grÃ¤nssnitt och en sÃ¤ker miljÃ¶ samt en komponent fÃ¶r hantering av anvÃ¤ndare. Servern Ã¤r nÃ¶dvÃ¤ndig fÃ¶r att hantera kommunikationen med databasen och fÃ¶r att klienten ska kunna kommunicera med servern behÃ¶vs ett API-grÃ¤nssnitt. Klienten behÃ¶vs fÃ¶r att studenter och lÃ¤rare ska kunna utfÃ¶ra de ovannÃ¤mnda systemfunktionerna och systemkraven. FÃ¶r att lÃ¶sa problemet med att studenternas program kan vara skadlig och dÃ¤rmed utgÃ¶ra ett hot mot systemet anser vi att nÃ¥gon typ av komponent som kan exekvera programmen i en sÃ¤ker miljÃ¶ Ã¤r vÃ¤sentlig. Komponenten fÃ¶r att hantera anvÃ¤ndare behÃ¶vs fÃ¶r att servern ska kunna urskilja alla anvÃ¤ndare och deras uppgifter. Samtliga komponenter presenteras visuellt i figur \ref{fig:LeapArch}.
 
-LEAP består av ytterligare en komponent vilket är Docker, detta för att sätta upp en säker miljö där studenternas program exekveras med hjälp av Docker containrar. Samtliga komponenter presenteras visuellt i figur \ref{fig:LeapArch}.
+I tredje steget i Nunamakers metod identifierade vi olika lÃ¶sningar, sprÃ¥k och tekniker som vi skulle kunna anvÃ¤nda fÃ¶r att implementera vÃ¥r prototyp. Vi analyserade och diskuterade olika lÃ¶sningar och kom efter noga Ã¶vervÃ¤gande fram till att vÃ¥r prototyp LEAP ska anvÃ¤nda sig av fÃ¶ljande tekniker och sprÃ¥k. 
+
+LEAP bestÃ¥r i grunden av en HTTP-server utvecklad med Node.js \cite{nodejs} som Ã¤r en open source exekveringsmiljÃ¶ byggd pÃ¥ Googles JavaScript-motor V8. Node.js har en hÃ¤ndelsestyrd arkitektur som gÃ¶r det mÃ¶jligt att hantera asynkron I/O. FÃ¶r att interagera med servern har en webbaserad klient utvecklats som kommunicerar med servern via ett REST-API vilket har utvecklats med ramverket Express \cite{express}. Klienten Ã¤r implementerad med ramverken Bootstrap \cite{bootstrap} och AngularJS \cite{angularjs}. Bootstrap innehÃ¥ller en mÃ¤ngd fÃ¤rdigutvecklade komponenter fÃ¶r utveckling av webbapplikationer. AngularJS anvÃ¤nds fÃ¶r utveckling av webbapplikationer och frÃ¤mjar utveckling av klienter som fÃ¶ljer MVC arkitekturer. Datalagringen gÃ¶rs med hjÃ¤lp av MongoDB \cite{mongodb} som Ã¤r en NoSQL-klassificerad dokumentdatabas. FÃ¶r att kommunicera med databasen frÃ¥n servern anvÃ¤nds Node.js modulen Mongoose.  Tillsammans utgÃ¶r MongoDB, Express, AngularJS och Node.js MEAN-stacken \cite{mean_stack}. FÃ¶r att hantera och skilja pÃ¥ olika anvÃ¤ndare samt tillÃ¥ta dem att logga in anvÃ¤nder LEAP sig av Googles API med OAuth 2.0.
+
+LEAP bestÃ¥r av ytterligare en komponent vilket Ã¤r Docker \cite{docker}, detta fÃ¶r att sÃ¤tta upp en sÃ¤ker miljÃ¶ dÃ¤r studenternas program exekveras med hjÃ¤lp av Docker containrar. Samtliga komponenter presenteras visuellt i figur \ref{fig:LeapArch}.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[scale=0.4]{leap_arch.jpeg}
-\caption{Systemarkitektur för LEAP}
+\includegraphics[scale=0.4]{leap_arch.eps}
+\caption{Systemarkitektur fÃ¶r LEAP}
 \label{fig:LeapArch}
 \end{figure}
 
 \newpage
-\subsubsection{Förklarande av systemet vid uppladdning}
-När en lärare ska skapa en uppgift och ladda upp en tillhörande testfil hanteras detta av LEAP i följande steg: 
+\subsubsection{Uppladdning och inlÃ¤mning}
+
+NÃ¤r en lÃ¤rare ska skapa en uppgift och ladda upp en tillhÃ¶rande testfil hanteras detta av LEAP i fÃ¶ljande steg: 
 \begin{enumerate}
 \item
-Läraren loggar in i systemet genom webbklienten och skapar sedan en uppgift i en kurs och ger den ett namn. 
+LÃ¤raren loggar in i systemet och vÃ¤ljer att skapa en uppgift.
 \item
-Läraren väljer en komprimerad fil innehållandes en testfil och en tillhörande programfil.
+Till uppgiften mÃ¥ste lÃ¤raren bifoga testfall\footnote{Dessa testfall har en lÃ¤rare skapat vid ett tidigare tillfÃ¤lle} till uppgiften och ett program som testfallen kommer kÃ¶ras mot senare fÃ¶r att verifiera att testfallen Ã¤r korrekta.
 \item
-Läraren får välja om den vill skapa ett tillhörande quiz till uppgiften och kan då skapa frågorna och svaren direkt i webbklienten. 
+LÃ¤raren fÃ¥r valmÃ¶jligheten att skapa ett tillhÃ¶rande quiz till uppgiften.
 \item
-Servern tar emot en förfrågan om att skapa en ny uppgift och verifierar först att det inte redan existerar en uppgift med det angivna namnet.
+LÃ¤raren skickar en fÃ¶rfrÃ¥gan om att skapa uppgiften.
 \item
-Servern skapar en unik mapp för att spara den uppladdade filen.
+Servern tar emot fÃ¶rfrÃ¥gan om att skapa en ny uppgift.
 \item
-Servern packeterar upp den komprimerade filen och flyttar programfilerna samt testfilen till den unika mappen.
+Servern startar exekveringen av lÃ¤rarens testfallen mot lÃ¤rarens uppladdade program. Detta steg genomfÃ¶rs fÃ¶r att garantera att lÃ¤rarens testfall gÃ¥r igenom mot den tÃ¤nkta lÃ¶sningen som Ã¤r lÃ¤rarens uppladdade program.
 \item
-Servern skapar en Docker container och delar den unika mappen med containern för att container ska kunna exekvera lärarens testfil mot programmet.
-\item
-Docker container startar exekveringen av testerna.
-\item
-Servern letar i den delade unika mappen i containern efter en fil med namnet \textit{output.txt} medans exekvering utförs.
-\item
-När exekvering i container är klar skrivs resultat från testerna till filen \textit{output.txt}.
-\item
-Servern kommer då att hämta innehållet i \textit{output.txt}.
-\item
-Servern tolkar sedan innehållet i \textit{output.txt}.
-\item
-Om lärarens programfiler klarade testen sparas uppgiften i databasen och ges då ett unikt ID. Detta ID skickas sedan tillbaka till webbklienten och läraren kan då spara det och hänvisa sina studenter till detta. Om programfilerna inte klarar testen skickar servern tillbaka ett svar om att uppladdningen misslyckades tillsammans med ett felmeddelande om vad som gick fel.
+Om exekvering av alla testfall passerades sparas uppgiften i databasen och ges dÃ¥ ett unikt ID. Detta ID skickas sedan tillbaka till lÃ¤raren tillsammans med ett meddelande om att uppgiften har sparats i databasen. Om exekveringen av nÃ¥got testfall misslyckades skickar servern tillbaka ett svar till lÃ¤raren om att uppladdningen misslyckades tillsammans med ett felmeddelande om vad som gick fel.
 \end{enumerate}
 
 \newpage
-\subsubsection{Förklarande av systemet vid inlämning}
-För att underlätta beskrivningen av hur LEAP hanterar en inlämning av en student valde vi att använda oss av ett aktivitetsdiagram. Figur \ref{fig:LeapFlow} nedanför visar flödet för när en student ska genomföra en uppgift.
+
+FÃ¶r att underlÃ¤tta beskrivningen av hur LEAP hanterar en inlÃ¤mning av en student valde vi att anvÃ¤nda oss av ett aktivitetsdiagram. Figur \ref{fig:LeapFlow} nedanfÃ¶r visar flÃ¶det i LEAP nÃ¤r en student ska genomfÃ¶ra och lÃ¤mna in en lÃ¶sning till en uppgift.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[scale=0.25]{leap_flow.png}
-\caption{Aktivitetsdiagram över inlämningsprocessen}
+\includegraphics[scale=0.25]{correct_leap_flow.eps}
+\caption{Aktivitetsdiagram Ã¶ver inlÃ¤mningsprocessen fÃ¶r en student}
 \label{fig:LeapFlow}
 \end{figure}
 
-Figuren visar hur genomförandet av en uppgift går till vilket kan involvera ett quiz som studenten får genomföra. En uppgift kommer dock alltid att innehålla en testfil som testar studenternas program. När LEAP testar studenternas program sker det i en Docker container för att skydda servern mot eventuell skadlig kod, exakt hur detta går till beskrivs nedanför.
-
-\begin{enumerate}
-\item
-Servern tar emot en förfrågan med uppgiftens ID och en komprimerad fil innehållande studentens programfiler.
-\item
-Servern skapar en unik mapp för att spara studentens uppskickade filer och uppgiftens tillhörande testfil skapad av läraren.
-\item
-Servern packeterar upp den komprimerade filen och flyttar programfilerna till den unika mappen.
-\item
-Servern hämtar den tillhörande testfilen från databasen genom uppgiftens ID.
-\item
-Servern flyttar testfilen till den unika mappen.
-\item
-Servern skapar en Docker container och delar den unika mappen med containern för att container ska kunna exekvera testerna mot studentens program.
-\item
-Docker container startar exekveringen av testerna.
-\item
-Servern letar i den delade unika mappen i containern efter en fil med namnet \textit{output.txt} medans exekvering utförs.
-\item
-När exekvering i container är klar skrivs resultat från testerna till filen ?output.txt?.
-\item
-Servern kommer då att hämta innehållet i ?output.txt?.
-\item
-Servern tolkar sedan innehållet i ?output.txt?.
-\item
-Beroende på om studentens program klarade alla tester eller ej skickar servern antingen ett svar om att testerna gick igenom alternativt att de ej gick igenom tillsammans med ett felmeddelande om vad som inte godkändes.
-\end{enumerate}
+Figuren visar hur genomfÃ¶randet av en uppgift gÃ¥r till vilket kan involvera ett quiz beroende pÃ¥ lÃ¤rarens val att lÃ¤gga till en quiz eller ej. En uppgift kommer dock alltid att ha testfall som testar studentens program. NÃ¤r LEAP exekverar testfallen mot studentens program vid inlÃ¤mning av en uppgift eller mot lÃ¤rarens program vid uppladdning av en uppgift sker det i en Docker-container fÃ¶r att skydda servern mot eventuell skadlig kod.
 
 \newpage
-\subsection{Kontrollerade experiment}
 
-Här presenteras resultaten från de kontrollerade experimenten som vi utförde på studenter vid Malmö Högskola. Vi kommer att sammanfatta och lyfta fram de åsikter som vi anser är relevanta för vår studie, dock finns samtliga åsikter och svar från den andra enkäten i Appendix C. I tabell \ref{tab:Testpersoner} ges en översikt över testpersonerna i form av ålder, kön och vilket program som de läser.
-
-\begin{table}[h!]
-	\centering
-	\caption{Överblick av testpersonerna}
-	\label{tab:Testpersoner}
-	\begin{tabular}{c c c c c}
-		\toprule
-		Testperson & Ålder & Kön & Program & Termin\\
-		\midrule
-		1 & 26 & Man & Datavetenskap och applikationsutveckling & Andra\\
-		2 & 28 & Man & Systemutvecklare & Sjätte\\
-		3 & 32 & Kvinna & Systemutvecklare & Fjärde\\
-		4 & 22 & Man & Informationsarkitekt & Sjätte\\
-		5 & 23 & Man & Systemutvecklare & Sjätte\\
-		6 & 23 & Man & Systemutvecklare & Fjärde\\
-		7 & 39 & Kvinna & Systemutvecklare & Sjätte\\
-		8 & 39 & Man & Spelutveckling & Fjärde\\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-Av de åtta testpersonerna är två stycken kvinnor och fem av deltagarna läser till Systemutvecklare vid Malmö Högskola.
-
-\subsubsection{Användarupplevelse}
-Efter att testpersonerna utfört användartestet fick de ge sina synpunkter på användarupplevelsen. I figur \ref{fig:GeneralUX} presenteras resultatet på frågan \textit{Hur skulle du bedöma den allmänna användarupplevelsen (UX) av vår prototyp?}.
+I Figur \ref{fig:leapTeknisk1} och Figur \ref{fig:leapTeknisk2} visualiseras det hur LEAP hanterar exekveringen av testfallen nÃ¤r en student skickar en lÃ¶sning till en uppgift. Vi fÃ¶rutsÃ¤tter att studenten redan har fullfÃ¶ljt uppgiftens eventuella quiz och att studenten har skickat en fÃ¶rfrÃ¥gan med sin lÃ¶sning och uppgiftens ID till servern via klienten. Varje gÃ¥ng en student skickar sin lÃ¶sning till LEAP skapar servern en unik temporÃ¤r mapp. Syftet med mappen Ã¤r att hantera kommunikationen mellan servern och Docker-containern genom att servern delar den temporÃ¤ra mappen med Docker-containern. Kommunikationen sker genom att servern sparar studentens lÃ¶sning och testfallen fÃ¶r uppgiften i mappen och pÃ¥ sÃ¥ sÃ¤tt kan Docker-containern fÃ¥ tillgÃ¥ng till dessa och starta exekvering av testfallen mot studentens lÃ¶sning. Exekveringens utdata sparas till en textfil och pÃ¥ sÃ¥ sÃ¤tt kan servern fÃ¥ tillgÃ¥ng och tolka utdatan och dÃ¤rigenom avgÃ¶ra om studenten har passerat alla testfall eller ej. Figur \ref{fig:leapTeknisk1} presenterar visuellt hur servern skapar den temporÃ¤ra mappen med tillhÃ¶rande filer.
 
 \begin{figure}[ht!]
 \centering
+\includegraphics[scale=0.8]{leap_teknisk_1.eps}
+\caption{Aktivitetsdiagram Ã¶ver inlÃ¤mningsprocessen fÃ¶r en student}
+\label{fig:leapTeknisk1}
+\end{figure}
+
+\begin{description}
+    \item [Steg 1] Servern hÃ¤mtar testfallen fÃ¶r uppgiften baserat pÃ¥ uppgiftens ID som serven fick genom studentens fÃ¶rfrÃ¥gan.
+    \item [Steg 2] Efter att servern har hÃ¤mtat testfallen frÃ¥n databasen skapar servern den temporÃ¤ra mappen och skapar Ã¤ven filen \textit{MainTest.java} i den temporÃ¤ra mappen och sedan skriver servern testfallen till \textit{MainTest.java}
+    \item [Steg 3] Efter steg 2, flyttar servern studentens lÃ¶sning bestÃ¥endes av en en kodfil till den temporÃ¤ra mappen och namnger studentens lÃ¶sning, kodfil, till \textit{Main.java}
+\end{description}
+
+\newpage
+Figur \ref{fig:leapTeknisk2} presenterar visuellt hur servern startar exekveringen av Docker-containern och hur servern fÃ¥r tillbaka utdatan frÃ¥n de exekverade testfallen som sker i Docker-containern.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.8]{leap_teknisk_2.eps}
+\caption{Aktivitetsdiagram Ã¶ver inlÃ¤mningsprocessen fÃ¶r en student}
+\label{fig:leapTeknisk2}
+\end{figure}
+
+\begin{description}
+    \item [Steg 1] Servern startar exekveringen av Docker-containern
+    \item [Steg 2] NÃ¤r exekveringen av Docker-containern startas genom servern kÃ¶r Docker-containern testfallen som finns i filen \textit{MainTest.java} mot kodfilen \textit{Main.java}. Dessa filer finns i den temporÃ¤ra mappen som servern delade Docker-containern.
+    \item [Steg 3] NÃ¤r exekveringen av testfallen Ã¤r klara skriver Docker-containern utdatan till en textfil med namnet \textit{output.txt} och placerar textfilen i den temporÃ¤ra mappen och pÃ¥ sÃ¥ sÃ¤tt kan servern ta del av testfallens utdata.
+    \item [Steg 4] Servern hÃ¤mtar innehÃ¥llet, testfallens utdata, i filen \textit{output.txt} och tolkar utdatan fÃ¶r att kunna avgÃ¶ra om studentens lÃ¶sning har passerat testfallen eller ej. Om samtliga testfall passerades meddelar servern studenten att lÃ¶sningen godkÃ¤ndes. Om nÃ¥got testfall inte passerade meddelar servern studenten att lÃ¶sningen ej godkÃ¤ndes och skickar Ã¤ven med utdatan frÃ¥n testfallen.
+\end{description}
+
+\newpage
+\subsection{Kontrollerade experiment} \label{experiment}
+
+HÃ¤r presenteras resultaten frÃ¥n de kontrollerade experimenten som vi utfÃ¶rde pÃ¥ studenter vid MalmÃ¶ HÃ¶gskola. Vid de frÃ¥gor som involverade att testpersonerna fick gÃ¶ra stÃ¤llningstagande krÃ¤vde vi att testpersonerna motiverade dessa. FÃ¶r att kunna tolka testpersonernas motiveringar och Ã¥sikter har vi identifierat vÃ¤rdeord i motiveringarna och Ã¥sikterna samt Ã¤ven identifierat vad vÃ¤rdeorden syftar pÃ¥. Genom detta har vi kunnat gruppera testpersonernas Ã¥sikter och motiveringar och pÃ¥ sÃ¥ sÃ¤tt kunnat sammanfatta och dra slutsatser frÃ¥n Ã¥sikterna och motiveringarna. 
+\\
+\\
+I tabell \ref{tab:Testpersoner} ges en Ã¶versikt Ã¶ver testpersonerna i form av Ã¥lder, kÃ¶n och vilket program som de lÃ¤ser.
+
+\begin{table}[h!]
+	\centering
+	\caption{Ã–verblick av testpersonerna}
+	\label{tab:Testpersoner}
+	\begin{tabular}{c c c c c}
+		\toprule
+		Testperson & Ã…lder & KÃ¶n & Program & Termin\\
+		\midrule
+		1 & 26 & Man & Datavetenskap och applikationsutveckling & Andra\\
+		2 & 28 & Man & Systemutvecklare & SjÃ¤tte\\
+		3 & 32 & Kvinna & Systemutvecklare & FjÃ¤rde\\
+		4 & 22 & Man & Informationsarkitekt & SjÃ¤tte\\
+		5 & 23 & Man & Systemutvecklare & SjÃ¤tte\\
+		6 & 23 & Man & Systemutvecklare & FjÃ¤rde\\
+		7 & 39 & Kvinna & Systemutvecklare & SjÃ¤tte\\
+		8 & 39 & Man & Spelutveckling & FjÃ¤rde\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+Av Ã¥tta testpersonerna Ã¤r tvÃ¥ kvinnor och fem av testpersonerna lÃ¤ser till Systemutvecklare vid MalmÃ¶ HÃ¶gskola.
+
+\subsubsection{AnvÃ¤ndarupplevelse}\label{AnvÃ¤ndarupplevelse}
+Efter att testpersonerna utfÃ¶rt anvÃ¤ndartestet fick de ge sina synpunkter pÃ¥ anvÃ¤ndarupplevelsen. I figur \ref{fig:GeneralUX} presenteras resultatet pÃ¥ frÃ¥gan \textit{Hur skulle du bedÃ¶ma den allmÃ¤nna anvÃ¤ndarupplevelsen (UX) av vÃ¥r prototyp?}, dÃ¤r 1 motsvarar vÃ¤ldigt dÃ¥ligt och 7 motsvarar mycket bra.
+
+\begin{figure}[ht!]
+\centering
+<<<<<<< HEAD
 \includegraphics[scale=0.6]{general_ux.png}
 \caption{Allmäna användarupplevelsen av prototypen \uek{Om ni använder en Likert-skaa så måste ni förklara vilka värdeord ni har förklarat de olika siffrorna med.}}
 \label{fig:GeneralUX}
@@ -424,9 +593,19 @@ Efter att testpersonerna utfört användartestet fick de ge sina synpunkter på anv
 
 Som diagrammet visar \uek{Det är ju ganska lätt att lägga in referenser till vilka diagram som avses i LaTeX. Gör det!} är åsikterna från testpersonerna lite olika speciellt när det kommer till detaljrikedomen i återkopplingen. Tre personer upplevde att återkopplingen tydligt visar vad felet i programmet är. Dock upplevde tre personer att återkopplingen som vår prototyp gav var svårtydlig och svårförstådd. De flesta av testpersonerna upplevde att vår prototyp var enkel att använda eftersom navigeringen var tydlig och att det var tydligt hur man skickade in en uppgift för bedömning. 
 Vi hade även en fråga där vi ville att testpersonerna skulle nämna förbättringar för vår prototyp. Där nämner samtliga att återkopplingen kan bli bättre på olika sätt. De nämner dels att den kan bli tydligare och mer strukturerad för att det ska vara lättare att veta vad felet i programmet är men även att det hade varit bra att få tips eller exempel på hur felen kan lösas. 
+=======
+\includegraphics[scale=0.6]{general_UX2.eps}
+\caption{AllmÃ¤nna anvÃ¤ndarupplevelsen av prototypen}
+\label{fig:GeneralUX2}
+\end{figure}
 
-Vi ställde även en fråga om testpersonerna tror att det skulle vara användbart att använda vår prototyp vid programmeringskurser. Figur \ref{fig:UsePrototype} visar att samtliga studenter ställer sig positivt till att använda vår prototyp vid programmeringskurser. De flesta av testpersoner menar att direkt återkoppling är anledningen till att de anser att vår prototyp kan användas vid programmeringskurser. En av testpersoner anser dock att återkopplingen som ges från en lärare eller en labbhandledare är mer givande. Två av testpersonerna påpekar att med vår prototyp skulle studenterna bli mer självständiga. En av dem menar att vid laborationer finns det inte alltid utrymme att få sina uppgifter bedömda eftersom antalet studenter är markant fler än antalet lärare och labbhandledare. Vidare menar testpersonen att det finns få redovisningstider vilket medför att studenter har svårt att få sina uppgifter redovisade och bedömda samt att stressen för lärare att bedöma uppgifterna minskar med användningen av vår prototyp.
+Testpersonernas Ã¥sikter var delade nÃ¤r det kommer till detaljrikedomen i Ã¥terkopplingen. Tre personer upplevde att Ã¥terkopplingen tydligt visar vad felet i programmet Ã¤r. Dock upplevde tre personer att Ã¥terkopplingen som vÃ¥r prototyp gav var svÃ¥rtydlig och svÃ¥rfÃ¶rstÃ¥dd. Merparten av testpersonerna upplevde att vÃ¥r prototyp var enkel att anvÃ¤nda eftersom navigeringen var tydlig och att det var tydligt hur man skickade in en uppgift fÃ¶r bedÃ¶mning. 
+Vi hade Ã¤ven en frÃ¥ga dÃ¤r vi ville att testpersonerna skulle fÃ¶reslÃ¥ fÃ¶rbÃ¤ttringar fÃ¶r vÃ¥r prototyp. DÃ¤r nÃ¤mner samtliga att Ã¥terkopplingen kan bli bÃ¤ttre pÃ¥ olika sÃ¤tt. De nÃ¤mner dels att den kan bli tydligare och mer strukturerad fÃ¶r att det ska vara lÃ¤ttare att veta vad felet i programmet Ã¤r men Ã¤ven att det hade varit bra att fÃ¥ tips eller exempel pÃ¥ hur felen kan lÃ¶sas. 
+>>>>>>> master
 
+Vi stÃ¤llde Ã¤ven en frÃ¥ga om testpersonerna tror att det skulle vara anvÃ¤ndbart att anvÃ¤nda vÃ¥r prototyp vid programmeringskurser. Samtliga studenter stÃ¤ller sig positiva, det vill sÃ¤ga de svarade ja, till att anvÃ¤nda vÃ¥r prototyp vid programmeringskurser. Merparten av testpersonerna menar att direkt Ã¥terkoppling Ã¤r anledningen till att de anser att vÃ¥r prototyp kan anvÃ¤ndas vid programmeringskurser. En av testpersonerna anser dock att Ã¥terkopplingen som ges frÃ¥n en lÃ¤rare eller en labbhandledare Ã¤r mer givande. TvÃ¥ av testpersonerna pÃ¥pekar att med vÃ¥r prototyp skulle studenterna bli mer sjÃ¤lvstÃ¤ndiga. En av dem menar att vid laborationer finns det inte alltid utrymme att fÃ¥ sina uppgifter bedÃ¶mda eftersom antalet studenter Ã¤r markant fler Ã¤n antalet lÃ¤rare och labbhandledare. Vidare menar testpersonen att det finns fÃ¥ redovisningstider vilket medfÃ¶r att studenter har svÃ¥rt att fÃ¥ sina uppgifter redovisade och bedÃ¶mda samt att stressen fÃ¶r lÃ¤rare att bedÃ¶ma uppgifterna minskar med anvÃ¤ndningen av vÃ¥r prototyp.
+
+<<<<<<< HEAD
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale=0.6]{use_prototype.png}
@@ -443,81 +622,116 @@ Vi ställde även frågor till testpersonerna om hur de upplevde att få direkt åter
 \caption{Upplevelsen av direkt återkoppling \uek{Samma kommentar som ovan.}}
 \label{fig:DirectFeedback}
 \end{figure}
+=======
+\subsubsection{Ã…terkoppling}\label{Ã…terkoppling}
+>>>>>>> master
 
-Som figur \ref{fig:DirectFeedback} visar upplevde samtliga testpersoner att direkt återkoppling var väldigt bra. De påpekade att det var skönt att slippa vänta på att få en uppgift bedömd eftersom testpersoner tycker att återkoppling ska ges när de är inne i tänket för uppgiften. En av testpersonerna menar att det är ineffektivt med bedömning som involverar en lärare när det gäller direkt återkoppling eftersom det kan dröja upp till två veckor innan en uppgift blir bedömd. En annan testperson menar även att med direkt återkoppling kan missuppfattningar kring en uppgift upptäckas tidigare jämfört med bedömning som involverar en lärare. En av testpersonerna menar även att uppgifter kan bli enklare vid direkt återkoppling, men att det kan lösas genom att sätta en begränsning på antalet inlämningar.
+Vi stÃ¤llde Ã¤ven frÃ¥gor till testpersonerna om hur de upplevde att fÃ¥ direkt Ã¥terkoppling och hur de upplevde detaljrikedomen i Ã¥terkopplingen. Vi frÃ¥gade testpersonerna hur de upplevde att fÃ¥ direkt Ã¥terkoppling pÃ¥ en skala frÃ¥n ett till sju, dÃ¤r 1 Ã¤r vÃ¤ldigt dÃ¥ligt och 7 motsvarar mycket bra.
+Samtliga testpersoner svarade med en 7:a. De pÃ¥pekade att det var skÃ¶nt att slippa vÃ¤nta pÃ¥ att fÃ¥ en uppgift bedÃ¶md eftersom testpersonerna tycker att Ã¥terkoppling ska ges nÃ¤r de Ã¤r inne i tÃ¤nket fÃ¶r uppgiften. En av testpersonerna svarar att det Ã¤r ineffektivt med bedÃ¶mning som involverar en lÃ¤rare nÃ¤r det gÃ¤ller direkt Ã¥terkoppling eftersom det kan drÃ¶ja upp till tvÃ¥ veckor innan en uppgift blir bedÃ¶md. En annan testperson svarar Ã¤ven att med direkt Ã¥terkoppling kan missuppfattningar kring en uppgift upptÃ¤ckas tidigare jÃ¤mfÃ¶rt med bedÃ¶mning som involverar en lÃ¤rare. En av testpersonerna svarar Ã¤ven att uppgifter kan bli enklare vid direkt Ã¥terkoppling, men att det kan lÃ¶sas genom att sÃ¤tta en begrÃ¤nsning pÃ¥ antalet inlÃ¤mningar.
 
-\newpage
-Testpersonerna fick även besvara frågan \textit{Hur upplevde du detaljrikedomen i återkopplingen?} vilket presenteras i figur \ref{fig:DetailFeedback}
+Testpersonerna fick Ã¤ven besvara frÃ¥gan \textit{Hur upplevde du detaljrikedomen i Ã¥terkopplingen?}, dÃ¤r 1 motsvarar vÃ¤ldigt dÃ¥lig och 7 motsvarar mycket bra. Svaren presenteras i figur \ref{fig:DetailFeedback}.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[scale=0.6]{detail_feedback.png}
-\caption{Upplevelsen av detaljrikedomen i återkopplingen}
+\includegraphics[scale=0.6]{detail_feedback2.eps}
+\caption{Upplevelsen av detaljrikedomen i Ã¥terkopplingen}
 \label{fig:DetailFeedback}
 \end{figure}
 
-Samtliga testpersoner upplevde att detaljrikedomen i återkopplingen var hög men vissa menar att den var svårtolkad och kunde presenterats och strukturerats på ett enklare och mer konkret sätt. En av testpersonerna menar att prototypens återkoppling inte är lika givande jämfört med återkopplingen från en lärare eftersom en lärare även kan ge en förklaring på varför felet uppstod. De menar även att det kan vara bra att ge tips eller exempel för att lösa felen.
+Sju av testpersoner upplevde att detaljrikedomen i Ã¥terkopplingen var hÃ¶g men vissa menar att Ã¥terkopplingen var svÃ¥rtolkad och kunde presenterats och strukturerats pÃ¥ ett enklare och mer konkret sÃ¤tt. En av testpersonerna menar att prototypens Ã¥terkoppling inte Ã¤r lika givande jÃ¤mfÃ¶rt med Ã¥terkopplingen frÃ¥n en lÃ¤rare eftersom en lÃ¤rare Ã¤ven kan ge en fÃ¶rklaring pÃ¥ varfÃ¶r felet uppstod. De menar Ã¤ven att det kan vara bra att ge tips eller exempel fÃ¶r att lÃ¶sa felen.
 
 \newpage
 \subsubsection{Quiz}
 
-Eftersom vår prototyp även gör det möjligt att använda ett quiz vid uppgifterna, ställde vi frågor relaterat till quizzet. I figur \ref{fig:QuizHelps} visas resultatet på frågan \textit{Hur mycket tror du att ett quiz hjälper studenter i deras programmeringsutveckling och förståelse?}
+Eftersom vÃ¥r prototyp Ã¤ven gÃ¶r det mÃ¶jligt att anvÃ¤nda ett quiz vid uppgifterna, stÃ¤llde vi frÃ¥gor relaterat till quizzet. I figur \ref{fig:QuizHelps} visas resultatet pÃ¥ frÃ¥gan \textit{Hur mycket tror du att ett quiz hjÃ¤lper studenter i deras programmeringsutveckling och fÃ¶rstÃ¥else?}, dÃ¤r 1 motsvarar inte alls och 7 vÃ¤ldigt mycket.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[scale=0.6]{quiz_helps.png}
-\caption{Betydelsen av quiz för utvecklingen}
+\includegraphics[scale=0.6]{quiz_helps2.eps}
+\caption{Betydelsen av quiz fÃ¶r utvecklingen}
 \label{fig:QuizHelps}
 \end{figure}
 
-Sju av testpersonerna ställer sig positivt till att använda quiz för att förbättra studenternas förståelse och kunskap. Det är en person som ställer sig negativt till detta. Den personen tror inte att det hjälper studenterna med ett quiz utan menar istället att det är bättre med praktiska moment som programmeringsuppgifter eller laborationer för att utveckla studenternas förståelse och kunskaper. Personen menar att det istället är till mest nytta för läraren då den kan få en bättre bild av studenternas faktiska förståelse.
+Sju av testpersonerna stÃ¤ller sig positiva till att anvÃ¤nda quiz fÃ¶r att fÃ¶rbÃ¤ttra studenternas fÃ¶rstÃ¥else och kunskap. Det Ã¤r en testperson som stÃ¤ller sig negativt till detta. Testpersonen tror inte att det hjÃ¤lper studenterna med ett quiz utan menar istÃ¤llet att det Ã¤r bÃ¤ttre med praktiska moment som programmeringsuppgifter eller laborationer fÃ¶r att utveckla studenternas fÃ¶rstÃ¥else och kunskaper. Personen menar att anvÃ¤ndningen av quiz istÃ¤llet Ã¤r till mest nytta fÃ¶r lÃ¤raren dÃ¥ lÃ¤raren kan fÃ¥ en bÃ¤ttre bild av studenternas faktiska fÃ¶rstÃ¥else.
 
-Två av personerna menar att det är viktigt med teori och begrepp för att förstå helheten och att det utan viss förståelse är svårt att programmera eller ha förståelse för varför lösningen ser ut som den gör.
+TvÃ¥ av personerna menar att det Ã¤r viktigt med teori och begrepp fÃ¶r att fÃ¶rstÃ¥ helheten och att det utan viss fÃ¶rstÃ¥else Ã¤r svÃ¥rt att programmera eller ha fÃ¶rstÃ¥else fÃ¶r varfÃ¶r lÃ¶sningen ser ut som den gÃ¶r.
 
-Vidare ställde vi frågan \textit{När tycker du att ett quiz ska användas?} och där testpersonerna kunde välja mellan (1) \textit{Innan programmeringsuppgift} (2) \textit{Efter programmeringsuppgift} (3) \textit{Både och} (4) \textit{Inte alls}. Resultatet från frågan presenteras i figur \ref{fig:QuizWhen}.
+Vidare stÃ¤llde vi frÃ¥gan \textit{NÃ¤r tycker du att ett quiz bÃ¶r anvÃ¤ndas?} dÃ¤r testpersonerna kunde vÃ¤lja mellan (1) \textit{Innan programmeringsuppgift} (2) \textit{Efter programmeringsuppgift} (3) \textit{BÃ¥de och} (4) \textit{Inte alls}. Resultatet frÃ¥n frÃ¥gan var att fyra testpersoner svarade (1) och de andra fyra svarade (3). De personer som tyckte att ett quiz bÃ¶r anvÃ¤ndas innan  programmeringsuppgiften menar att det kommer hjÃ¤lpa studenten att genomfÃ¶ra programmeringsuppgiften eftersom det krÃ¤ver att studenten har en viss grad av fÃ¶rstÃ¥else innan programmeringen pÃ¥bÃ¶rjas. De pÃ¥pekar Ã¤ven att ett quiz hjÃ¤lper studenterna att inse inom vilka omrÃ¥den de behÃ¶ver fÃ¶rbÃ¤ttra sin fÃ¶rstÃ¥else. 
 
-\begin{figure}[ht!]
-\centering
-\includegraphics[scale=0.5]{quiz_when.png}
-\caption{Användning av quiz}
-\label{fig:QuizWhen}
-\end{figure}
-
-De personer som tyckte att ett quiz bör användas innan programmeringsuppgiften menar att det kommer hjälpa studenten att genomföra programmeringsuppgiften eftersom det kräver att studenten har en viss grad av förståelse innan programmeringen påbörjas. De påpekar även att ett quiz hjälper studenterna att inse inom vilka områden som de behöver förbättra sin förståelse. 
-
-De personer som tyckte att ett quiz bör användas både innan och efter programmeringsuppgiften har liknande åsikter om varför de anser att det ska vara innan. Anledningen till att de anser att ett quiz även borde finnas efter en programmeringsuppgift är för att verifiera att studenten har erhållit de förväntade kunskaperna från programmeringsuppgiften. 
+De personer som tyckte att ett quiz bÃ¶r anvÃ¤ndas bÃ¥de innan och efter programmeringsuppgiften har liknande Ã¥sikter om varfÃ¶r de anser att det ska vara innan. Anledningen till att de anser att ett quiz Ã¤ven borde finnas efter en programmeringsuppgift Ã¤r fÃ¶r att verifiera att studenten har erhÃ¥llit de fÃ¶rvÃ¤ntade kunskaperna frÃ¥n programmeringsuppgiften. 
 
 \subsubsection{Traditionellt eller automatiserat?}
 
-För att kunna jämföra traditionell och automatiserad bedömning ställde vi frågor till testpersonerna där de fick lyfta fram fördelar och nackdelar om respektive sätt följt av att de fick göra en bedömning av vilket sätt de tror är bäst för deras utveckling som programmerare.
+FÃ¶r att kunna jÃ¤mfÃ¶ra traditionell och automatiserad bedÃ¶mning stÃ¤llde vi frÃ¥gor till testpersonerna dÃ¤r de fick lyfta fram fÃ¶rdelar och nackdelar om respektive sÃ¤tt fÃ¶ljt av att de fick gÃ¶ra en bedÃ¶mning av vilket sÃ¤tt de tror Ã¤r bÃ¤st fÃ¶r deras utveckling som programmerare.
 
-Fördelar med automatiserade bedömningssystem som testpersonerna lyfte fram är liknande delar som beskrivits innan som snabbare återkoppling och att studenterna blir mer självständiga. En av testpersonerna påpekar att de studenter som har problem kan få mer hjälp av lärare och labbhandledare eftersom de andra studenterna blir mer självständiga och kräver därav inte lika mycket av lärarens resurser. Personen menar även att med ett automatiserat bedömningssystem kan uppgifterna bli bättre genom åren eftersom ett sådant system kan användas av flera högskolor och på så sätt kan de olika högskolorna samarbeta för att göra uppgifterna bättre för studenterna. En av testpersoner menar även att med automatiserade bedömningssystem kan studenter rätta sina egna fel och undviker därmed att skämmas över sina inskickade program eller kodfiler som de inte är nöjda med.
+FÃ¶rdelar med automatiserade bedÃ¶mningssystem som testpersonerna lyfte fram Ã¤r liknande de delar som beskrivits under avsnitt \ref{Ã…terkoppling} och \ref{AnvÃ¤ndarupplevelse} som snabbare Ã¥terkoppling och att studenterna blir mer sjÃ¤lvstÃ¤ndiga. En av testpersonerna pÃ¥pekade att de studenter som har problem kan fÃ¥ mer hjÃ¤lp av lÃ¤rare och labbhandledare eftersom de andra studenterna blir mer sjÃ¤lvstÃ¤ndiga och krÃ¤ver dÃ¤rav inte lika mycket av lÃ¤rarens resurser. Testpersonen menar Ã¤ven att med ett automatiserat bedÃ¶mningssystem kan uppgifterna bli bÃ¤ttre genom Ã¥ren eftersom ett sÃ¥dant system kan anvÃ¤ndas av flera hÃ¶gskolor och pÃ¥ sÃ¥ sÃ¤tt kan de olika hÃ¶gskolorna samarbeta fÃ¶r att gÃ¶ra uppgifterna bÃ¤ttre fÃ¶r studenterna. En av testpersonerna menar Ã¤ven att med automatiserade bedÃ¶mningssystem kan studenter rÃ¤tta sina egna fel och undviker dÃ¤rmed att skÃ¤mmas Ã¶ver sina inskickade program eller kodfiler som de inte Ã¤r nÃ¶jda med.
 
-Nackdelar som testpersonerna lyfte fram med automatiserade bedömningssystem är är att återkopplingen kan vara svårtolkad, vilket testpersonerna har nämnt vid tidigare tillfällen. Två av testpersonerna menar att det är svårt att verifiera kodkvalitén i studenternas program. En av dem menar att ett problem går att lösa på många olika sätt och där vissa är bättre än andra. De menar även att det är svårare för ett bedömningssystem än för en lärare eller labbhandledare att ge förbättringsförslag som studenterna kan göra i sina program vilket exempelvis kan förbättra läsbarheten och effektiviteten. En person påpekar att lärare kan frästas av att konstruera uppgifter av enklare karaktär då de medför enklare testning.
+Nackdelar som testpersonerna lyfte fram med automatiserade bedÃ¶mningssystem Ã¤r att Ã¥terkopplingen kan vara svÃ¥rtolkad, vilket testpersonerna har nÃ¤mnt vid tidigare tillfÃ¤llen. TvÃ¥ av testpersonerna menar att det Ã¤r svÃ¥rt att verifiera kodkvalitÃ©n i studenternas program. En av dem menar att ett problem gÃ¥r att lÃ¶sa pÃ¥ mÃ¥nga olika sÃ¤tt och dÃ¤r vissa Ã¤r bÃ¤ttre Ã¤n andra. De menar Ã¤ven att det Ã¤r svÃ¥rare fÃ¶r ett bedÃ¶mningssystem Ã¤n fÃ¶r en lÃ¤rare eller labbhandledare att ge fÃ¶rslag pÃ¥ fÃ¶rbÃ¤ttringar som studenterna kan gÃ¶ra i sina program vilket exempelvis kan fÃ¶rbÃ¤ttra lÃ¤sbarheten och effektiviteten. En person pÃ¥pekar att lÃ¤rare kan frestas av att konstruera uppgifter av enklare karaktÃ¤r dÃ¥ det medfÃ¶r enklare testning.
 
-Tre av testpersonerna ansåg att det inte finns några fördelar med att använda ett traditionellt bedömningssätt som involverar en lärare. De andra testpersonerna menar att med en lärare eller en labbhandledare kan en mer kvalitativ återkoppling ges. En av testpersonerna menar att en student då kan få svar på varför något är fel i deras kod istället för vad som är fel. En annan testperson påpekar att läraren kan granska programmet utifrån ett läsbarhetsperspektiv vilket inte ett bedömningssystem kan göra.
+Tre av testpersonerna ansÃ¥g att det inte finns nÃ¥gra fÃ¶rdelar med att anvÃ¤nda ett traditionellt bedÃ¶mningssÃ¤tt som involverar en lÃ¤rare. De andra testpersonerna menar att med en lÃ¤rare eller en labbhandledare kan en mer kvalitativ Ã¥terkoppling ges. En av testpersonerna menar att en student dÃ¥ kan fÃ¥ svar pÃ¥ varfÃ¶r nÃ¥got Ã¤r fel i deras kod istÃ¤llet fÃ¶r vad som Ã¤r fel. En annan testperson pÃ¥pekar att lÃ¤raren kan granska programmet utifrÃ¥n ett lÃ¤sbarhetsperspektiv vilket inte ett bedÃ¶mningssystem kan gÃ¶ra.
 
-Nackdelar som testpersonerna lyfter fram med traditionell bedömning är att det dels är tidskrävande för lärare och labbhandledare men även att det tar tid för studenterna att få återkoppling och bedömning. En av testpersonerna menar att bara för att det är en lärare som bedömer en uppgift behöver inte det automatiskt betyda att återkopplingen kommer hjälpa studenten att genomföra uppgiften. Vidare menar testpersonen att återkopplingen, från en lärare, i en del fall enbart kan uppge att studenten inte klarat uppgiften. En annan testperson är inne på samma spår, där testpersonen menar att de krävs att det finns bra labbhandledare som kan ge korrekt återkoppling, vilket enligt testpersonen inte alltid är fallet.
+Nackdelar som testpersonerna lyfter fram med traditionell bedÃ¶mning Ã¤r att det dels Ã¤r tidskrÃ¤vande fÃ¶r lÃ¤rare och labbhandledare men och dels att det tar tid fÃ¶r studenterna att fÃ¥ Ã¥terkoppling och bedÃ¶mning. En av testpersonerna menar att bara fÃ¶r att det Ã¤r en lÃ¤rare som bedÃ¶mer en uppgift behÃ¶ver inte det automatiskt betyda att Ã¥terkopplingen kommer hjÃ¤lpa studenten att genomfÃ¶ra uppgiften. Vidare menar testpersonen att Ã¥terkopplingen frÃ¥n en lÃ¤rare ibland enbart uppger att studenten inte klarat uppgiften och att Ã¥terkopplingen saknar motivering till varfÃ¶r studenten inte klarat uppgiften. En annan testperson Ã¤r inne pÃ¥ samma spÃ¥r, dÃ¤r testpersonen menar att de krÃ¤vs att det finns bra labbhandledare som kan ge korrekt Ã¥terkoppling, vilket enligt testpersonen inte alltid Ã¤r fallet.
 
-Vi avslutade med att ställa frågan \textit{Vilket av traditionellt och automatiserat sätt tror du är bäst för din utveckling som programmerare att använda vid programmeringskurser?}. Resultatet på denna fråga presenteras i figur \ref{fig:TradvsAuto}.
+Vi avslutade med att stÃ¤lla frÃ¥gan \textit{Vilket av traditionellt och automatiserat sÃ¤tt tror du Ã¤r bÃ¤st fÃ¶r din utveckling som programmerare att anvÃ¤nda vid programmeringskurser?}. Resultatet pÃ¥ denna frÃ¥ga presenteras i figur \ref{fig:TradvsAuto}.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[scale=0.5]{trad_vs_auto.png}
+\includegraphics[scale=0.5]{trad_vs_auto.eps}
 \caption{Traditionellt eller automatiserat}
 \label{fig:TradvsAuto}
 \end{figure}
 
-Det är sju av åtta testpersoner som anser att automatiserad bedöming är bättre för deras utveckling som programmerare. Motivering till deras val är fördelarna som nämnts ovanför som snabbare återkoppling och ökad självständighet för studenterna. En testperson menar att ett automatiskt bedömningssystem inte behöver utesluta en handledare eller lärare helt utan mer fungera som ett stöd till dessa. En annan testperson menar att automatiskt och traditionellt sätt uppfyller olika syften. Testpersonen menar att ett traditionellt sätt är bättre vid introduktionskurser eftersom det kan krävas mer hjälp och bättre återkoppling. Vidare menar testpersonen att ett automatiserat system är mer lämpligt att använda i kurser med avancerat innehåll eftersom fokus i dessa kurser är problemlösning av specifika problem istället för utlärning inom ett specifikt ämne vilket är fokus i introduktionskurser.
+Det Ã¤r sju av Ã¥tta testpersoner som anser att automatiserad bedÃ¶mning Ã¤r bÃ¤ttre fÃ¶r deras utveckling som programmerare. Motivering till deras val Ã¤r fÃ¶rdelarna som nÃ¤mnts ovanfÃ¶r som snabbare Ã¥terkoppling och Ã¶kad sjÃ¤lvstÃ¤ndighet fÃ¶r studenterna. En testperson menar att ett automatiskt bedÃ¶mningssystem inte behÃ¶ver utesluta en labbhandledare eller lÃ¤rare helt utan mer fungera som ett stÃ¶d till dessa. En annan testperson menar att automatiskt och traditionellt bedÃ¶mningssÃ¤tt uppfyller olika syften. Testpersonen menar att ett traditionellt bedÃ¶mningssÃ¤tt Ã¤r bÃ¤ttre vid introduktionskurser eftersom det kan krÃ¤vas mer hjÃ¤lp och bÃ¤ttre Ã¥terkoppling. Vidare menar testpersonen att ett automatiserat system Ã¤r mer lÃ¤mpligt att anvÃ¤nda i kurser med avancerat innehÃ¥ll eftersom fokus i dessa kurser Ã¤r problemlÃ¶sning av specifika problem istÃ¤llet fÃ¶r utlÃ¤rning inom ett specifikt Ã¤mne vilket Ã¤r fokus i introduktionskurser.
 
 \newpage
-\section{Analys}
+\section{Analys och diskussion}
+
+I en studie av Carter m. fl. \cite{carter} framkom det att Ã¥sikterna om bedÃ¶mningssystem bland de intervjuade lÃ¤rarna i studien var mer positiv ju mer erfarenhet av bedÃ¶mningssystem de hade. De lÃ¤rare utan tidigare erfarenhet av bedÃ¶mningssystem ansÃ¥g att sÃ¥dana system ej var lÃ¤mpliga fÃ¶r att testa studenters kunskaper och att kvalitÃ©n pÃ¥ Ã¥terkopplingen var lÃ¥g. Detta resultat kan jÃ¤mfÃ¶ras med resultatet frÃ¥n de intervjuer som vi genomfÃ¶rde med tre lÃ¤rare pÃ¥ MalmÃ¶ HÃ¶gskola eftersom tvÃ¥ av lÃ¤rarna inte trodde pÃ¥ att anvÃ¤nda automatiserade bedÃ¶mningssystem vid programmeringskurser och att dessa tvÃ¥ lÃ¤rare aldrig tidigare anvÃ¤nt ett bedÃ¶mningssystem i deras programmeringskurser. DÃ¤rfÃ¶r tror vi att deras negativa Ã¥sikter kan bero pÃ¥ deras oerfarenhet av bedÃ¶mningssystem. Och det Ã¤r just lÃ¤rarna som avgÃ¶r hur bra ett bedÃ¶mningssystem Ã¤r eftersom det Ã¤r upp till lÃ¤rarna att utforma uppgifterna och ta fram vÃ¤lgenomtÃ¤nkta och heltÃ¤ckande testfall. Utformningen av uppgifter och tillhÃ¶rande testfall har i tidigare studier identifierats som framgÃ¥ngsfaktorer fÃ¶r ett bedÃ¶mningssystem []. Detta eftersom vid automatiserad bedÃ¶mning krÃ¤vs det att uppgifters krav Ã¤r mer precisa Ã¤n vid manuell bedÃ¶mning fÃ¶r att undvika tvetydigheter sÃ¤rskilt nÃ¤r det handlar om indata och utdata []. NÃ¤r det kommer till testfall Ã¤r det viktigt att de Ã¤r genomtÃ¤nkta och heltÃ¤ckande fÃ¶r att fÃ¶rhindra att felaktiga programmeringslÃ¶sningar godkÃ¤nns []. Men nackdelen med dessa framgÃ¥ngsfaktorer Ã¤r att de kan krÃ¤va mer resurser Ã¤n vad som krÃ¤vs vid manuell bedÃ¶mning sÃ¤rskilt om antalet studenter Ã¤r hanterligt manuellt. Tidigare studier \cite{ala-mutka} \cite{cinelli} menar att utformningen av uppgifter och testfall fÃ¶r automatiserade bedÃ¶mningssytem krÃ¤ver mer resurser Ã¤n utformningen av uppgifter som bedÃ¶ms manuellt. Men trots att utformningen av uppgifter och testfall fÃ¶r automatiserad bedÃ¶mning krÃ¤ver mer resurser hjÃ¤lper automatiserad bedÃ¶mningssystem lÃ¤rare att minska deras arbetsbelastning som lÃ¤ggs pÃ¥ att manuellt verifiera att studenternas programmeringslÃ¶sning Ã¤r korrekta \cite{enstrom}.
+\\
+\\
+Att verifiera lÃ¶sningens korrekthet Ã¤r en funktionalitetsbedÃ¶mning, vilket Ã¤r den typ av bedÃ¶mning som LEAP genomfÃ¶r av studenternas lÃ¶sning. En fÃ¶rdel med att automatisera funktionalitetsbedÃ¶mningen Ã¤r att ett bedÃ¶mningssystem inte kommer godkÃ¤nna en lÃ¶sning fÃ¶rrÃ¤n alla testfall passeras och om testfallen Ã¤r vÃ¤l genomtÃ¤nkta och heltÃ¤ckande Ã¤r det lÃ¤ttare att garantera lÃ¶sningens korrekthet Ã¤n vid manuell bedÃ¶mning. DÃ¤rmed anser vi att ett bedÃ¶mningssystem utfÃ¶r funktionalitetsbedÃ¶mning snabbare och utfÃ¶rligare Ã¤n vad en lÃ¤rare gÃ¶r.
+\\
+\\
+Men nÃ¤r det kommer till bedÃ¶mning av mer kvalitativa aspekter tror vi att bedÃ¶mningen av en lÃ¤rare Ã¤r att fÃ¶redra, vilket stÃ¶ds av flertalet andra studier [KÃ„LLOR] men Ã¤ven av resultaten frÃ¥n de kontrollerade experimenten. Testpersonerna menar dels att lÃ¤rare kan bedÃ¶ma aspekter som kodkvalitÃ©, lÃ¤sbarhet och Ã¤ven att en lÃ¤rare kan ge fÃ¶rbÃ¤ttringsfÃ¶rslag samt best practices vilket Ã¤r betydligt svÃ¥rare fÃ¶r ett bedÃ¶mningssystem. DÃ¤remot Ã¤r det inte sÃ¤kert att studenter fÃ¥r kvalitativ Ã¥terkoppling enbart fÃ¶r att Ã¥terkopplingen ges av lÃ¤rare, vilket lyftes fram av en testperson frÃ¥n de kontrollerade experimenten. En annan nackdel med manuell bedÃ¶mning Ã¤r risken fÃ¶r subjektiv bedÃ¶mning stÃ¶rre Ã¤n vad den Ã¤r vid automatiserade bedÃ¶mningssystem. En av testpersonerna ansÃ¥g att ett bedÃ¶mningssystem inte lÃ¤mpar sig att anvÃ¤ndas vid introduktionskurser utan att det istÃ¤llet borde anvÃ¤ndas vid mer avancerade kurser eftersom fokus i dessa kurser Ã¤r problemlÃ¶sning av specifika problem istÃ¤llet fÃ¶r utlÃ¤rning inom ett specifikt Ã¤mne vilket Ã¤r fokus i introduktionskurser. Detta stÃ¶ds av Ahoniemi and Reinikainen som menar att oerfarna studenter krÃ¤ver grundlig och personlig Ã¥terkoppling pÃ¥ deras programmeringsuppgifter fÃ¶r att de ska lÃ¤ra sig av sina misstag och pÃ¥ sÃ¥ sÃ¤tt kunna fÃ¶rbÃ¤ttra sina kunskaper. DÃ¤remot visar studien [Law, Lee, Yu] hur ett bedÃ¶mningssystem uppmuntrade och motiverade studenters vilja att lÃ¤ra sig. Men trots att studien visar att de blir mer motiverade Ã¤r fortfarande manuell bedÃ¶mning att fÃ¶redra framfÃ¶r automatisk bedÃ¶mning nÃ¤r bedÃ¶mningen behandlar kvalitativa aspekter, vilket har bevisats i flertalet andra studier [].
+\\
+\\
+En annan fÃ¶rdel med automatiserade bedÃ¶mningssystem Ã¤r att studenter, sÃ¤rskilt de bÃ¤ttre studenterna, blir mer sjÃ¤lvstÃ¤ndiga eftersom ett bedÃ¶mningssystem har mÃ¶jligheten att vara tillgÃ¤ngligt dygnet runt. Som en av testpersonerna lyfte fram kan de studenter som har lÃ¤ttare fÃ¶r en del moment krÃ¤va mindre tid av en lÃ¤rare eller labbassistent fÃ¶r att fÃ¥ deras uppgifter bedÃ¶mda vilket gÃ¶r att en lÃ¤rare eller labbassistent har mer tid Ã¶ver till de som behÃ¶ver mer personlig och grundlig Ã¥terkoppling och hjÃ¤lp.
+\\
+\\
+UtifrÃ¥n vÃ¥ra resultat Ã¤r det svÃ¥rt att avgÃ¶ra hur ett bedÃ¶mningssystem av den hÃ¤r typen har fÃ¶r pÃ¥verkan pÃ¥ studenters programmeringskunskaper. Vi tror att det skulle krÃ¤vas en studie som under en lÃ¤ngre period analyserade effekterna av att anvÃ¤nda ett bedÃ¶mningssystem av den hÃ¤r typen i en programmeringskurs fÃ¶r att kunna avgÃ¶ra om studenters programmeringskunskaper fÃ¶rbÃ¤ttras. I en studie av Daly och Horgan \cite{roboprof_4} analyserade de under ett Ã¥r effekterna av att anvÃ¤nda det system fÃ¶rfattarna utvecklat, RoboProf, i en programmeringskurs fÃ¶r Java-programmering. Totalt ingick 300 studenter i studien och resultaten visar att de studenter som gjorde de uppgifter som fanns till RoboProf presterade signifikant mycket bÃ¤ttre Ã¤n de studenter som inte gjorde det. Liknande resultat har Ã¤ven presenterats i andra studier \cite{higgins_coursemarker_12} \cite{japanerna_1}. Resultaten frÃ¥n de kontrollerade experimenten visar att de studenter som ingick i studien har en positiv syn pÃ¥ anvÃ¤ndningen av ett bedÃ¶mningssystem av den hÃ¤r typen i programmeringskurser och vÃ¥r fÃ¶rhoppning Ã¤r att anvÃ¤ndningen av LEAP i en programmeringskurs ska leda till resultat som visar att LEAP Ã¶kar studenters programmeringskunskaper i hÃ¶gre grad Ã¤n enbart traditionell bedÃ¶mning. 
+\\
+\\
+En av testpersonerna i de kontrollerade experimenten pÃ¥pekar att en mÃ¶jlig negativ aspekt av anvÃ¤ndningen av automatiska bedÃ¶mningssystem Ã¤r att studenters utrymme fÃ¶r kreativitet i sina lÃ¶sningar hÃ¤mmas. Eftersom kraven fÃ¶r uppgifter som ska bedÃ¶mas av ett automatiskt bedÃ¶mningssystem mÃ¥ste vara mycket precisa och vÃ¤ldefinierade kan det leda till att lÃ¤rare utformar uppgifter pÃ¥ ett sÃ¤tt som gÃ¶r det svÃ¥rt fÃ¶r studenten att utnyttja sin fulla kreativitet i sin lÃ¶sning \cite{pieterse}. Vi tycker av dessa skÃ¤l att uppgifter av mindre omfattning dÃ¤r design och struktur inte har nÃ¥gon pÃ¥verkan pÃ¥ lÃ¶sningens kvalitÃ© bÃ¶r lÃ¤mpa sig bra fÃ¶r bedÃ¶mning av ett automatiskt bedÃ¶mningssystem medans stÃ¶rre uppgifter kan krÃ¤va en viss grad av manuell bedÃ¶mning. Ett exempel pÃ¥ en uppgift av mindre omfattning Ã¤r att implementera en funktion som itererar genom en vektor och utfÃ¶r en validering fÃ¶r att sortera ut element frÃ¥n vektorn. En sÃ¥dan uppgift Ã¤r vÃ¤ldigt svÃ¥r att bedÃ¶ma avseende design till skillnad frÃ¥n en uppgift dÃ¤r studenten ska skapa en applikation som fungerar som ett adressregister vilket kan designas och implementeras pÃ¥ en mÃ¤ngd olika vis och som sÃ¤tter studentens kreativitet pÃ¥ prov. Vi tror Ã¤ven att bedÃ¶mningssystem lÃ¤mpar sig att anvÃ¤ndas vid kurser som involverar algoritmer eftersom det dÃ¥ Ã¤r mÃ¶jligt att automatiskt testa om en algoritm har implementerats korrekt baserat pÃ¥ sÃ¤rskild indata.
+\\
+\\
+Direkt Ã¥terkoppling till studenterna Ã¤r enligt resultatet frÃ¥n de kontrollerade experimenten den stÃ¶rsta fÃ¶rdelen med ett bedÃ¶mningssystem dock upplevde testpersonerna att nackdelarna med Ã¥terkopplingen frÃ¥n ett bedÃ¶mningssystem kan vara att den Ã¤r svÃ¥rfÃ¶rstÃ¥dd och att Ã¥terkopplingen frÃ¥n en lÃ¤rare Ã¤r mer givande eftersom en lÃ¤rare kan fÃ¶rklara varfÃ¶r felet uppstod och Ã¤ven ge mer kvalitativ Ã¥terkoppling kring studentens lÃ¶sning. Detta Ã¤r nÃ¥got som stÃ¶ds av Ala-Mutka \cite{ala-mutka}. De intervjuade lÃ¤rarna Ã¤r inne i samma tÃ¤nk som testpersonerna frÃ¥n de kontrollerade experimenten dÃ¥ lÃ¤rarna menar att deras Ã¥terkoppling Ã¤r mer givande fÃ¶r studenter och Ã¥terkoppling Ã¤r en viktig del i studenternas utveckling vilket stÃ¶ds av Carless [Carless]. Carless menar att Ã¥terkoppling Ã¤r den viktigaste aspekten fÃ¶r en kvalitativ utveckling hos studenterna. Ala-Mutka \cite{ala-mutka} menar att trots att lÃ¤rarens Ã¥terkoppling kan vara av mer kvalitativ karaktÃ¤r kompenseras kvalitÃ©n mot snabb Ã¥terkoppling och tillgÃ¤ngligheten som ett bedÃ¶mningssystem erbjuder. Carter m. fl. \cite{carter} presenterar frÃ¥n sin studie att en respondent frÃ¥n deras studie menar att direkt Ã¥terkoppling med sÃ¤mre kvalitÃ© Ã¤r att fÃ¶redra gentemot detaljerad och kvalitativ Ã¥terkoppling som ges veckor senare. VÃ¥rt resultat frÃ¥n de kontrollerade experimenten stÃ¶djer pÃ¥stÃ¥endet eftersom sju av de Ã¥tta testpersonerna skulle fÃ¶redra att anvÃ¤nda ett automatiserat bedÃ¶mningssystem istÃ¤llet fÃ¶r traditionell bedÃ¶mning och direkt Ã¥terkoppling var enligt testpersonerna den avgÃ¶rande faktorn.
+\\
+\\
+Vid intervjuerna med de tre lÃ¤rarna vid MalmÃ¶ HÃ¶gskola framkom det att de efterfrÃ¥gade mÃ¶jligheten att anvÃ¤nda quiz fÃ¶r att bedÃ¶ma studenternas fÃ¶rstÃ¥else. Vi valde dÃ¤rfÃ¶r att i LEAP implementera mÃ¶jligheten att anvÃ¤nda ett quiz som en student mÃ¥ste avklara innan studenten kan lÃ¤mna in sin lÃ¶sning till programmeringsuppgiften. Resultaten frÃ¥n de kontrollerade experimenten visar att testpersonerna Ã¤r Ã¶vervÃ¤gande positiva till att anvÃ¤nda quiz fÃ¶r att fÃ¶rbÃ¤ttra studenternas fÃ¶rstÃ¥else och kunskaper. Vi tror att anvÃ¤ndningen av quiz fÃ¥r studenterna att pÃ¥ egen hand lÃ¤ra sig den bakomliggande teorin som Ã¤r nÃ¶dvÃ¤ndig fÃ¶r att sedan klara av att lÃ¶sa programmeringsuppgiften och att ett quiz kan sÃ¤kerstÃ¤lla att studenterna faktiskt har uppnÃ¥tt tillrÃ¤cklig fÃ¶rstÃ¥else vilket var en av de punkter som de intervjuade lÃ¤rarna ansÃ¥g var viktigast och som de ansÃ¥g att ett bedÃ¶mningssystem inte kan bedÃ¶ma. Vi tror Ã¤ven att med quiz fÃ¥r studenterna en Ã¶kad fÃ¶rstÃ¥else fÃ¶r programmering vilket dÃ¤rmed hjÃ¤lper studenterna att nÃ¥ hÃ¶gre betyg. I en studie av Woit och Mason \cite{woit_2003} genomfÃ¶rde de under fem Ã¥r en kurs dÃ¤r upplÃ¤gget pÃ¥ kursen varierade varje Ã¥r. Under det Ã¥ret dÃ¥ de anvÃ¤nde quiz som en del av kursens moment fann de en korrelation mellan resultaten pÃ¥ quiz och resultatet pÃ¥ den sista tentamina i slutet pÃ¥ kursen. Resultatet visar att varje student fick ungefÃ¤r ett betyg hÃ¶gre Ã¤n de studenter frÃ¥n de resterande Ã¥ren.  
+\\
+\\
+De tankar och Ã¥sikter vi fÃ¶rt fram i detta avsnitt bygger pÃ¥ resultaten frÃ¥n de intervjuer och kontrollerade experiment som genomfÃ¶rts. Det gÃ¥r att diskutera kring validiteten i resultaten eftersom antalet personer som ingick i intervjuerna och de kontrollerade experimenten Ã¤r relativt fÃ¥. Det som dock talar fÃ¶r resultatens validitet Ã¤r att personerna som ingick i de tvÃ¥ momenten enligt oss Ã¤r vÃ¤ldigt representativa fÃ¶r respektive tÃ¤nkta mÃ¥lgrupp. De tre intervjuade lÃ¤rarna har alla lÃ¥ng dokumenterad erfarenhet inom utlÃ¤rning av programmering till studenter och de studenter som ingick i de kontrollerade experimenten har olika bakgrund, utbildningar, Ã¥lder och kÃ¶n.
+
+%FÃ¶rdelar
+%- snabb Ã¥terkoppling âˆš
+%- objektiv bedÃ¶mning âˆš
+%- tillgÃ¤nglighet, mer sjÃ¤lvstÃ¤ndighet âˆš
+%- verifiera funktionaliteten bÃ¤ttre Ã¤n en lÃ¤rare, kan kolla HELA programmet vilket tar fÃ¶r mycket tid manuellt âˆš
+%- quiz som kan testa studenternas fÃ¶rstÃ¥else, bra kÃ¤llor pÃ¥ det. âˆš
+%- en viss sÃ¤kerhet, kÃ¶rs Ã¥tminstone inte pÃ¥ lÃ¤rarens dator
+
+%Nackdelar
+%- Tar tid att utforma testfall och uppgifter âˆš
+%- SvÃ¥rt att verifiera kvalitÃ© i programmen âˆš
+%- Personlig feedback Ã¤r mer kvalitativ, kan fÃ¶rklara vad felen beror pÃ¥, men beror pÃ¥ hur bra handledaren Ã¤r? âˆš
+%- Kreativitet hÃ¤mmas âˆš
+
 
 \newpage
-\section{Diskussion}
+\section{Slutsatser}
 
 \newpage
-\section{Slutsatser och vidare forskning}
+\section{Vidare forskning}
 
 
 %
@@ -525,6 +739,7 @@ Det är sju av åtta testpersoner som anser att automatiserad bedöming är bättre f
 \newpage
 
 \addcontentsline{toc}{section}{Referenser}
+<<<<<<< HEAD
 \uek{referenslsitan stämmer ju int emed texten, men det vet ni väl?}
 
 \begin{thebibliography}{888}
@@ -536,16 +751,24 @@ Det är sju av åtta testpersoner som anser att automatiserad bedöming är bättre f
 H.~N.~Djidjev, A.~Lingas, J.-R.~Sack, An $O(n\log n)$ algorithm for
 computing the rectilinear link center of a simple polygon. {\em Discrete and
 Computational Geometry\/}~8:131--152,~1992.
+=======
 
-\bibitem{rectlinkopt1}
-Y.~Ke, An efficient algorithm for link distance problems. In {\em
-Proceedings of the 5th ACM Symposium on Computational Geometry}, pages~69--78,~1989.
+\bibliographystyle{ieeetr}
+\bibliography{referenser}
 
-\bibitem{rectlinkfirst}
-W.~Lenhart, R.~Pollack, J.-R.~Sack, R.~Seidel, M.~Sharir, S.~Suri,
-G.~Toussaint, S.~Whitesides, C.~Yap, Computing the link center of a simple
-polygon. {\em Discrete and Computational Geometry\/}~3:281--293,~1988.
+\newpage
 
-\end{thebibliography}
+% FÃ¶re EnkÃ¤t
+\includepdf[pages=1,scale=0.7,pagecommand=\section*{Appendix A}]{enkat_fore.pdf}
+\includepdf[pages=2-,scale=0.7,pagecommand={}]{enkat_fore.pdf}
+>>>>>>> master
+
+% Efter EnkÃ¤t
+\includepdf[pages=1,scale=0.7,pagecommand=\section*{Appendix B}]{enkat_efter.pdf}
+\includepdf[pages=2-,scale=0.7,pagecommand={}]{enkat_efter.pdf}
+
+% IntervjufrÃ¥gor
+\includepdf[pages=1,scale=0.7,pagecommand=\section*{Appendix C}]{intervjufragor.pdf}
+
 
 \end{document}
