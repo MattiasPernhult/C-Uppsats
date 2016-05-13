@@ -1,0 +1,1555 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.18)  13 MAY 2016 23:07
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**uppsatsen.tex
+(./uppsatsen.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 21 languages loaded.
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen105
+\lightrulewidth=\dimen106
+\cmidrulewidth=\dimen107
+\belowrulesep=\dimen108
+\belowbottomsep=\dimen109
+\aboverulesep=\dimen110
+\abovetopsep=\dimen111
+\cmidrulesep=\dimen112
+\cmidrulekern=\dimen113
+\defaultaddspace=\dimen114
+\@cmidla=\count88
+\@cmidlb=\count89
+\@aboverulesep=\dimen115
+\@belowrulesep=\dimen116
+\@thisruleclass=\count90
+\@lastruleclass=\count91
+\@thisrulewidth=\dimen117
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen118
+\extrarowheight=\dimen119
+\NC@list=\toks15
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen120
+\TX@old@table=\dimen121
+\TX@old@col=\dimen122
+\TX@target=\dimen123
+\TX@delta=\dimen124
+\TX@cols=\count92
+\TX@ftn=\toks16
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count93
+\calc@Bcount=\count94
+\calc@Adimen=\dimen125
+\calc@Bdimen=\dimen126
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count95
+\calc@Cskip=\skip47
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/04/20 v2.0e eso-pic (RN)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\AM@pagewidth=\dimen127
+\AM@pageheight=\dimen128
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks17
+\c@AM@survey=\count96
+\AM@templatesizebox=\box27
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+)) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+\c@tracingmulticols=\count97
+\mult@box=\box28
+\multicol@leftmargin=\dimen129
+\c@unbalance=\count98
+\c@collectmore=\count99
+\doublecol@number=\count100
+\multicoltolerance=\count101
+\multicolpretolerance=\count102
+\full@width=\dimen130
+\page@free=\dimen131
+\premulticols=\dimen132
+\postmulticols=\dimen133
+\multicolsep=\skip48
+\multicolbaselineskip=\skip49
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen134
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count103
+\c@finalcolumnbadness=\count104
+\last@try=\dimen135
+\multicolovershoot=\dimen136
+\multicolundershoot=\dimen137
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count105
+)
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/babel-swedish/swedish.ldf
+Language: swedish 2005/03/31 v2.3d Swedish support from the babel system
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
+\babel@savecnt=\count106
+\U@D=\dimen138
+)
+Package babel Info: Making " an active character on input line 90.
+))
+No file uppsatsen.aux.
+\openout1 = `uppsatsen.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen139
+\scratchbox=\box54
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen140
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks21
+)
+\AtBeginShipoutBox=\box55
+Package epstopdf Info: Source file: <images_eps/mahlogo-name.eps>
+(epstopdf)                    date: 2016-05-12 14:45:40
+(epstopdf)                    size: 39676 bytes
+(epstopdf)             Output file: <images_eps/mahlogo-name-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/mahlogo-name-ep
+s-converted-to.pdf images_eps/mahlogo-name.eps>
+(epstopdf)             \includegraphics on input line 33.
+runsystem(repstopdf --outfile=images_eps/mahlogo-name-eps-converted-to.pdf imag
+es_eps/mahlogo-name.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/mahlogo-name-eps-converted-to.p
+df>.
+
+
+! Package pdftex.def Error: File `images_eps/mahlogo-name-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \includegraphics[scale=1]{mahlogo-name.eps}
+                                                
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 33.
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [1
+
+{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+] [3]
+[4] [5] [6] [7]
+No file uppsatsen.toc.
+\tf@toc=\write3
+\openout3 = `uppsatsen.toc'.
+
+[8]
+
+LaTeX Warning: Citation `douce_11' on page 1 undefined on input line 162.
+
+
+LaTeX Warning: Citation `japanerna_1' on page 1 undefined on input line 162.
+
+
+LaTeX Warning: Citation `douce_11' on page 1 undefined on input line 162.
+
+
+LaTeX Warning: Citation `hollingsworth_2' on page 1 undefined on input line 162
+.
+
+
+LaTeX Warning: Citation `higgins_3' on page 1 undefined on input line 162.
+
+
+LaTeX Warning: Citation `hollingsworth_2' on page 1 undefined on input line 162
+.
+
+
+LaTeX Warning: Citation `roboprof_4' on page 1 undefined on input line 166.
+
+
+LaTeX Warning: Citation `roboprof_4' on page 1 undefined on input line 166.
+
+
+LaTeX Warning: Citation `plaguer_5' on page 1 undefined on input line 166.
+
+
+LaTeX Warning: Citation `webtasks' on page 1 undefined on input line 168.
+
+
+LaTeX Warning: Citation `edwards_15' on page 1 undefined on input line 170.
+
+
+LaTeX Warning: Citation `edwards_15' on page 1 undefined on input line 170.
+
+
+LaTeX Warning: Citation `edwards_15' on page 1 undefined on input line 170.
+
+
+LaTeX Warning: Citation `higgins_3' on page 1 undefined on input line 172.
+
+
+LaTeX Warning: Citation `higgins_coursemarker_12' on page 1 undefined on input 
+line 172.
+
+
+LaTeX Warning: Citation `higgins_3' on page 1 undefined on input line 172.
+
+
+LaTeX Warning: Citation `caiza_7' on page 1 undefined on input line 172.
+
+
+LaTeX Warning: Citation `douce_11' on page 1 undefined on input line 172.
+
+
+LaTeX Warning: Citation `reek_6' on page 1 undefined on input line 174.
+
+
+LaTeX Warning: Citation `ihantola' on page 1 undefined on input line 174.
+
+[1]
+
+LaTeX Warning: Citation `caiza_7' on page 2 undefined on input line 176.
+
+
+LaTeX Warning: Citation `ihantola' on page 2 undefined on input line 178.
+
+
+LaTeX Warning: Citation `hollingsworth_2' on page 2 undefined on input line 181
+.
+
+
+LaTeX Warning: Citation `spacek_13' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `cs50_8' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `ihantola' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `cs50_8' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `selinux' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `pambegransningar' on page 2 undefined on input line 18
+1.
+
+
+LaTeX Warning: Citation `spacek_13' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `docker' on page 2 undefined on input line 181.
+
+
+LaTeX Warning: Citation `roboprof_4' on page 2 undefined on input line 185.
+
+
+LaTeX Warning: Citation `spacek_13' on page 2 undefined on input line 185.
+
+
+LaTeX Warning: Reference `LEAP' on page 2 undefined on input line 187.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 207--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--214
+
+ []
+
+[3]
+
+LaTeX Warning: Reference `Nunamakers metod' on page 4 undefined on input line 2
+18.
+
+
+LaTeX Warning: Reference `fig:metod_visual' on page 4 undefined on input line 2
+18.
+
+
+LaTeX Warning: Reference `Intervjuer' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Reference `Experiment' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Citation `nunamaker' on page 4 undefined on input line 221.
+
+
+LaTeX Warning: Citation `hevner' on page 4 undefined on input line 224.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--225
+
+ []
+
+
+LaTeX Warning: Reference `LEAP' on page 4 undefined on input line 229.
+
+
+LaTeX Warning: Reference `Bakgrund' on page 4 undefined on input line 234.
+
+
+LaTeX Warning: Reference `Experiment' on page 4 undefined on input line 239.
+
+
+LaTeX Warning: Reference `experiment' on page 4 undefined on input line 239.
+
+
+LaTeX Warning: Reference `TODO' on page 4 undefined on input line 244.
+
+
+LaTeX Warning: Reference `Metod' on page 4 undefined on input line 249.
+
+
+LaTeX Warning: Reference `fig:metod_visual' on page 4 undefined on input line 2
+54.
+
+[4]
+Package epstopdf Info: Source file: <images_eps/metod_image2.eps>
+(epstopdf)                    date: 2016-05-12 14:45:48
+(epstopdf)                    size: 14659995 bytes
+(epstopdf)             Output file: <images_eps/metod_image2-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/metod_image2-ep
+s-converted-to.pdf images_eps/metod_image2.eps>
+(epstopdf)             \includegraphics on input line 267.
+runsystem(repstopdf --outfile=images_eps/metod_image2-eps-converted-to.pdf imag
+es_eps/metod_image2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/metod_image2-eps-converted-to.p
+df>.
+
+
+! Package pdftex.def Error: File `images_eps/metod_image2-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 ...ludegraphics[scale=0.4]{metod_image2.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `seminarieboken' on page 5 undefined on input line 273.
+
+
+
+LaTeX Warning: Citation `seminarieboken' on page 5 undefined on input line 273.
+
+
+
+LaTeX Warning: Citation `nunamaker' on page 5 undefined on input line 276.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 276.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 276.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 276.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 276.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 276.
+
+LaTeX Warning: Reference `systemfunktioner' on page 5 undefined on input line 2
+76.
+
+
+LaTeX Warning: Citation `nunamaker' on page 5 undefined on input line 276.
+
+
+LaTeX Warning: Citation `nunamaker' on page 5 undefined on input line 279.
+
+
+LaTeX Warning: Reference `systemkomponenter' on page 5 undefined on input line 
+279.
+
+
+LaTeX Warning: Reference `LEAP' on page 5 undefined on input line 282.
+
+
+LaTeX Warning: Citation `hevner' on page 5 undefined on input line 285.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--288
+
+ []
+
+[5] [6] [7]
+
+LaTeX Warning: Reference `Metod' on page 8 undefined on input line 306.
+
+
+LaTeX Warning: Reference `result:Intervjuer' on page 8 undefined on input line 
+306.
+
+
+LaTeX Warning: Reference `LEAP' on page 8 undefined on input line 306.
+
+
+LaTeX Warning: Reference `experiment' on page 8 undefined on input line 306.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--324
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 325--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--335
+
+ []
+
+[9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 344.
+
+ (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 344.
+
+
+LaTeX Warning: Reference `fig:LeapArch' on page 10 undefined on input line 369.
+
+
+[10]
+
+LaTeX Warning: Citation `nodejs' on page 11 undefined on input line 373.
+
+
+LaTeX Warning: Citation `express' on page 11 undefined on input line 373.
+
+
+LaTeX Warning: Citation `bootstrap' on page 11 undefined on input line 373.
+
+
+LaTeX Warning: Citation `angularjs' on page 11 undefined on input line 373.
+
+
+LaTeX Warning: Citation `mongodb' on page 11 undefined on input line 373.
+
+
+LaTeX Warning: Citation `mean_stack' on page 11 undefined on input line 373.
+
+
+LaTeX Warning: Citation `docker' on page 11 undefined on input line 375.
+
+
+LaTeX Warning: Reference `fig:LeapArch' on page 11 undefined on input line 375.
+
+
+Package epstopdf Info: Source file: <images_eps/leap_arch.eps>
+(epstopdf)                    date: 2016-05-12 14:45:36
+(epstopdf)                    size: 4785059 bytes
+(epstopdf)             Output file: <images_eps/leap_arch-eps-converted-to.pdf>
+
+(epstopdf)             Command: <repstopdf --outfile=images_eps/leap_arch-eps-c
+onverted-to.pdf images_eps/leap_arch.eps>
+(epstopdf)             \includegraphics on input line 379.
+runsystem(repstopdf --outfile=images_eps/leap_arch-eps-converted-to.pdf images_
+eps/leap_arch.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/leap_arch-eps-converted-to.pdf>
+.
+
+! Package pdftex.def Error: File `images_eps/leap_arch-eps-converted-to.pdf' no
+t found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.379 \includegraphics[scale=0.4]{leap_arch.eps}
+                                                
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11] [12]
+
+LaTeX Warning: Reference `fig:LeapFlow' on page 13 undefined on input line 407.
+
+
+Package epstopdf Info: Source file: <images_eps/correct_leap_flow.eps>
+(epstopdf)                    date: 2016-05-12 14:45:40
+(epstopdf)                    size: 10187377 bytes
+(epstopdf)             Output file: <images_eps/correct_leap_flow-eps-converted
+-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/correct_leap_fl
+ow-eps-converted-to.pdf images_eps/correct_leap_flow.eps>
+(epstopdf)             \includegraphics on input line 411.
+runsystem(repstopdf --outfile=images_eps/correct_leap_flow-eps-converted-to.pdf
+ images_eps/correct_leap_flow.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/correct_leap_flow-eps-converted
+-to.pdf>.
+
+! Package pdftex.def Error: File `images_eps/correct_leap_flow-eps-converted-to
+.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.411 ...aphics[scale=0.25]{correct_leap_flow.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[13]
+
+LaTeX Warning: Reference `fig:leapTeknisk1' on page 14 undefined on input line 
+420.
+
+
+LaTeX Warning: Reference `fig:leapTeknisk2' on page 14 undefined on input line 
+420.
+
+
+LaTeX Warning: Reference `fig:leapTeknisk1' on page 14 undefined on input line 
+420.
+
+Package epstopdf Info: Source file: <images_eps/leap_teknisk_1.eps>
+(epstopdf)                    date: 2016-05-12 14:45:42
+(epstopdf)                    size: 22384 bytes
+(epstopdf)             Output file: <images_eps/leap_teknisk_1-eps-converted-to
+.pdf>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/leap_teknisk_1-
+eps-converted-to.pdf images_eps/leap_teknisk_1.eps>
+(epstopdf)             \includegraphics on input line 424.
+runsystem(repstopdf --outfile=images_eps/leap_teknisk_1-eps-converted-to.pdf im
+ages_eps/leap_teknisk_1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/leap_teknisk_1-eps-converted-to
+.pdf>.
+
+! Package pdftex.def Error: File `images_eps/leap_teknisk_1-eps-converted-to.pd
+f' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.424 ...degraphics[scale=0.8]{leap_teknisk_1.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[14]
+
+LaTeX Warning: Reference `fig:leapTeknisk2' on page 15 undefined on input line 
+436.
+
+Package epstopdf Info: Source file: <images_eps/leap_teknisk_2.eps>
+(epstopdf)                    date: 2016-05-12 14:45:42
+(epstopdf)                    size: 22272 bytes
+(epstopdf)             Output file: <images_eps/leap_teknisk_2-eps-converted-to
+.pdf>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/leap_teknisk_2-
+eps-converted-to.pdf images_eps/leap_teknisk_2.eps>
+(epstopdf)             \includegraphics on input line 440.
+runsystem(repstopdf --outfile=images_eps/leap_teknisk_2-eps-converted-to.pdf im
+ages_eps/leap_teknisk_2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/leap_teknisk_2-eps-converted-to
+.pdf>.
+
+! Package pdftex.def Error: File `images_eps/leap_teknisk_2-eps-converted-to.pd
+f' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.440 ...degraphics[scale=0.8]{leap_teknisk_2.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (7.48788pt too wide) in paragraph at lines 447--448
+[]\T1/cmr/m/n/10.95 När ex-e-kve-ring-en av Docker-containern star-tas ge-nom s
+er-vern kör Docker-containern
+ []
+
+[15]
+
+LaTeX Warning: Reference `tab:Testpersoner' on page 16 undefined on input line 
+458.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--459
+
+ []
+
+
+LaTeX Warning: Reference `fig:GeneralUX' on page 16 undefined on input line 482
+.
+
+Package epstopdf Info: Source file: <images_eps/general_UX2.eps>
+(epstopdf)                    date: 2016-05-12 14:45:42
+(epstopdf)                    size: 4665135 bytes
+(epstopdf)             Output file: <images_eps/general_UX2-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/general_UX2-eps
+-converted-to.pdf images_eps/general_UX2.eps>
+(epstopdf)             \includegraphics on input line 486.
+runsystem(repstopdf --outfile=images_eps/general_UX2-eps-converted-to.pdf image
+s_eps/general_UX2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/general_UX2-eps-converted-to.pd
+f>.
+
+! Package pdftex.def Error: File `images_eps/general_UX2-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.486 \includegraphics[scale=0.6]{general_UX2.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[16]
+
+LaTeX Warning: Reference `fig:DetailFeedback' on page 17 undefined on input lin
+e 501.
+
+Package epstopdf Info: Source file: <images_eps/detail_feedback2.eps>
+(epstopdf)                    date: 2016-05-12 14:45:42
+(epstopdf)                    size: 4830573 bytes
+(epstopdf)             Output file: <images_eps/detail_feedback2-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/detail_feedback
+2-eps-converted-to.pdf images_eps/detail_feedback2.eps>
+(epstopdf)             \includegraphics on input line 505.
+runsystem(repstopdf --outfile=images_eps/detail_feedback2-eps-converted-to.pdf 
+images_eps/detail_feedback2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/detail_feedback2-eps-converted-
+to.pdf>.
+
+! Package pdftex.def Error: File `images_eps/detail_feedback2-eps-converted-to.
+pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.505 ...graphics[scale=0.6]{detail_feedback2.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[17] [18]
+
+LaTeX Warning: Reference `fig:QuizHelps' on page 19 undefined on input line 515
+.
+
+Package epstopdf Info: Source file: <images_eps/quiz_helps2.eps>
+(epstopdf)                    date: 2016-05-12 14:45:48
+(epstopdf)                    size: 4791559 bytes
+(epstopdf)             Output file: <images_eps/quiz_helps2-eps-converted-to.pd
+f>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/quiz_helps2-eps
+-converted-to.pdf images_eps/quiz_helps2.eps>
+(epstopdf)             \includegraphics on input line 519.
+runsystem(repstopdf --outfile=images_eps/quiz_helps2-eps-converted-to.pdf image
+s_eps/quiz_helps2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/quiz_helps2-eps-converted-to.pd
+f>.
+
+! Package pdftex.def Error: File `images_eps/quiz_helps2-eps-converted-to.pdf' 
+not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.519 \includegraphics[scale=0.6]{quiz_helps2.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `\IeC {\r A}terkoppling' on page 19 undefined on input
+ line 536.
+
+
+LaTeX Warning: Reference `Anv\IeC {\"a}ndarupplevelse' on page 19 undefined on 
+input line 536.
+
+[19]
+
+LaTeX Warning: Reference `fig:TradvsAuto' on page 20 undefined on input line 54
+4.
+
+Package epstopdf Info: Source file: <images_eps/trad_vs_auto.eps>
+(epstopdf)                    date: 2016-05-12 14:45:38
+(epstopdf)                    size: 3564506 bytes
+(epstopdf)             Output file: <images_eps/trad_vs_auto-eps-converted-to.p
+df>
+(epstopdf)             Command: <repstopdf --outfile=images_eps/trad_vs_auto-ep
+s-converted-to.pdf images_eps/trad_vs_auto.eps>
+(epstopdf)             \includegraphics on input line 548.
+runsystem(repstopdf --outfile=images_eps/trad_vs_auto-eps-converted-to.pdf imag
+es_eps/trad_vs_auto.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images_eps/trad_vs_auto-eps-converted-to.p
+df>.
+
+! Package pdftex.def Error: File `images_eps/trad_vs_auto-eps-converted-to.pdf'
+ not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.548 ...ludegraphics[scale=0.5]{trad_vs_auto.eps}
+                                                  
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[20] [21]
+
+LaTeX Warning: Citation `carter' on page 22 undefined on input line 558.
+
+
+LaTeX Warning: Citation `ala-mutka' on page 22 undefined on input line 558.
+
+
+LaTeX Warning: Citation `cinelli' on page 22 undefined on input line 558.
+
+
+LaTeX Warning: Citation `enstrom' on page 22 undefined on input line 558.
+
+
+LaTeX Warning: Citation `roboprof_4' on page 22 undefined on input line 570.
+
+
+LaTeX Warning: Citation `higgins_coursemarker_12' on page 22 undefined on input
+ line 570.
+
+
+LaTeX Warning: Citation `japanerna_1' on page 22 undefined on input line 570.
+
+
+LaTeX Warning: Citation `pieterse' on page 22 undefined on input line 573.
+
+
+LaTeX Warning: Citation `ala-mutka' on page 22 undefined on input line 576.
+
+
+LaTeX Warning: Citation `ala-mutka' on page 22 undefined on input line 576.
+
+
+LaTeX Warning: Citation `carter' on page 22 undefined on input line 576.
+
+
+LaTeX Warning: Citation `woit_2003' on page 22 undefined on input line 579.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--583
+
+ []
+
+[22] [23] [24] [25] [26]
+No file uppsatsen.bbl.
+<enkat_fore.pdf, id=125, 597.23125pt x 845.1575pt>
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf>
+Package pdftex.def Info: enkat_fore.pdf used on input line 617.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf>
+Package pdftex.def Info: enkat_fore.pdf used on input line 617.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<enkat_fore.pdf, id=128, page=1, 597.23125pt x 845.1575pt>
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 1>
+Package pdftex.def Info: enkat_fore.pdf, page1 used on input line 617.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf, page 1>
+Package pdftex.def Info: enkat_fore.pdf, page1 used on input line 617.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 1>
+Package pdftex.def Info: enkat_fore.pdf, page1 used on input line 617.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf, page 1>
+Package pdftex.def Info: enkat_fore.pdf, page1 used on input line 617.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 1>
+Package pdftex.def Info: enkat_fore.pdf, page1 used on input line 617.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [27 <./enkat_fore.pdf>]
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf>
+Package pdftex.def Info: enkat_fore.pdf used on input line 618.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf>
+Package pdftex.def Info: enkat_fore.pdf used on input line 618.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<enkat_fore.pdf, id=160, page=2, 597.23125pt x 845.1575pt>
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 2>
+Package pdftex.def Info: enkat_fore.pdf, page2 used on input line 618.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf, page 2>
+Package pdftex.def Info: enkat_fore.pdf, page2 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 2>
+Package pdftex.def Info: enkat_fore.pdf, page2 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf, page 2>
+Package pdftex.def Info: enkat_fore.pdf, page2 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+
+<enkat_fore.pdf, id=161, page=3, 597.23125pt x 845.1575pt>
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 3>
+Package pdftex.def Info: enkat_fore.pdf, page3 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+ <use enkat_fore.pdf, page 3>
+Package pdftex.def Info: enkat_fore.pdf, page3 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 2>
+Package pdftex.def Info: enkat_fore.pdf, page2 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [28 <./enkat_fore.pdf>]
+File: enkat_fore.pdf Graphic file (type pdf)
+
+<use enkat_fore.pdf, page 3>
+Package pdftex.def Info: enkat_fore.pdf, page3 used on input line 618.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [29 <./enkat_fore.pdf>]
+<enkat_efter.pdf, id=176, 597.23125pt x 845.1575pt>
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf>
+Package pdftex.def Info: enkat_efter.pdf used on input line 621.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf>
+Package pdftex.def Info: enkat_efter.pdf used on input line 621.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<enkat_efter.pdf, id=179, page=1, 597.23125pt x 845.1575pt>
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 1>
+Package pdftex.def Info: enkat_efter.pdf, page1 used on input line 621.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 1>
+Package pdftex.def Info: enkat_efter.pdf, page1 used on input line 621.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 1>
+Package pdftex.def Info: enkat_efter.pdf, page1 used on input line 621.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 1>
+Package pdftex.def Info: enkat_efter.pdf, page1 used on input line 621.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 1>
+Package pdftex.def Info: enkat_efter.pdf, page1 used on input line 621.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [30 <./enkat_efter.pdf>]
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf>
+Package pdftex.def Info: enkat_efter.pdf used on input line 622.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf>
+Package pdftex.def Info: enkat_efter.pdf used on input line 622.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<enkat_efter.pdf, id=211, page=2, 597.23125pt x 845.1575pt>
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 2>
+Package pdftex.def Info: enkat_efter.pdf, page2 used on input line 622.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 2>
+Package pdftex.def Info: enkat_efter.pdf, page2 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 2>
+Package pdftex.def Info: enkat_efter.pdf, page2 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 2>
+Package pdftex.def Info: enkat_efter.pdf, page2 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+
+<enkat_efter.pdf, id=212, page=3, 597.23125pt x 845.1575pt>
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 3>
+Package pdftex.def Info: enkat_efter.pdf, page3 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 3>
+Package pdftex.def Info: enkat_efter.pdf, page3 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 2>
+Package pdftex.def Info: enkat_efter.pdf, page2 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [31 <./enkat_efter.pdf>]
+<enkat_efter.pdf, id=217, page=4, 597.23125pt x 845.1575pt>
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 4>
+Package pdftex.def Info: enkat_efter.pdf, page4 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 4>
+Package pdftex.def Info: enkat_efter.pdf, page4 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 3>
+Package pdftex.def Info: enkat_efter.pdf, page3 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [32 <./enkat_efter.pdf>]
+<enkat_efter.pdf, id=221, page=5, 597.23125pt x 845.1575pt>
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 5>
+Package pdftex.def Info: enkat_efter.pdf, page5 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+ <use enkat_efter.pdf, page 5>
+Package pdftex.def Info: enkat_efter.pdf, page5 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 4>
+Package pdftex.def Info: enkat_efter.pdf, page4 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [33 <./enkat_efter.pdf>]
+File: enkat_efter.pdf Graphic file (type pdf)
+
+<use enkat_efter.pdf, page 5>
+Package pdftex.def Info: enkat_efter.pdf, page5 used on input line 622.
+(pdftex.def)             Requested size: 418.05902pt x 591.60622pt.
+ [34 <./enkat_efter.pdf>]
+<intervjufragor.pdf, id=235, 596.2275pt x 844.15375pt>
+File: intervjufragor.pdf Graphic file (type pdf)
+
+<use intervjufragor.pdf>
+Package pdftex.def Info: intervjufragor.pdf used on input line 625.
+(pdftex.def)             Requested size: 596.22604pt x 844.15169pt.
+File: intervjufragor.pdf Graphic file (type pdf)
+ <use intervjufragor.pdf>
+Package pdftex.def Info: intervjufragor.pdf used on input line 625.
+(pdftex.def)             Requested size: 596.22604pt x 844.15169pt.
+
+<intervjufragor.pdf, id=238, page=1, 596.2275pt x 844.15375pt>
+File: intervjufragor.pdf Graphic file (type pdf)
+
+<use intervjufragor.pdf, page 1>
+Package pdftex.def Info: intervjufragor.pdf, page1 used on input line 625.
+(pdftex.def)             Requested size: 596.22604pt x 844.15169pt.
+File: intervjufragor.pdf Graphic file (type pdf)
+ <use intervjufragor.pdf, page 1>
+Package pdftex.def Info: intervjufragor.pdf, page1 used on input line 625.
+(pdftex.def)             Requested size: 417.3564pt x 590.9036pt.
+File: intervjufragor.pdf Graphic file (type pdf)
+
+<use intervjufragor.pdf, page 1>
+Package pdftex.def Info: intervjufragor.pdf, page1 used on input line 625.
+(pdftex.def)             Requested size: 417.3564pt x 590.9036pt.
+File: intervjufragor.pdf Graphic file (type pdf)
+ <use intervjufragor.pdf, page 1>
+Package pdftex.def Info: intervjufragor.pdf, page1 used on input line 625.
+(pdftex.def)             Requested size: 417.3564pt x 590.9036pt.
+File: intervjufragor.pdf Graphic file (type pdf)
+
+<use intervjufragor.pdf, page 1>
+Package pdftex.def Info: intervjufragor.pdf, page1 used on input line 625.
+(pdftex.def)             Requested size: 417.3564pt x 590.9036pt.
+ [35 <./intervjufragor.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./intervjufragor.pdf): PDF i
+nclusion: invalid other resource which is no dict (key 'ProcSets', type <array>
+); ignored.
+>] (./uppsatsen.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 29 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 4114 strings out of 494501
+ 56824 string characters out of 6167030
+ 145688 words of memory out of 5000000
+ 7291 multiletter control sequences out of 15000+600000
+ 17544 words of font info for 40 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 42i,19n,49p,2215b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/mattiaspernhult/Library/texlive/2015basic/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/mattiaspernhult/Library/texli
+ve/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/matt
+iaspernhult/Library/texlive/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
+m0600.600pk> </Users/mattiaspernhult/Library/texlive/2015basic/texmf-var/fonts/
+pk/ljfour/jknappen/ec/ecrm0800.600pk> </Users/mattiaspernhult/Library/texlive/2
+015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </Users/mattiasp
+ernhult/Library/texlive/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx109
+5.600pk> </Users/mattiaspernhult/Library/texlive/2015basic/texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1440.600pk> </Users/mattiaspernhult/Library/texlive/2015b
+asic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </Users/mattiaspernh
+ult/Library/texlive/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.60
+0pk> </Users/mattiaspernhult/Library/texlive/2015basic/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecrm1728.600pk> </Users/mattiaspernhult/Library/texlive/2015basic
+/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/mattiaspernhult/
+Library/texlive/2015basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk>
+ </Users/mattiaspernhult/Library/texlive/2015basic/texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecrm1200.600pk> </Users/mattiaspernhult/Library/texlive/2015basic/tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk></usr/local/texlive/2015basic
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on uppsatsen.pdf (43 pages, 381020 bytes).
+PDF statistics:
+ 733 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+
